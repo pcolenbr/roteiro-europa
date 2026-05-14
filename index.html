@@ -6,436 +6,446 @@
 <title>Roteiro Europa — Outubro — Paris · Luxemburgo · Bruxelas · Amsterdã · Paris</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --cream: #F4EFE4;
-  --dark: #1C1814;
-  --warm: #8B6914;
-  --accent: #B5621E;
-  --accent2: #C4973A;
-  --muted: #7A7068;
-  --paris: #2C4A6E;
-  --lux: #3D6B4F;
-  --bru: #7A3030;
-  --ams: #3A5C7A;
-  --paris2: #4A3A6E;
-}
+  :root {
+    --cream: #F4EFE4;
+    --dark: #1C1814;
+    --warm: #8B6914;
+    --accent: #B5621E;
+    --accent2: #C4973A;
+    --muted: #7A7068;
+    --paris: #2C4A6E;
+    --lux: #3D6B4F;
+    --bru: #7A3030;
+    --ams: #3A5C7A;
+    --paris2: #4A3A6E;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--dark);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+  }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+  /* HEADER */
+  header {
+    background: var(--dark);
+    color: var(--cream);
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(181,98,30,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 30%, rgba(196,151,58,0.08) 0%, transparent 50%);
+  }
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 16px;
+    font-weight: 500;
+    position: relative;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  header h1 em { font-style: italic; color: #C9A96E; }
+  .header-route {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .route-city {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.9);
+  }
+  .route-arrow { color: var(--accent); font-size: 14px; }
+  .header-meta {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 0.5px;
+    position: relative;
+  }
 
-body {
-  background: var(--cream);
-  color: var(--dark);
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-}
+  /* AUTUMN ALERT */
+  .autumn-banner {
+    background: linear-gradient(135deg, #5C3A1A, #3A2A12);
+    color: var(--cream);
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 13px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .autumn-banner strong { color: var(--accent2); }
 
-/* HEADER */
-header {
-  background: var(--dark);
-  color: var(--cream);
-  padding: 60px 40px 50px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
+  /* LEGEND */
+  .legend {
+    background: #141210;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 18px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(245,240,232,0.6);
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .tag-free { background: rgba(74,122,58,0.15); color: #7DC46A; border: 1px solid rgba(74,122,58,0.3); }
+  .tag-advance { background: rgba(181,98,30,0.15); color: #E8885A; border: 1px solid rgba(181,98,30,0.3); }
+  .tag-local { background: rgba(122,92,42,0.15); color: #D4A862; border: 1px solid rgba(122,92,42,0.3); }
+  .tag-seasonal { background: rgba(160,90,30,0.15); color: #E8A84A; border: 1px solid rgba(160,90,30,0.3); }
 
-header::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(181,98,30,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 30%, rgba(196,151,58,0.08) 0%, transparent 50%);
-}
+  /* MAIN */
+  main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
 
-.header-label {
-  font-size: 11px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--accent2);
-  margin-bottom: 16px;
-  font-weight: 500;
-  position: relative;
-}
+  /* CITY SECTION */
+  .city-section { margin-bottom: 72px; }
+  .city-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid rgba(26,22,18,0.1);
+  }
+  .city-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1;
+    opacity: 0.12;
+    flex-shrink: 0;
+    margin-top: -4px;
+  }
+  .city-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .city-subtitle {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .city-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .city-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .pill-paris { background: rgba(44,74,110,0.1); color: var(--paris); }
+  .pill-paris2 { background: rgba(74,58,110,0.1); color: var(--paris2); }
+  .pill-lux { background: rgba(61,107,79,0.1); color: var(--lux); }
+  .pill-bru { background: rgba(122,48,48,0.1); color: var(--bru); }
+  .pill-ams { background: rgba(58,92,122,0.1); color: var(--ams); }
+  .pill-autumn { background: rgba(181,98,30,0.1); color: var(--accent); }
 
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 5vw, 3.8rem);
-  font-weight: 400;
-  line-height: 1.15;
-  margin-bottom: 20px;
-  position: relative;
-}
+  /* DAY */
+  .day-block {
+    margin-bottom: 28px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .day-header {
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--dark);
+  }
+  .day-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: var(--cream);
+    font-weight: 400;
+  }
+  .day-date {
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .day-theme {
+    font-size: 10px;
+    color: rgba(245,240,232,0.45);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
 
-header h1 em { font-style: italic; color: #C9A96E; }
+  /* ACTIVITY */
+  .activity {
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: start;
+  }
+  .activity:last-child { border-bottom: none; }
+  .activity-time {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .activity-name {
+    font-weight: 500;
+    font-size: 0.92rem;
+    margin-bottom: 4px;
+    color: var(--dark);
+  }
+  .activity-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .activity-desc a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181,98,30,0.3);
+  }
+  .activity-desc a:hover { border-color: var(--accent); }
+  .activity-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    flex-shrink: 0;
+  }
+  .price {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--dark);
+    white-space: nowrap;
+  }
 
-.header-route {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  position: relative;
-}
+  /* SEASONAL NOTE */
+  .season-note {
+    background: rgba(181,98,30,0.07);
+    border-left: 3px solid var(--accent);
+    padding: 12px 20px;
+    margin: 0 24px 20px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.81rem;
+    color: #5C3A18;
+    line-height: 1.6;
+  }
+  .season-note strong { color: var(--accent); }
 
-.route-city {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgba(245,240,232,0.9);
-}
+  /* TIP BOX */
+  .tip-box {
+    background: rgba(196,151,58,0.07);
+    border-left: 3px solid var(--accent2);
+    padding: 12px 20px;
+    margin: 0 24px 20px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.81rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .tip-box strong { color: var(--accent2); }
 
-.route-arrow { color: var(--accent); font-size: 14px; }
+  /* SEPARATOR */
+  .transfer-note {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 36px 0;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .transfer-note::before,
+  .transfer-note::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+  }
 
-.header-meta {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  font-size: 12px;
-  color: rgba(245,240,232,0.5);
-  letter-spacing: 0.5px;
-  position: relative;
-}
+  /* SUMMARY */
+  .summary {
+    background: var(--dark);
+    color: var(--cream);
+    border-radius: 16px;
+    padding: 40px;
+    margin-top: 60px;
+  }
+  .summary h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .summary-card {
+    background: rgba(255,255,255,0.04);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .summary-card h4 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 12px;
+  }
+  .summary-card ul {
+    list-style: none;
+    font-size: 12px;
+    color: rgba(245,240,232,0.75);
+    line-height: 2;
+  }
+  .summary-card ul li::before { content: '→ '; color: var(--accent); }
+  .budget-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: rgba(245,240,232,0.75);
+  }
+  .budget-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0 0;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--cream);
+  }
+  .budget-total .price { color: #C9A96E; font-size: 1.15rem; }
 
-/* AUTUMN ALERT */
-.autumn-banner {
-  background: linear-gradient(135deg, #5C3A1A, #3A2A12);
-  color: var(--cream);
-  padding: 18px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  font-size: 13px;
-  text-align: center;
-  flex-wrap: wrap;
-}
+  /* FREE WALKING TOUR BOX */
+  .fwt-box {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: linear-gradient(135deg, rgba(44,74,110,0.06), rgba(44,74,110,0.03));
+    border: 1px solid rgba(44,74,110,0.15);
+    border-left: 4px solid #2C4A6E;
+    border-radius: 0 12px 12px 0;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+  }
+  .fwt-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .fwt-content { flex: 1; }
+  .fwt-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #2C4A6E;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .fwt-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 10px;
+  }
+  .fwt-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .fwt-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    background: #2C4A6E;
+    color: var(--cream) !important;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none !important;
+    letter-spacing: 0.3px;
+    transition: opacity 0.15s;
+  }
+  .fwt-links a:hover { opacity: 0.85; }
+  .fwt-tip {
+    font-size: 0.78rem;
+    color: #2C4A6E;
+    opacity: 0.8;
+    line-height: 1.5;
+    font-style: italic;
+  }
 
-.autumn-banner strong { color: var(--accent2); }
+  @media (max-width: 600px) {
+    .fwt-box { flex-direction: column; gap: 10px; }
+  }
 
-/* LEGEND */
-.legend {
-  background: #141210;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 18px 40px;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  color: rgba(245,240,232,0.6);
-}
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 3px 9px;
-  border-radius: 20px;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.tag-free { background: rgba(74,122,58,0.15); color: #7DC46A; border: 1px solid rgba(74,122,58,0.3); }
-.tag-advance { background: rgba(181,98,30,0.15); color: #E8885A; border: 1px solid rgba(181,98,30,0.3); }
-.tag-local { background: rgba(122,92,42,0.15); color: #D4A862; border: 1px solid rgba(122,92,42,0.3); }
-.tag-seasonal { background: rgba(160,90,30,0.15); color: #E8A84A; border: 1px solid rgba(160,90,30,0.3); }
-
-/* MAIN */
-main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
-
-/* CITY SECTION */
-.city-section { margin-bottom: 72px; }
-
-.city-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 40px;
-  padding-bottom: 24px;
-  border-bottom: 2px solid rgba(26,22,18,0.1);
-}
-
-.city-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 1;
-  opacity: 0.12;
-  flex-shrink: 0;
-  margin-top: -4px;
-}
-
-.city-info h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.city-subtitle {
-  font-size: 13px;
-  color: var(--muted);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 4px;
-}
-
-.city-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-
-.city-pill {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.pill-paris { background: rgba(44,74,110,0.1); color: var(--paris); }
-.pill-paris2 { background: rgba(74,58,110,0.1); color: var(--paris2); }
-.pill-lux { background: rgba(61,107,79,0.1); color: var(--lux); }
-.pill-bru { background: rgba(122,48,48,0.1); color: var(--bru); }
-.pill-ams { background: rgba(58,92,122,0.1); color: var(--ams); }
-.pill-autumn { background: rgba(181,98,30,0.1); color: var(--accent); }
-
-/* DAY */
-.day-block {
-  margin-bottom: 28px;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-}
-
-.day-header {
-  padding: 14px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--dark);
-}
-
-.day-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
-  color: var(--cream);
-  font-weight: 400;
-}
-
-.day-date {
-  font-size: 11px;
-  color: var(--accent2);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.day-theme {
-  font-size: 10px;
-  color: rgba(245,240,232,0.45);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 2px;
-}
-
-/* ACTIVITY */
-.activity {
-  padding: 16px 24px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 16px;
-  align-items: start;
-}
-
-.activity:last-child { border-bottom: none; }
-
-.activity-time {
-  font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 3px;
-}
-
-.activity-name {
-  font-weight: 500;
-  font-size: 0.92rem;
-  margin-bottom: 4px;
-  color: var(--dark);
-}
-
-.activity-desc {
-  font-size: 0.82rem;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.activity-desc a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(181,98,30,0.3);
-}
-
-.activity-desc a:hover { border-color: var(--accent); }
-
-.activity-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 5px;
-  flex-shrink: 0;
-}
-
-.price {
-  font-family: 'Playfair Display', serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--dark);
-  white-space: nowrap;
-}
-
-/* SEASONAL NOTE */
-.season-note {
-  background: rgba(181,98,30,0.07);
-  border-left: 3px solid var(--accent);
-  padding: 12px 20px;
-  margin: 0 24px 20px;
-  border-radius: 0 8px 8px 0;
-  font-size: 0.81rem;
-  color: #5C3A18;
-  line-height: 1.6;
-}
-
-.season-note strong { color: var(--accent); }
-
-/* TIP BOX */
-.tip-box {
-  background: rgba(196,151,58,0.07);
-  border-left: 3px solid var(--accent2);
-  padding: 12px 20px;
-  margin: 0 24px 20px;
-  border-radius: 0 8px 8px 0;
-  font-size: 0.81rem;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.tip-box strong { color: var(--accent2); }
-
-/* SEPARATOR */
-.transfer-note {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin: 36px 0;
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.transfer-note::before,
-.transfer-note::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: rgba(0,0,0,0.1);
-}
-
-/* SUMMARY */
-.summary {
-  background: var(--dark);
-  color: var(--cream);
-  border-radius: 16px;
-  padding: 40px;
-  margin-top: 60px;
-}
-
-.summary h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-bottom: 28px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.summary-card {
-  background: rgba(255,255,255,0.04);
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.summary-card h4 {
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--accent2);
-  margin-bottom: 12px;
-}
-
-.summary-card ul {
-  list-style: none;
-  font-size: 12px;
-  color: rgba(245,240,232,0.75);
-  line-height: 2;
-}
-
-.summary-card ul li::before { content: '→ '; color: var(--accent); }
-
-.budget-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  padding: 7px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  color: rgba(245,240,232,0.75);
-}
-
-.budget-total {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0 0;
-  font-weight: 500;
-  font-size: 13px;
-  color: var(--cream);
-}
-
-.budget-total .price { color: #C9A96E; font-size: 1.15rem; }
-
-@media (max-width: 600px) {
-  header { padding: 40px 20px; }
-  .autumn-banner { padding: 14px 20px; }
-  main { padding: 36px 16px; }
-  .summary { padding: 28px 20px; }
-  .summary-grid { grid-template-columns: 1fr; }
-  .activity { grid-template-columns: 1fr; }
-  .activity-right { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
-  .day-header { flex-direction: column; align-items: flex-start; gap: 4px; }
-}
 </style>
 </head>
 <body>
@@ -467,22 +477,10 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
 </div>
 
 <div class="legend">
-  <div class="legend-item">
-    <span class="tag tag-free">✓ Gratuito</span>
-    <span>Entrada livre</span>
-  </div>
-  <div class="legend-item">
-    <span class="tag tag-advance">⚡ Compre antes</span>
-    <span>Reserve com antecedência</span>
-  </div>
-  <div class="legend-item">
-    <span class="tag tag-local">🏷 No local</span>
-    <span>Pode comprar na hora</span>
-  </div>
-  <div class="legend-item">
-    <span class="tag tag-seasonal">🍂 Especial outubro</span>
-    <span>Só nesta época</span>
-  </div>
+  <div class="legend-item"><span class="tag tag-free">✓ Gratuito</span><span>Entrada livre</span></div>
+  <div class="legend-item"><span class="tag tag-advance">⚡ Compre antes</span><span>Reserve com antecedência</span></div>
+  <div class="legend-item"><span class="tag tag-local">🏷 No local</span><span>Pode comprar na hora</span></div>
+  <div class="legend-item"><span class="tag tag-seasonal">🍂 Especial outubro</span><span>Só nesta época</span></div>
 </div>
 
 <main>
@@ -505,6 +503,19 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     <strong>Paris em outubro:</strong> Folhagem dourada no Luxembourg, Tuileries e Bois de Boulogne. A cidade ganha um charme outonal único — menos turistas, luz mais suave, cafés mais aconchegantes. Temperatura entre 10°C e 17°C. Leve camadas e um impermeável leve.
   </div>
 
+  <div class="fwt-box">
+    <div class="fwt-icon">🚶</div>
+    <div class="fwt-content">
+      <p class="fwt-title">Free Walking Tour — Paris</p>
+      <p class="fwt-desc">Uma das melhores formas de se ambientar em Paris é fazendo um free walking tour no primeiro ou segundo dia. Os tours são gratuitos — você paga apenas a gorjeta que achar justo no final. Cobrem os grandes marcos (Notre-Dame, Louvre, Marais, Montmartre) com contexto histórico e dicas locais que você não acharia em guia. São 2–3h de passeio a pé com um guia local e fluente em inglês.</p>
+      <div class="fwt-links">
+        <a href="https://www.guruwalk.com/paris" target="_blank">🔗 GuruWalk Paris</a>
+        <a href="https://www.neweuropetours.eu/sandemans-tours/paris/free-tour-of-paris/" target="_blank">🔗 SANDEMANs Paris</a>
+      </div>
+      <p class="fwt-tip">💡 Reserve com antecedência pelo site — os melhores horários (10h e 14h) esgotam rápido em outubro.</p>
+    </div>
+  </div>
+
   <!-- DIA 1 -->
   <div class="day-block">
     <div class="day-header">
@@ -517,8 +528,20 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     <div class="activity">
       <div>
         <p class="activity-time">Tarde</p>
+        <p class="activity-name">Catedral de Notre-Dame de Paris ⭐ Visita obrigatória</p>
+        <p class="activity-desc">Após o incêndio de 2019 e anos de restauração, Notre-Dame reabriu suas portas em dezembro de 2024 — uma das ressurreições mais emocionantes da arquitetura mundial. A catedral gótica do século XII está mais deslumbrante do que nunca por dentro. A entrada é gratuita, mas <strong>reserve um horário com antecedência</strong> pelo site oficial — a demanda é altíssima. <a href="https://www.notredamedeparis.fr" target="_blank">notredamedeparis.fr</a></p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Grátis</span>
+        <span class="tag tag-free">✓ Gratuito</span>
+        <span class="tag tag-advance">⚡ Compre antes</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Final da tarde</p>
         <p class="activity-name">Île de la Cité & Île Saint-Louis</p>
-        <p class="activity-desc">As ilhas medievais no coração do Sena. Caminhe pela Pont Neuf, contemple a fachada de Notre-Dame (ainda em restauração/reabertura recente), explore as ruelas do século XIII. Outubro tem luz dourada perfeita para fotos.</p>
+        <p class="activity-desc">Saindo de Notre-Dame, explore a Pont Neuf (a ponte mais antiga de Paris), as ruelas medievais da Île de la Cité e atravesse para a Île Saint-Louis — uma das áreas mais tranquilas e charmosas da cidade. Outubro tem luz dourada perfeita para fotos.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
@@ -553,16 +576,16 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 2 — Louvre & Saint-Germain Outonal</p>
-        <p class="day-theme">Arte · Jardins Dourados · Cafés Literários</p>
+        <p class="day-title">Dia 2 — Louvre (dia inteiro) & Saint-Germain</p>
+        <p class="day-theme">Arte · Dia completo no maior museu do mundo · Cafés Literários</p>
       </div>
       <span class="day-date">02 out</span>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Manhã (9h–12h)</p>
-        <p class="activity-name">Museu do Louvre</p>
-        <p class="activity-desc">Outubro tem filas menores que o verão, mas ainda é essencial reservar online. Foque no essencial: Mona Lisa, Vênus de Milo, Grande Galeria italiana. 3h sem pressa. <strong>Atenção:</strong> Ingresso para brasileiros é €32/pp desde jan/2026. Fechado às terças. <a href="https://ticket.louvre.fr" target="_blank">ticket.louvre.fr</a></p>
+        <p class="activity-time">Manhã (9h) até o final da tarde (~17h)</p>
+        <p class="activity-name">Museu do Louvre — Dia inteiro</p>
+        <p class="activity-desc">Com um dia completo, dá para explorar o Louvre com a calma que ele merece. Divida a visita em blocos temáticos: <strong>Ala Denon</strong> (Mona Lisa, Vênus de Milo, Vitória de Samotrácia), <strong>Ala Richelieu</strong> (esculturas francesas, Vermeer, objetos de arte), <strong>Ala Sully</strong> (Egito Antigo, antigüidades gregas). Faça uma pausa para almoço no Café Richelieu dentro do museu ou num dos bancos nos Jardins das Tulherias logo fora. <strong>Atenção:</strong> Ingresso para brasileiros é €32/pp desde jan/2026. Fechado às terças. <a href="https://ticket.louvre.fr" target="_blank">ticket.louvre.fr</a></p>
       </div>
       <div class="activity-right">
         <span class="price">€32/pp</span>
@@ -571,26 +594,28 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Tarde</p>
-        <p class="activity-name">Jardin du Luxembourg no outono</p>
-        <p class="activity-desc">Um dos parques mais bonitos de Paris fica ainda mais especial em outubro — folhagem dourada, castanheiras, parisenses tomando café nas cadeiras verdes. Um dos cenários mais fotogênicos da viagem. Grátis.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Final da tarde</p>
-        <p class="activity-name">Café de Flore ou Les Deux Magots</p>
-        <p class="activity-desc">Os cafés históricos de Sartre e Beauvoir em Saint-Germain. Em outubro, há aquecedores nas esplanadas — o clima é perfeito para sentar do lado de fora com um café crème e observar o bairro.</p>
+        <p class="activity-time">Final da tarde (~17h30) — a 15 min a pé</p>
+        <p class="activity-name">Café de Flore ou Les Deux Magots — Saint-Germain</p>
+        <p class="activity-desc">O encerramento perfeito para um dia de museu: sentar na esplanada dos cafés históricos de Sartre e Beauvoir em Saint-Germain, com um café crème ou um vinho. Em outubro há aquecedores nas mesas do lado de fora — o clima é aconchegante e o bairro está num ritmo tranquilo a essa hora. Sem precisar de energia para mais nenhuma atração.</p>
       </div>
       <div class="activity-right">
         <span class="price">~€15–20/pp</span>
         <span class="tag tag-local">🏷 No local</span>
       </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Jantar</p>
+        <p class="activity-name">Jantar em Saint-Germain-des-Prés</p>
+        <p class="activity-desc">O bairro tem ótimas opções de bistrots tradicionais a poucos passos dos cafés. Experimente a <em>soupe à l'oignon gratinée</em> ou um <em>confit de canard</em> — clássicos do outono parisiense. Evite os restaurantes colados nos cafés históricos (turísticos e caros) — caminhe uma rua para os lados para preços mais honestos.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€50–80/casal</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Dica pro Louvre:</strong> Baixe o app oficial do Louvre antes da visita — ele tem mapa interativo e rotas temáticas que economizam muito tempo dentro do museu. Traga uma garrafa de água e um lanche leve para a tarde, pois as filas internas do restaurante podem ser longas.
     </div>
   </div>
 
@@ -624,16 +649,16 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 4 — Torre Eiffel & Marais</p>
-        <p class="day-theme">Ícone · Bairro Histórico · Le Marais</p>
+        <p class="day-title">Dia 4 — Grande Rota do Oeste: Torre Eiffel → Arco do Triunfo</p>
+        <p class="day-theme">Ícones · Champs-Élysées · Show de Luzes Noturno</p>
       </div>
       <span class="day-date">04 out</span>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Manhã (9h)</p>
-        <p class="activity-name">Torre Eiffel</p>
-        <p class="activity-desc">Em outubro, o amanhecer por volta das 7h30 traz luz suave e dourada — ideal para fotos. Chegue cedo (abertura às 9h). O 2º andar já é espetacular; subir ao topo (€36,70) é opcional. Reserve online com antecedência. <a href="https://www.toureiffel.paris/en/rates-opening-times" target="_blank">toureiffel.paris</a></p>
+        <p class="activity-time">Manhã (9h) · Ponto de partida: Metrô Trocadéro</p>
+        <p class="activity-name">Trocadéro → Torre Eiffel (a melhor vista de Paris)</p>
+        <p class="activity-desc">Desça na estação de metrô <strong>Trocadéro</strong> — de lá, a vista frontal da Torre Eiffel emoldurando os jardins é uma das mais icônicas do mundo. Fotografe com calma antes de ir até a Torre. Reserve o ingresso com antecedência pelo site oficial. O 2º andar já é espetacular; o topo (€36,70) é opcional. <a href="https://www.toureiffel.paris/en/rates-opening-times" target="_blank">toureiffel.paris</a></p>
       </div>
       <div class="activity-right">
         <span class="price">€14,80–€36,70/pp</span>
@@ -642,9 +667,9 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Tarde</p>
-        <p class="activity-name">Le Marais & Place des Vosges</p>
-        <p class="activity-desc">A praça mais antiga de Paris com arcadas medievais — linda em outubro com folhas caindo. Visite o Musée Carnavalet (história de Paris, entrada gratuita), explore galerias e coma o famoso falafel da Rue des Rosiers.</p>
+        <p class="activity-time">Após a Torre · caminhada</p>
+        <p class="activity-name">Champ de Mars — Piquenique no gramado</p>
+        <p class="activity-desc">O grande parque aos pés da Torre Eiffel. Em outubro, com folhagem dourada ao fundo da torre, é um dos cenários mais bonitos de Paris. Ideal para uma pausa, fotos e um café numa baguete comprada no caminho. Totalmente gratuito.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
@@ -654,14 +679,40 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Noite</p>
-        <p class="activity-name">Passeio noturno pelo Sena</p>
-        <p class="activity-desc">Caminhada pelas Berges de Seine — a torre pisca por 5 minutos a cada hora cheia. Em outubro, o reflexo das árvores douradas nos canais e a iluminação da cidade criam uma atmosfera cinematográfica.</p>
+        <p class="activity-time">Tarde · caminhada pelo Sena</p>
+        <p class="activity-name">Pont Alexandre III — A ponte mais bela de Paris</p>
+        <p class="activity-desc">Atravesse pelo Sena até a Pont Alexandre III — com suas esculturas douradas e lampiões art nouveau, é considerada a ponte mais ornamentada de Paris. Ótima para fotos e fica perfeitamente no caminho entre a Torre Eiffel e os Champs-Élysées. Totalmente gratuito.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
         <span class="tag tag-free">✓ Gratuito</span>
       </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Tarde · continuação</p>
+        <p class="activity-name">Champs-Élysées → Arco do Triunfo</p>
+        <p class="activity-desc">Suba pela Avenue des Champs-Élysées — a avenida mais famosa do mundo, ladeada de castanheiras com folhagem de outono em outubro. Ao chegar na Place de l'Étoile, suba ao <strong>Arco do Triunfo</strong> para uma das vistas mais espetaculares de Paris: 12 avenidas irradiando a partir de um único ponto, vistas do alto. <a href="https://www.paris-arc-de-triomphe.fr" target="_blank">paris-arc-de-triomphe.fr</a></p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€13/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Noite (horário cheio após o anoitecer)</p>
+        <p class="activity-name">✨ Show de Luzes da Torre Eiffel</p>
+        <p class="activity-desc">A Torre Eiffel pisca com milhares de luzes por <strong>5 minutos a cada hora cheia</strong>, do anoitecer até meia-noite. Em outubro o anoitecer é por volta das 19h. Volte ao Trocadéro ou às Berges de Seine para a melhor vista do show — um dos espetáculos gratuitos mais emocionantes da Europa. Não perca!</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Grátis</span>
+        <span class="tag tag-free">✓ Gratuito</span>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Rota do dia:</strong> Metrô Trocadéro → Torre Eiffel (a pé, ~5 min) → Champ de Mars (a pé) → Pont Alexandre III (a pé, ~20 min) → Champs-Élysées (a pé, ~15 min) → Arco do Triunfo. Toda a rota é praticamente linear e pode ser feita a pé! Distância total: ~5km.
     </div>
   </div>
 
@@ -669,16 +720,16 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 5 — Montmartre & Musée de l'Orangerie</p>
-        <p class="day-theme">Bairro Boêmio · Monet · Festival de Vinho (início do mês)</p>
+        <p class="day-title">Dia 5 — Montmartre, Jardin du Luxembourg & Le Marais</p>
+        <p class="day-theme">Bairro Boêmio · Parque Outonal · Sacré-Cœur · Bairro Histórico</p>
       </div>
       <span class="day-date">05 out</span>
     </div>
     <div class="activity">
       <div>
         <p class="activity-time">Manhã</p>
-        <p class="activity-name">Montmartre outonal</p>
-        <p class="activity-desc">O bairro dos artistas fica especialmente charmoso em outubro. As escadarias com folhas caindo, a vista panorâmica do Sacré-Cœur, a Place du Tertre. Se visitar no início do mês (≈ 1ª semana), pode coincidir com a <strong>Fête des Vendanges</strong> — o único festival de colheita de vinho de Paris, realizado todo ano na 1ª semana de outubro em Montmartre.</p>
+        <p class="activity-name">Basílica do Sacré-Cœur & Bairro de Montmartre</p>
+        <p class="activity-desc">Suba até o Sacré-Cœur de manhã — a vista panorâmica de Paris com luz outonal é deslumbrante (entrada gratuita). Depois explore o bairro: as escadarias cobertas de folhas, a Place du Tertre com artistas de rua, ateliês e as vinhas de Montmartre. Em outubro na <strong>1ª semana</strong>, pode coincidir com a <strong>Fête des Vendanges</strong> — o único festival de vinho de Paris, realizado aqui há mais de 90 anos.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
@@ -688,9 +739,33 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Tarde</p>
+        <p class="activity-time">Início da tarde (~13h) — metrô ~20 min</p>
+        <p class="activity-name">Jardin du Luxembourg no outono 🍂</p>
+        <p class="activity-desc">De Montmartre, pegue o metrô direto até Notre-Dame-des-Champs ou Odéon — o Luxembourg fica a poucos minutos. Em outubro, é um dos parques mais bonitos de Paris: folhagem dourada e alaranjada, castanheiras, parisenses nas icônicas cadeiras verdes ao sol fraco do outono. Almoce por aqui antes de entrar — há boas opções de padaria no entorno da Rue Soufflot. Um dos cenários mais fotogênicos de toda a viagem.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Grátis</span>
+        <span class="tag tag-free">✓ Gratuito</span>
+        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Final da tarde — metrô ~15 min</p>
+        <p class="activity-name">Le Marais & Place des Vosges</p>
+        <p class="activity-desc">A praça mais antiga de Paris com arcadas medievais — linda em outubro com folhas caindo. Visite o Musée Carnavalet (história de Paris, entrada gratuita), explore galerias de arte e coma o famoso falafel da Rue des Rosiers — L'As du Fallafel é o mais icônico.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Grátis</span>
+        <span class="tag tag-free">✓ Gratuito</span>
+        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Noite (opcional)</p>
         <p class="activity-name">Musée de l'Orangerie — Nenúfares de Monet</p>
-        <p class="activity-desc">As duas salas ovais com os nenúfares monumentais de Monet são uma das experiências mais meditativas de Paris — perfeita para um dia de outono. Museu íntimo, não sobrecarrega. Reserve online. <a href="https://www.musee-orangerie.fr" target="_blank">musee-orangerie.fr</a></p>
+        <p class="activity-desc">Se o cansaço permitir, o Orangerie fica próximo ao Louvre (Jardins das Tulherias) e fecha às 21h às sextas — pode ser encaixado no final do dia. Caso prefira descansar, reserve para outra tarde livre. As duas salas ovais com os nenúfares monumentais de Monet são uma das experiências mais meditativas de Paris. Reserve online. <a href="https://www.musee-orangerie.fr" target="_blank">musee-orangerie.fr</a></p>
       </div>
       <div class="activity-right">
         <span class="price">~€12,50/pp</span>
@@ -699,15 +774,18 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">À noite</p>
+        <p class="activity-time">À noite (opcional)</p>
         <p class="activity-name">🍫 Salon du Chocolat (se na 2ª quinzena de outubro)</p>
-        <p class="activity-desc">O maior festival de chocolate do mundo acontece anualmente em Paris em outubro/novembro — com esculturas de chocolate, degustações, e chefs de todo o mundo. Verifique as datas exatas de 2026. <a href="https://www.salon-du-chocolat.com" target="_blank">salon-du-chocolat.com</a></p>
+        <p class="activity-desc">O maior festival de chocolate do mundo acontece anualmente em Paris em outubro/novembro — esculturas de chocolate, degustações e chefs de todo o mundo. Verifique as datas exatas de 2026. <a href="https://www.salon-du-chocolat.com" target="_blank">salon-du-chocolat.com</a></p>
       </div>
       <div class="activity-right">
         <span class="price">~€15–20/pp</span>
         <span class="tag tag-seasonal">🍂 Especial outubro</span>
         <span class="tag tag-advance">⚡ Compre antes</span>
       </div>
+    </div>
+    <div class="tip-box">
+      <strong>Rota do dia:</strong> Montmartre (manhã, norte) → metrô linha 12 até Notre-Dame-des-Champs → Jardin du Luxembourg (centro-sul, almoço + passeio) → metrô linha 4 até Saint-Paul → Le Marais (tarde, leste). Um dia com três bairros completamente diferentes, sem correria.
     </div>
   </div>
 </section>
@@ -730,6 +808,19 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
 
   <div class="tip-box">
     <strong>Bônus único:</strong> Transporte público 100% gratuito em Luxemburgo para todos — turistas incluídos. Use o tram, ônibus e metrô à vontade!
+  </div>
+
+  <div class="fwt-box">
+    <div class="fwt-icon">🚶</div>
+    <div class="fwt-content">
+      <p class="fwt-title">Free Walking Tour — Luxemburgo</p>
+      <p class="fwt-desc">Luxemburgo é pequena mas densa em história — um free tour no primeiro dia é ideal para entender como a cidade foi construída literalmente em cima de séculos de fortalezas. Os guias explicam a relação entre a Cidade Alta, o Grund e os vales de um jeito que faz o roteiro fazer muito mais sentido. Tour de ~2h, em inglês, gorjeta livre no final.</p>
+      <div class="fwt-links">
+        <a href="https://twentytour.com/free-walking-tour-luxembourg/" target="_blank">🔗 TwentyTour Luxembourg</a>
+        <a href="https://www.guruwalk.com/luxembourg" target="_blank">🔗 GuruWalk Luxembourg</a>
+      </div>
+      <p class="fwt-tip">💡 O TwentyTour é o mais bem avaliado em Luxemburgo — ponto de encontro em frente à estátua Monument Dicks et Lentz, na Place Guillaume II. Funciona todos os dias.</p>
+    </div>
   </div>
 
   <!-- DIA 6 -->
@@ -825,6 +916,20 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
         <span class="city-pill pill-bru">2 dias</span>
         <span class="city-pill pill-autumn">🍂 Chocolate & Cerveja</span>
       </div>
+    </div>
+  </div>
+
+  <div class="fwt-box">
+    <div class="fwt-icon">🚶</div>
+    <div class="fwt-content">
+      <p class="fwt-title">Free Walking Tour — Bruxelas</p>
+      <p class="fwt-desc">Bruxelas tem alguns dos free walking tours mais bem avaliados da Europa — a cidade tem camadas de história política, artística e gastronômica que um guia local sabe contar muito bem. Os tours cobrem a Grand Place, Galeries Saint-Hubert, Manneken Pis e o bairro histórico em cerca de 2h30. O Tell Me Stories About Brussels é consistentemente o mais bem avaliado de toda a cidade (4.9★ no TripAdvisor).</p>
+      <div class="fwt-links">
+        <a href="https://ambassadorstours.com/en/brussels/free-walking-tour-brussels" target="_blank">🔗 Tell Me Stories About Brussels</a>
+        <a href="https://www.neweuropetours.eu/sandemans-tours/brussels/free-tour-of-brussels/" target="_blank">🔗 SANDEMANs Brussels</a>
+        <a href="https://www.guruwalk.com/brussels" target="_blank">🔗 GuruWalk Brussels</a>
+      </div>
+      <p class="fwt-tip">💡 O Tell Me Stories costuma esgotar — reserve com alguns dias de antecedência. Ponto de encontro: Grand Place, em frente à Torre da Câmara Municipal. Funciona todos os dias do ano.</p>
     </div>
   </div>
 
@@ -946,6 +1051,19 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
 
   <div class="season-note">
     <strong>Amsterdã em outubro</strong> é simplesmente linda — os canais refletem folhas douradas e laranja das árvores centenárias. A cidade está quieta após o verão, com preços mais acessíveis e atmosfera muito mais local. Keukenhof está fechado em outubro, mas substituímos por experiências outonal igualmente especiais.
+  </div>
+
+  <div class="fwt-box">
+    <div class="fwt-icon">🚶</div>
+    <div class="fwt-content">
+      <p class="fwt-title">Free Walking Tour — Amsterdã</p>
+      <p class="fwt-desc">Amsterdã tem uma cena de free walking tours excelente — da história do século de ouro holandês ao Jordaan, passando pelo Barrio Vermelho e a Casa de Anne Frank (por fora). Com 5 dias na cidade, vale fazer um tour geral no primeiro dia para se orientar e um tour temático depois (Jordaan, História Judaica, ou tour noturno). Ambos os grandes operadores têm presença forte aqui.</p>
+      <div class="fwt-links">
+        <a href="https://www.neweuropetours.eu/sandemans-tours/amsterdam/free-tour-of-amsterdam/" target="_blank">🔗 SANDEMANs Amsterdam</a>
+        <a href="https://www.guruwalk.com/amsterdam" target="_blank">🔗 GuruWalk Amsterdam</a>
+      </div>
+      <p class="fwt-tip">💡 O SANDEMANs é o operador original de free tours na Europa e tem excelente reputação em Amsterdã. Ponto de encontro: Dam Square. Horários às 11h, 13h e 15h. Reserve online para garantir vaga — outubro ainda tem boa demanda.</p>
+    </div>
   </div>
 
   <!-- DIA 10 -->
@@ -1220,10 +1338,640 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
   </div>
 </section>
 
+<!-- COST TABLE -->
+<div class="cost-section">
+  <h3 class="cost-title">💶 Estimativa de Custos por Cidade <span class="cost-subtitle">Por casal · outubro 2026 · categoria moderada</span></h3>
+
+  <div class="cost-note">
+    Valores em euros (€). Estimativas para <strong>2 pessoas</strong>, categoria moderada — hotéis 3 estrelas bem localizados, refeições em restaurantes locais e tradicionais, ingressos conforme o roteiro. Colunas mostram intervalo <strong>mínimo → máximo</strong> por noite/dia.
+  </div>
+
+  <!-- PARIS 1 -->
+  <div class="cost-city-label" style="--city-color: #2C4A6E">🗼 Paris — chegada (5 noites · 5 dias)</div>
+  <div class="table-wrap">
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Detalhes</th>
+          <th>Por noite/dia (casal)</th>
+          <th>Total (5 dias)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cat-label">🏨 Hotel</td>
+          <td class="cat-detail">Hotel 3★ bem localizado (Marais, Saint-Germain, République). Outubro é temporada moderada — preços menores que verão.</td>
+          <td class="cat-range">€150 – €220 <span class="per">/noite</span></td>
+          <td class="cat-total">€750 – €1.100</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">☕ Café da manhã</td>
+          <td class="cat-detail">Boulangerie local: croissant + café. Não incluso na maioria dos hotéis parisienses 3★.</td>
+          <td class="cat-range">€8 – €14 <span class="per">/casal</span></td>
+          <td class="cat-total">€40 – €70</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥗 Almoço</td>
+          <td class="cat-detail">Bistrots, crêperies, mercados. Fórmula "menu du jour" (prato + bebida) é ótimo custo-benefício.</td>
+          <td class="cat-range">€25 – €45 <span class="per">/casal</span></td>
+          <td class="cat-total">€125 – €225</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🍽 Jantar</td>
+          <td class="cat-detail">Restaurantes tradicionais franceses. 2 pratos + vinho. Evite a área do Trocadéro e Champs-Élysées para preços mais honestos.</td>
+          <td class="cat-range">€55 – €90 <span class="per">/casal</span></td>
+          <td class="cat-total">€275 – €450</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥐 Lanches</td>
+          <td class="cat-detail">Sorvete Berthillon, châtaignes de rua, café, waffles, macarons.</td>
+          <td class="cat-range">€10 – €20 <span class="per">/casal</span></td>
+          <td class="cat-total">€50 – €100</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🎟 Ingressos</td>
+          <td class="cat-detail">Louvre (€64), Torre Eiffel (€30–74), Versalhes (€50–70), Orangerie (€25), Arco do Triunfo (€26), Notre-Dame (grátis).</td>
+          <td class="cat-range">€40 – €60 <span class="per">/dia médio</span></td>
+          <td class="cat-total">€195 – €259</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🚇 Transporte interno</td>
+          <td class="cat-detail">Metrô/RER (Navigo Semaine ~€30/pessoa, cobre toda a semana ilimitado + RER Versalhes e CDG).</td>
+          <td class="cat-range">€8 – €12 <span class="per">/casal/dia</span></td>
+          <td class="cat-total">€60 (passe semanal)</td>
+        </tr>
+        <tr class="alt total-row">
+          <td class="cat-label">📊 Total Paris 1</td>
+          <td class="cat-detail">5 noites · 5 dias · 2 pessoas</td>
+          <td class="cat-range">€296 – €457 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€1.495 – €2.264</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- LUXEMBURGO -->
+  <div class="cost-city-label" style="--city-color: #3D6B4F">🏰 Luxemburgo (2 noites · 2 dias)</div>
+  <div class="table-wrap">
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Detalhes</th>
+          <th>Por noite/dia (casal)</th>
+          <th>Total (2 dias)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cat-label">🏨 Hotel</td>
+          <td class="cat-detail">Hotel 3★ no centro ou Kirchberg. Luxemburgo é surpreendentemente acessível para hotéis — menos turismo de massa que Paris ou Amsterdã.</td>
+          <td class="cat-range">€100 – €160 <span class="per">/noite</span></td>
+          <td class="cat-total">€200 – €320</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">☕ Café da manhã</td>
+          <td class="cat-detail">Muitos hotéis 3★ em Luxemburgo incluem café da manhã. Se não, padarias locais.</td>
+          <td class="cat-range">€0 – €16 <span class="per">/casal</span></td>
+          <td class="cat-total">€0 – €32</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥗 Almoço</td>
+          <td class="cat-detail">Restaurantes tradicionais luxemburgueses ou bistrots. Cidade pequena, poucos turistas — preços honestos.</td>
+          <td class="cat-range">€28 – €45 <span class="per">/casal</span></td>
+          <td class="cat-total">€56 – €90</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🍽 Jantar</td>
+          <td class="cat-detail">Restaurantes no Grund (bairro do vale) — boa culinária a preços razoáveis para uma capital europeia.</td>
+          <td class="cat-range">€50 – €80 <span class="per">/casal</span></td>
+          <td class="cat-total">€100 – €160</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥐 Lanches</td>
+          <td class="cat-detail">Cafés, doces locais.</td>
+          <td class="cat-range">€8 – €15 <span class="per">/casal</span></td>
+          <td class="cat-total">€16 – €30</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🎟 Ingressos</td>
+          <td class="cat-detail">Bock Casemates (€14 casal), MUDAM (€20 casal). Corniche e catedral: gratuitos.</td>
+          <td class="cat-range">€17 – €20 <span class="per">/dia médio</span></td>
+          <td class="cat-total">€34</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🚇 Transporte interno</td>
+          <td class="cat-detail">100% gratuito em todo o país — ônibus, tram e metrô sem custo algum! ✨</td>
+          <td class="cat-range">€0 <span class="per">grátis!</span></td>
+          <td class="cat-total">€0</td>
+        </tr>
+        <tr class="alt total-row">
+          <td class="cat-label">📊 Total Luxemburgo</td>
+          <td class="cat-detail">2 noites · 2 dias · 2 pessoas</td>
+          <td class="cat-range">€203 – €336 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€406 – €636</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- BRUXELAS -->
+  <div class="cost-city-label" style="--city-color: #7A3030">🍫 Bruxelas (2 noites · 2 dias)</div>
+  <div class="table-wrap">
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Detalhes</th>
+          <th>Por noite/dia (casal)</th>
+          <th>Total (2 dias)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cat-label">🏨 Hotel</td>
+          <td class="cat-detail">Hotel 3★ próximo à Grand Place ou Ixelles. Bruxelas é mais acessível que Paris/Amsterdã para hospedagem.</td>
+          <td class="cat-range">€110 – €170 <span class="per">/noite</span></td>
+          <td class="cat-total">€220 – €340</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">☕ Café da manhã</td>
+          <td class="cat-detail">Padarias e cafés belgas. Waffles e café são excelentes e acessíveis.</td>
+          <td class="cat-range">€10 – €18 <span class="per">/casal</span></td>
+          <td class="cat-total">€20 – €36</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥗 Almoço</td>
+          <td class="cat-detail">Bistrots e restaurantes belgas tradicionais. Moules-frites, croque-monsieur, falafel belga.</td>
+          <td class="cat-range">€28 – €50 <span class="per">/casal</span></td>
+          <td class="cat-total">€56 – €100</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🍽 Jantar</td>
+          <td class="cat-detail">Restaurantes tradicionais belgas. Moules-frites + cervejas trappistas. Evite a Rue des Bouchers para preços mais honestos.</td>
+          <td class="cat-range">€55 – €85 <span class="per">/casal</span></td>
+          <td class="cat-total">€110 – €170</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥐 Lanches</td>
+          <td class="cat-detail">Waffles (€3–5 cada), chocolates artesanais, cervejas no Delirium.</td>
+          <td class="cat-range">€15 – €30 <span class="per">/casal</span></td>
+          <td class="cat-total">€30 – €60</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🎟 Ingressos</td>
+          <td class="cat-detail">Magritte (€20 casal), Atomium (€32–36 casal). Grand Place: gratuito.</td>
+          <td class="cat-range">€26 – €30 <span class="per">/dia médio</span></td>
+          <td class="cat-total">€52 – €56</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🚇 Transporte interno</td>
+          <td class="cat-detail">Rede STIB-MIVB (metrô, tram, ônibus). Passe de 24h ~€8/pessoa ou bilhete único ~€2,50.</td>
+          <td class="cat-range">€10 – €16 <span class="per">/casal/dia</span></td>
+          <td class="cat-total">€20 – €32</td>
+        </tr>
+        <tr class="alt total-row">
+          <td class="cat-label">📊 Total Bruxelas</td>
+          <td class="cat-detail">2 noites · 2 dias · 2 pessoas</td>
+          <td class="cat-range">€254 – €399 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€508 – €794</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- AMSTERDÃ -->
+  <div class="cost-city-label" style="--city-color: #3A5C7A">🌷 Amsterdã (5 noites · 5 dias)</div>
+  <div class="table-wrap">
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Detalhes</th>
+          <th>Por noite/dia (casal)</th>
+          <th>Total (5 dias)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cat-label">🏨 Hotel</td>
+          <td class="cat-detail">Hotel 3★ em De Pijp, Jordaan ou perto do Museumplein. <strong>Atenção:</strong> a taxa turística de Amsterdã subiu para 12,5% em 2026 — já inclusa nos valores abaixo.</td>
+          <td class="cat-range">€160 – €240 <span class="per">/noite</span></td>
+          <td class="cat-total">€800 – €1.200</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">☕ Café da manhã</td>
+          <td class="cat-detail">Cafés holandeses (appeltaart, broodjes). Café Papeneiland, Winkel 43. Alguns hotéis incluem.</td>
+          <td class="cat-range">€10 – €20 <span class="per">/casal</span></td>
+          <td class="cat-total">€50 – €100</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥗 Almoço</td>
+          <td class="cat-detail">Cafés, mercado Albert Cuyp, broodjeswinkel (sanduícheria). Evite restaurantes próximos ao Dam Square — até 35% mais caros.</td>
+          <td class="cat-range">€25 – €45 <span class="per">/casal</span></td>
+          <td class="cat-total">€125 – €225</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🍽 Jantar</td>
+          <td class="cat-detail">Restaurantes locais em De Pijp ou Jordaan. Rijsttafel indonésio (~€35–50/pp) é especial mas caro — inclua 1–2x no orçamento.</td>
+          <td class="cat-range">€60 – €100 <span class="per">/casal</span></td>
+          <td class="cat-total">€300 – €500</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥐 Lanches</td>
+          <td class="cat-detail">Haring no mercado, stroopwafel fresco, kaas (queijo), poffertjes.</td>
+          <td class="cat-range">€10 – €18 <span class="per">/casal</span></td>
+          <td class="cat-total">€50 – €90</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🎟 Ingressos</td>
+          <td class="cat-detail">Anne Frank (€33), Van Gogh (€50), Rijksmuseum (€47), Passeio de barco (€40), Zaanse Schans atrações (~€20). Amsterdamse Bos: grátis.</td>
+          <td class="cat-range">€35 – €50 <span class="per">/dia médio</span></td>
+          <td class="cat-total">€190</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🚲 Transporte interno</td>
+          <td class="cat-detail">GVB passe 72h (~€20/pessoa) + aluguel de bike 2 dias (~€12–15/dia). Amsterdã é muito caminhável no centro.</td>
+          <td class="cat-range">€15 – €25 <span class="per">/casal/dia</span></td>
+          <td class="cat-total">€75 – €125</td>
+        </tr>
+        <tr class="alt total-row">
+          <td class="cat-label">📊 Total Amsterdã</td>
+          <td class="cat-detail">5 noites · 5 dias · 2 pessoas</td>
+          <td class="cat-range">€315 – €493 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€1.590 – €2.430</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PARIS RETORNO -->
+  <div class="cost-city-label" style="--city-color: #4A3A6E">✈ Paris — retorno (1 noite · 1 dia)</div>
+  <div class="table-wrap">
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Detalhes</th>
+          <th>Por noite/dia (casal)</th>
+          <th>Total (1 dia)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cat-label">🏨 Hotel</td>
+          <td class="cat-detail">Hotel 3★ próximo ao Canal Saint-Martin ou próximo ao CDG. Recomendamos perto do centro para aproveitar a manhã.</td>
+          <td class="cat-range">€150 – €220 <span class="per">/noite</span></td>
+          <td class="cat-total">€150 – €220</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">☕ Café da manhã</td>
+          <td class="cat-detail">Du Pain et des Idées — a última boulangerie parisiense de verdade.</td>
+          <td class="cat-range">€16 – €24 <span class="per">/casal</span></td>
+          <td class="cat-total">€16 – €24</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🥗 Almoço</td>
+          <td class="cat-detail">Bistrots do bairro de République — preços mais honestos que o centro turístico.</td>
+          <td class="cat-range">€30 – €50 <span class="per">/casal</span></td>
+          <td class="cat-total">€30 – €50</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🍽 Jantar</td>
+          <td class="cat-detail">No aeroporto ou no hotel (voo geralmente noturno para o Brasil).</td>
+          <td class="cat-range">€20 – €40 <span class="per">/casal</span></td>
+          <td class="cat-total">€20 – €40</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🎟 Ingressos</td>
+          <td class="cat-detail">Canal Saint-Martin e bairro de République: passeio gratuito.</td>
+          <td class="cat-range">€0</td>
+          <td class="cat-total">€0</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🚇 Transporte</td>
+          <td class="cat-detail">Metrô (já coberto pelo Navigo da 1ª semana, se ainda válido) + RER B ao CDG (€12,10/pp = €24,20 casal).</td>
+          <td class="cat-range">€24 – €30 <span class="per">/casal</span></td>
+          <td class="cat-total">€24 – €30</td>
+        </tr>
+        <tr class="alt total-row">
+          <td class="cat-label">📊 Total Paris retorno</td>
+          <td class="cat-detail">1 noite · 1 dia · 2 pessoas</td>
+          <td class="cat-range">€240 – €384 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€240 – €364</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- TRENS ENTRE CIDADES -->
+  <div class="cost-city-label" style="--city-color: #5C3A1A">🚆 Trens entre cidades (ida · casal)</div>
+  <div class="table-wrap">
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Trecho</th>
+          <th>Operadora / Tipo</th>
+          <th>Duração</th>
+          <th>Custo estimado (casal)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cat-label">Paris → Luxemburgo</td>
+          <td class="cat-detail">TGV / IC direto</td>
+          <td class="cat-range">~2h10</td>
+          <td class="cat-total">€60 – €160</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">Luxemburgo → Bruxelas</td>
+          <td class="cat-detail">IC direto</td>
+          <td class="cat-range">~3h</td>
+          <td class="cat-total">€50 – €120</td>
+        </tr>
+        <tr>
+          <td class="cat-label">Bruxelas → Amsterdã</td>
+          <td class="cat-detail">Thalys / Eurostar</td>
+          <td class="cat-range">~1h50</td>
+          <td class="cat-total">€60 – €160</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">Amsterdã → Paris</td>
+          <td class="cat-detail">Thalys direto</td>
+          <td class="cat-range">~3h20</td>
+          <td class="cat-total">€80 – €240</td>
+        </tr>
+        <tr class="total-row">
+          <td class="cat-label">📊 Total trens</td>
+          <td class="cat-detail">Reservando com antecedência (2–3 meses) → valor mínimo. Última hora → valor máximo.</td>
+          <td class="cat-range">—</td>
+          <td class="cat-total highlight">€250 – €680</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRAND TOTAL -->
+  <div class="grand-total">
+    <div class="grand-total-title">💰 Total Geral Estimado da Viagem</div>
+    <div class="grand-total-subtitle">2 pessoas · 15 dias · outubro 2026 · excluindo voos Brasil–Europa</div>
+    <div class="grand-total-grid">
+      <div class="grand-row">
+        <span>🗼 Paris chegada (5 dias)</span>
+        <span>€1.495 – €2.264</span>
+      </div>
+      <div class="grand-row">
+        <span>🏰 Luxemburgo (2 dias)</span>
+        <span>€406 – €636</span>
+      </div>
+      <div class="grand-row">
+        <span>🍫 Bruxelas (2 dias)</span>
+        <span>€508 – €794</span>
+      </div>
+      <div class="grand-row">
+        <span>🌷 Amsterdã (5 dias)</span>
+        <span>€1.590 – €2.430</span>
+      </div>
+      <div class="grand-row">
+        <span>✈ Paris retorno (1 dia)</span>
+        <span>€240 – €364</span>
+      </div>
+      <div class="grand-row">
+        <span>🚆 Trens entre cidades</span>
+        <span>€250 – €680</span>
+      </div>
+      <div class="grand-divider"></div>
+      <div class="grand-row grand-final">
+        <span>TOTAL GERAL</span>
+        <span class="grand-price">€4.489 – €7.168</span>
+      </div>
+      <div class="grand-per-person">
+        Por pessoa: <strong>~€2.245 – €3.584</strong> · Por dia: <strong>~€300 – €478/casal</strong>
+      </div>
+    </div>
+    <div class="grand-tips">
+      <div class="grand-tip">💡 <strong>Para economizar:</strong> Reserve trens com 2–3 meses de antecedência, fique em hotéis em bairros um pouco mais afastados do centro (mas bem conectados), e prefira almoços em bistrots locais a restaurantes turísticos.</div>
+      <div class="grand-tip">💡 <strong>Não incluso:</strong> Passagens aéreas Brasil–Paris, seguro viagem, compras pessoais e souvenirs, chips/roaming, e gastos extras imprevistos. Recomendamos reserva de ~€200–300 extras por casal.</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* COST TABLE STYLES */
+  .cost-section {
+    margin-top: 60px;
+  }
+  .cost-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .cost-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .cost-note {
+    background: rgba(181,98,30,0.07);
+    border-left: 3px solid var(--accent);
+    padding: 12px 20px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 36px;
+    line-height: 1.6;
+  }
+  .cost-city-label {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--city-color, var(--dark));
+    margin: 32px 0 12px;
+    padding: 6px 0;
+    border-bottom: 2px solid currentColor;
+    opacity: 0.9;
+  }
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    margin-bottom: 8px;
+  }
+  .cost-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 0.83rem;
+  }
+  .cost-table thead tr {
+    background: var(--dark);
+    color: var(--cream);
+  }
+  .cost-table thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .cost-table tbody tr {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: background 0.15s;
+  }
+  .cost-table tbody tr.alt {
+    background: rgba(0,0,0,0.018);
+  }
+  .cost-table tbody tr:hover {
+    background: rgba(181,98,30,0.04);
+  }
+  .cost-table td {
+    padding: 11px 16px;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .cat-label {
+    font-weight: 600;
+    color: var(--dark);
+    white-space: nowrap;
+    min-width: 130px;
+  }
+  .cat-detail {
+    color: var(--muted);
+    font-size: 0.8rem;
+    max-width: 340px;
+  }
+  .cat-range {
+    font-weight: 500;
+    color: var(--dark);
+    white-space: nowrap;
+    text-align: right;
+  }
+  .cat-range .per {
+    font-size: 10px;
+    color: var(--muted);
+    font-weight: 400;
+    display: block;
+  }
+  .cat-total {
+    font-weight: 700;
+    color: var(--dark);
+    white-space: nowrap;
+    text-align: right;
+  }
+  .total-row {
+    background: rgba(181,98,30,0.06) !important;
+    border-top: 2px solid rgba(181,98,30,0.2) !important;
+  }
+  .total-row .cat-label {
+    color: var(--accent);
+  }
+  .highlight {
+    color: var(--accent);
+    font-size: 1rem;
+  }
+
+  /* GRAND TOTAL */
+  .grand-total {
+    background: var(--dark);
+    color: var(--cream);
+    border-radius: 16px;
+    padding: 36px 40px;
+    margin-top: 40px;
+  }
+  .grand-total-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  .grand-total-subtitle {
+    font-size: 11px;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .grand-total-grid {
+    background: rgba(255,255,255,0.04);
+    border-radius: 10px;
+    padding: 20px 24px;
+  }
+  .grand-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 13px;
+    color: rgba(245,240,232,0.8);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .grand-divider {
+    border-top: 2px solid rgba(255,255,255,0.15);
+    margin: 8px 0;
+  }
+  .grand-final {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--cream);
+    border-bottom: none;
+    padding-top: 12px;
+  }
+  .grand-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #C9A96E;
+    font-weight: 700;
+  }
+  .grand-per-person {
+    font-size: 11px;
+    color: rgba(245,240,232,0.45);
+    text-align: right;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+  .grand-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 20px;
+  }
+  .grand-tip {
+    font-size: 12px;
+    color: rgba(245,240,232,0.6);
+    line-height: 1.6;
+  }
+  .grand-tip strong { color: var(--accent2); }
+
+  @media (max-width: 600px) {
+    .cost-table { font-size: 0.76rem; }
+    .cost-table thead th, .cost-table td { padding: 9px 10px; }
+    .cat-detail { max-width: 180px; }
+    .grand-total { padding: 24px 20px; }
+    .grand-price { font-size: 1.2rem; }
+  }
+</style>
+
 <!-- SUMMARY -->
 <div class="summary">
   <h3>📋 Resumo Prático — Outubro 2026</h3>
   <div class="summary-grid">
+
     <div class="summary-card">
       <h4>⚡ Compre com muita antecedência</h4>
       <ul>
@@ -1237,33 +1985,20 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
         <li>Trem Amsterdã → Paris no dia 14</li>
       </ul>
     </div>
+
     <div class="summary-card">
       <h4>💰 Estimativa de ingressos por cidade</h4>
-      <div class="budget-row">
-        <span>Paris (museus + Versalhes + Orangerie)</span>
-        <span>~€130–160/pp</span>
-      </div>
-      <div class="budget-row">
-        <span>Luxemburgo (Casemates + MUDAM)</span>
-        <span>~€17/pp</span>
-      </div>
-      <div class="budget-row">
-        <span>Bruxelas (Magritte + Atomium)</span>
-        <span>~€28/pp</span>
-      </div>
-      <div class="budget-row">
-        <span>Amsterdã (museus + passeio de barco)</span>
-        <span>~€85–100/pp</span>
-      </div>
-      <div class="budget-row">
-        <span>Trens entre cidades (ida)</span>
-        <span>~€125–260/pp</span>
-      </div>
+      <div class="budget-row"><span>Paris (museus + Versalhes + Orangerie)</span><span>~€130–160/pp</span></div>
+      <div class="budget-row"><span>Luxemburgo (Casemates + MUDAM)</span><span>~€17/pp</span></div>
+      <div class="budget-row"><span>Bruxelas (Magritte + Atomium)</span><span>~€28/pp</span></div>
+      <div class="budget-row"><span>Amsterdã (museus + passeio de barco)</span><span>~€85–100/pp</span></div>
+      <div class="budget-row"><span>Trens entre cidades (ida)</span><span>~€125–260/pp</span></div>
       <div class="budget-total">
         <span>Total estimado (ingressos + trens)</span>
         <span class="price">~€385–560/pp</span>
       </div>
     </div>
+
     <div class="summary-card">
       <h4>🍂 Especial outubro — Não perca</h4>
       <ul>
@@ -1277,6 +2012,7 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
         <li>Paris (retorno): Canal Saint-Martin com plátanos dourados</li>
       </ul>
     </div>
+
     <div class="summary-card">
       <h4>🍽 Gastronomia — Sabores de Outono</h4>
       <ul>
@@ -1290,8 +2026,723 @@ main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
         <li>Amsterdã: Haring (arenque) no Albert Cuyp</li>
       </ul>
     </div>
+
   </div>
 </div>
+
+<!-- ======================== GUIA DE RESTAURANTES ======================== -->
+<section class="resto-section">
+  <div class="resto-intro">
+    <h2 class="resto-main-title">🍽 Guia de Restaurantes & Cafeterias de Backup</h2>
+    <p class="resto-main-sub">Restaurantes bem avaliados e com preços acessíveis · Cafeterias com personalidade · Ordenados por custo-benefício</p>
+  </div>
+
+  <!-- PARIS -->
+  <div class="resto-city">
+    <div class="resto-city-header" style="--c: #2C4A6E">
+      <span class="resto-city-emoji">🗼</span>
+      <div>
+        <h3>Paris</h3>
+        <p>Bistrots, bouillons e cozinha de bairro — onde os parisienses comem de verdade</p>
+      </div>
+    </div>
+
+    <div class="resto-grid">
+      <div class="resto-col">
+        <div class="resto-col-title">🍽 Restaurantes <span class="resto-price-range">€12–€35/pp</span></div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Bouillon Chartier</span>
+            <span class="resto-price">€15–20/pp</span>
+          </div>
+          <p class="resto-type">Brasserie tradicional · 9º arr.</p>
+          <p class="resto-desc">O mais famoso "bouillon" de Paris — restaurante popular do século XIX com decoração art nouveau original e menu de clássicos franceses a preços honestíssimos. Fila do lado de fora faz parte, mas anda rápido.</p>
+          <div class="resto-tags"><span class="rtag">Sem reserva</span><span class="rtag">Ícone local</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Bistrot Victoires</span>
+            <span class="resto-price">€18–25/pp</span>
+          </div>
+          <p class="resto-type">Bistrot francês · perto do Louvre · 1º arr.</p>
+          <p class="resto-desc">A poucos passos do Louvre, frequentado por trabalhadores locais do bairro. Menu com os clássicos — confit de canard, steak-frites, escargots — a preços surpreendentemente razoáveis para a localização.</p>
+          <div class="resto-tags"><span class="rtag">Sem reserva</span><span class="rtag">Próximo ao Louvre</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Chez Gladines</span>
+            <span class="resto-price">€14–22/pp</span>
+          </div>
+          <p class="resto-type">Cozinha do sudoeste francês · Marais · 13º arr.</p>
+          <p class="resto-desc">Especialidade em culinária basca e do sudoeste — cassoulet, saladas generosas, magret de pato. Porções gigantes, ambiente descontraído e preços honestos. Favorito dos estudantes parisienses.</p>
+          <div class="resto-tags"><span class="rtag">Porções grandes</span><span class="rtag">Casual</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Le Servan</span>
+            <span class="resto-price">€20–30/pp</span>
+          </div>
+          <p class="resto-type">Bistrô moderno · 11º arr.</p>
+          <p class="resto-desc">Comandado por duas irmãs, mistura influências francesas e asiáticas com ingredientes sazonais. Um dos melhores custo-benefícios do bairro République. Reserve com antecedência — pequeno e sempre cheio.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">Criativo</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">L'As du Fallafel</span>
+            <span class="resto-price">€8–12/pp</span>
+          </div>
+          <p class="resto-type">Street food israelense · Marais · 4º arr.</p>
+          <p class="resto-desc">O falafel mais famoso de Paris, na Rue des Rosiers. Fila constante, mas anda rápido. O sabich (pão pita com berinjela e ovo) também é imperdível. Melhor custo-benefício do Marais.</p>
+          <div class="resto-tags"><span class="rtag">Street food</span><span class="rtag">Rápido</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Bistrot Paul Bert</span>
+            <span class="resto-price">€25–35/pp</span>
+          </div>
+          <p class="resto-type">Bistrot clássico · 11º arr.</p>
+          <p class="resto-desc">Um dos bistrots mais elogiados de Paris por quem ama a cozinha francesa tradicional — côte de boeuf, tarte tatin, vinho de produtores independentes. Ambiente animado e autêntico.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">Clássico</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Crêperie Josselin</span>
+            <span class="resto-price">€12–18/pp</span>
+          </div>
+          <p class="resto-type">Crêperie bretã · Montparnasse · 14º arr.</p>
+          <p class="resto-desc">A melhor crêperie da cidade segundo muitos parisienses — galettes de trigo sarraceno com recheios tradicionais e cidra bretã. Ambiente simples e descontraído, frequentado por locais há décadas.</p>
+          <div class="resto-tags"><span class="rtag">Sem reserva</span><span class="rtag">Autêntico</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Chez Janou</span>
+            <span class="resto-price">€20–28/pp</span>
+          </div>
+          <p class="resto-type">Provençal · Marais · 3º arr.</p>
+          <p class="resto-desc">Provençal descontraído com mais de 80 tipos de pastis, ratatouille, brandade e clafoutis. Terrace animada, ambiente de bairro, muito frequentado por locais do Marais. Um dos favoritos da região.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">Terrace</span></div>
+        </div>
+      </div>
+
+      <div class="resto-col">
+        <div class="resto-col-title">☕ Cafeterias <span class="resto-price-range">€3–8 por café</span></div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Terres de Café</span>
+            <span class="resto-price">€3,50–6</span>
+          </div>
+          <p class="resto-type">Specialty coffee · Marais & outras localidades</p>
+          <p class="resto-desc">O melhor specialty coffee de Paris segundo muitos baristas locais — grãos de origem única, extração precisa, ambiente minimalista e acolhedor. Ótimo pour-over e espresso.</p>
+          <div class="resto-tags"><span class="rtag">Specialty coffee</span><span class="rtag">Várias unidades</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">KB CaféShop</span>
+            <span class="resto-price">€3–5,50</span>
+          </div>
+          <p class="resto-type">Specialty · Rue des Martyrs · 9º arr.</p>
+          <p class="resto-desc">Perfeito após Montmartre — fica no topo da Rue des Martyrs. Ambiente australiano descontraído, ótimo flat white e pastéis caseiros. Um dos percursores do specialty coffee em Paris.</p>
+          <div class="resto-tags"><span class="rtag">Perto de Montmartre</span><span class="rtag">Flat white</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Fringe</span>
+            <span class="resto-price">€3–6</span>
+          </div>
+          <p class="resto-type">Specialty + galeria de fotografia · Marais · 3º arr.</p>
+          <p class="resto-desc">Café especialidade dentro de uma galeria de fotografia no Marais — espresso e filtrados de alta qualidade, exposições temporárias nas paredes. Único e muito bem avaliado.</p>
+          <div class="resto-tags"><span class="rtag">Instagramável</span><span class="rtag">Arte + café</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Du Pain et des Idées</span>
+            <span class="resto-price">€4–10</span>
+          </div>
+          <p class="resto-type">Boulangerie artesanal · Canal Saint-Martin · 10º arr.</p>
+          <p class="resto-desc">Considerada uma das melhores padarias do mundo — o pain des amis e os escargots de chocolate são lendários. Perfeito para o café da manhã no dia do retorno a Paris. Fecha fins de semana.</p>
+          <div class="resto-tags"><span class="rtag">Padaria icônica</span><span class="rtag">Fecha fins de semana</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LUXEMBURGO -->
+  <div class="resto-city">
+    <div class="resto-city-header" style="--c: #3D6B4F">
+      <span class="resto-city-emoji">🏰</span>
+      <div>
+        <h3>Luxemburgo</h3>
+        <p>Cozinha luxemburguesa, internacional e cafés de bairro — cidade pequena, surpresas grandes</p>
+      </div>
+    </div>
+
+    <div class="resto-grid">
+      <div class="resto-col">
+        <div class="resto-col-title">🍽 Restaurantes <span class="resto-price-range">€15–€35/pp</span></div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Brasserie Guillaume</span>
+            <span class="resto-price">€18–28/pp</span>
+          </div>
+          <p class="resto-type">Brasserie · Place Guillaume II</p>
+          <p class="resto-desc">Na praça principal, boa cozinha luxemburguesa e europeia a preços razoáveis para a localização central. Ótimo para experimentar o Judd mat Gaardebounen (prato nacional) num ambiente animado.</p>
+          <div class="resto-tags"><span class="rtag">Prato nacional</span><span class="rtag">Central</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Chiggeri</span>
+            <span class="resto-price">€20–30/pp</span>
+          </div>
+          <p class="resto-type">Internacional · Cidade Alta</p>
+          <p class="resto-desc">Restaurante e bar de vinhos muito querido pelos locais — menu criativo, carta de vinhos impressionante (+ de 800 rótulos) e ambiente descontraído. Excelente custo-benefício para o nível da comida.</p>
+          <div class="resto-tags"><span class="rtag">Vinhos</span><span class="rtag">Favorito local</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Um Plateau</span>
+            <span class="resto-price">€14–22/pp</span>
+          </div>
+          <p class="resto-type">Bistrô moderno · Cidade Alta</p>
+          <p class="resto-desc">Cantina contemporânea com pratos do dia usando ingredientes locais e sazonais. Muito frequentado por trabalhadores do bairro no almoço — sinal garantido de qualidade e preço honesto.</p>
+          <div class="resto-tags"><span class="rtag">Almoço</span><span class="rtag">Sazonal</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Beet</span>
+            <span class="resto-price">€14–20/pp</span>
+          </div>
+          <p class="resto-type">Vegetariano / mercado · Cidade Alta</p>
+          <p class="resto-desc">Restaurante vegetariano e orgânico com produtos do mercado local — saladas generosas, sopas e pratos quentes. Um dos melhores almoços leves da cidade, com ótimas avaliações consistentes.</p>
+          <div class="resto-tags"><span class="rtag">Vegetariano</span><span class="rtag">Orgânico</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Restaurant Mosconi</span>
+            <span class="resto-price">€22–32/pp</span>
+          </div>
+          <p class="resto-type">Italiano · Grund</p>
+          <p class="resto-desc">Um dos melhores italianos de Luxemburgo no bairro do Grund — massas frescas, risoto e ambiente aconchegante. Muito bem avaliado por locais e expatriados. Reserve com antecedência.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">Grund</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Speltería</span>
+            <span class="resto-price">€12–18/pp</span>
+          </div>
+          <p class="resto-type">Cozinha saudável · Cidade Alta</p>
+          <p class="resto-desc">Especialidade em pratos com espelta e ingredientes naturais — bowls, wraps e sopas frescas. Ambiente jovem e descontraído, preços acessíveis e fila de locais na hora do almoço.</p>
+          <div class="resto-tags"><span class="rtag">Rápido</span><span class="rtag">Saudável</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Café de Paris</span>
+            <span class="resto-price">€16–25/pp</span>
+          </div>
+          <p class="resto-type">Brasserie clássica · Place d'Armes</p>
+          <p class="resto-desc">Brasserie na praça mais animada de Luxemburgo — ambiente parisiense, menu com clássicos e boa cerveja artesanal luxemburguesa. Ideal para observar o movimento local enquanto janta.</p>
+          <div class="resto-tags"><span class="rtag">Terrace</span><span class="rtag">Place d'Armes</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Am Tiirmschen</span>
+            <span class="resto-price">€18–28/pp</span>
+          </div>
+          <p class="resto-type">Luxemburguês tradicional · Grund</p>
+          <p class="resto-desc">Um dos restaurantes mais autênticos do bairro do Grund — cozinha luxemburguesa tradicional, ambiente histórico, ótimo para experimentar a gastronomia local com os moradores do vale.</p>
+          <div class="resto-tags"><span class="rtag">Tradicional</span><span class="rtag">Grund</span></div>
+        </div>
+      </div>
+
+      <div class="resto-col">
+        <div class="resto-col-title">☕ Cafeterias <span class="resto-price-range">€3–7 por café</span></div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Café Bacchus</span>
+            <span class="resto-price">€3–6</span>
+          </div>
+          <p class="resto-type">Café e vinhos · Cidade Alta</p>
+          <p class="resto-desc">Café charmoso com curadoria de vinhos naturais e café de qualidade — ambiente literário, frequentado por estudantes e criativos locais. Ótimo para uma pausa entre os pontos turísticos.</p>
+          <div class="resto-tags"><span class="rtag">Vinhos naturais</span><span class="rtag">Literário</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Kaffi um Haff</span>
+            <span class="resto-price">€2,50–5</span>
+          </div>
+          <p class="resto-type">Café tradicional luxemburguês · Cidade Alta</p>
+          <p class="resto-desc">Cafeteria local clássica com tortas caseiras, croissants e café forte — o tipo de lugar onde os luxemburgueses tomam café da manhã de verdade. Preços muito honestos.</p>
+          <div class="resto-tags"><span class="rtag">Café da manhã</span><span class="rtag">Local</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">October Coffee</span>
+            <span class="resto-price">€3–6</span>
+          </div>
+          <p class="resto-type">Specialty coffee · Cidade Alta</p>
+          <p class="resto-desc">Um dos melhores specialty coffees de Luxemburgo — grãos selecionados, métodos de filtrado e espresso de qualidade. Ambiente minimalista e acolhedor, muito bem avaliado pelos locais.</p>
+          <div class="resto-tags"><span class="rtag">Specialty coffee</span><span class="rtag">Filtrado</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Café des Artistes</span>
+            <span class="resto-price">€3–7</span>
+          </div>
+          <p class="resto-type">Café cultural · Grund</p>
+          <p class="resto-desc">Cafeteria com alma no bairro do Grund — exposições de arte nas paredes, café bem feito e tortas caseiras. O lugar perfeito para sentar depois de explorar o vale e descansar os pés.</p>
+          <div class="resto-tags"><span class="rtag">Arte</span><span class="rtag">Grund</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRUXELAS -->
+  <div class="resto-city">
+    <div class="resto-city-header" style="--c: #7A3030">
+      <span class="resto-city-emoji">🍫</span>
+      <div>
+        <h3>Bruxelas</h3>
+        <p>Moules, carbonnade, cervejas trappistas e uma cena gastronômica surpreendentemente diversa</p>
+      </div>
+    </div>
+
+    <div class="resto-grid">
+      <div class="resto-col">
+        <div class="resto-col-title">🍽 Restaurantes <span class="resto-price-range">€12–€35/pp</span></div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Fin de Siècle</span>
+            <span class="resto-price">€15–22/pp</span>
+          </div>
+          <p class="resto-type">Belga tradicional · Ixelles</p>
+          <p class="resto-desc">Um dos restaurantes mais queridos de Bruxelas pelos locais — cozinha belga clássica, porções generosas, sem floreios. Carbonnade flamande, stoofvlees e waterzooi a preços muito honestos. Sem reserva.</p>
+          <div class="resto-tags"><span class="rtag">Sem reserva</span><span class="rtag">Favorito local</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Chez Léon</span>
+            <span class="resto-price">€20–28/pp</span>
+          </div>
+          <p class="resto-type">Moules-frites · Centro · Rue des Bouchers</p>
+          <p class="resto-desc">A instituição das moules-frites desde 1893 — turístico mas genuíno. Mexilhões frescos em dezenas de preparações diferentes com fritas crocantes e cervejas belgas. Uma experiência que precisa acontecer.</p>
+          <div class="resto-tags"><span class="rtag">Ícone</span><span class="rtag">Moules</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Nuetnigenough</span>
+            <span class="resto-price">€18–28/pp</span>
+          </div>
+          <p class="resto-type">Belga tradicional · Centro</p>
+          <p class="resto-desc">Um dos bistrots mais autênticos do centro histórico — ambiente de pub belga com menu que inclui stoofvlees com fritas, croquetes de camarão e uma carta enorme de cervejas artesanais belgas.</p>
+          <div class="resto-tags"><span class="rtag">Cervejas artesanais</span><span class="rtag">Pub belga</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Bia Mara</span>
+            <span class="resto-price">€12–18/pp</span>
+          </div>
+          <p class="resto-type">Fish & chips belga · Centro</p>
+          <p class="resto-desc">Fish & chips com ingredientes premium e fritas belgas — o melhor dos dois mundos. Uma das melhores opções de comida acessível no centro de Bruxelas. Muito bem avaliado e sempre movimentado.</p>
+          <div class="resto-tags"><span class="rtag">Rápido</span><span class="rtag">Acessível</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Le Petit Boxeur</span>
+            <span class="resto-price">€16–24/pp</span>
+          </div>
+          <p class="resto-type">Bistrô moderno · Saint-Gilles</p>
+          <p class="resto-desc">Bistrô descontraído no bairro de Saint-Gilles — menu com pratos do dia sazonais, vinho natural e ambiente jovem. O tipo de lugar que os moradores do bairro frequentam toda semana.</p>
+          <div class="resto-tags"><span class="rtag">Vinho natural</span><span class="rtag">Bairro local</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Comptoir Florian</span>
+            <span class="resto-price">€14–22/pp</span>
+          </div>
+          <p class="resto-type">Mercado / bistrô · Ixelles</p>
+          <p class="resto-desc">Conceito de mercado e restaurante integrados no bairro de Ixelles — produtos frescos que viram pratos do dia. Muito bem avaliado e frequentado pela comunidade local criativa.</p>
+          <div class="resto-tags"><span class="rtag">Mercado</span><span class="rtag">Sazonal</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">La Brouette</span>
+            <span class="resto-price">€20–30/pp</span>
+          </div>
+          <p class="resto-type">Belga clássico · Grand Place</p>
+          <p class="resto-desc">Um dos poucos restaurantes na Grand Place que ainda oferece boa comida belga a preços relativamente razoáveis — waterzooi, coelho à belga e excelente lista de cervejas. Localização imbatível.</p>
+          <div class="resto-tags"><span class="rtag">Grand Place</span><span class="rtag">Clássico</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Maison Antoine (friterie)</span>
+            <span class="resto-price">€4–8/pp</span>
+          </div>
+          <p class="resto-type">Friterie · Place Jourdan</p>
+          <p class="resto-desc">Considerada a melhor friterie de Bruxelas desde 1948 — fritas belgas em banha de boi, molhos artesanais. Fila constante de locais é a melhor recomendação. Um ritual obrigatório em Bruxelas.</p>
+          <div class="resto-tags"><span class="rtag">Ícone</span><span class="rtag">Street food</span></div>
+        </div>
+      </div>
+
+      <div class="resto-col">
+        <div class="resto-col-title">☕ Cafeterias <span class="resto-price-range">€3–7 por café</span></div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">OR Coffee</span>
+            <span class="resto-price">€3,50–6</span>
+          </div>
+          <p class="resto-type">Specialty coffee pioneiro · Centro</p>
+          <p class="resto-desc">O pioneiro do specialty coffee em Bruxelas — torrefação própria, espresso e filtrados de alta qualidade. Várias unidades na cidade. Um marco da cena de café belga há mais de uma década.</p>
+          <div class="resto-tags"><span class="rtag">Torrefação própria</span><span class="rtag">Pioneiro</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Café Walvis</span>
+            <span class="resto-price">€3–5,50</span>
+          </div>
+          <p class="resto-type">Café e bar · Molenbeek</p>
+          <p class="resto-desc">Café cultural no bairro criativo de Molenbeek — música ao vivo às vezes, cerveja artesanal, café bem feito. Um dos lugares mais autênticos e menos turísticos de Bruxelas.</p>
+          <div class="resto-tags"><span class="rtag">Cultural</span><span class="rtag">Autêntico</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Le Cirio</span>
+            <span class="resto-price">€3–8</span>
+          </div>
+          <p class="resto-type">Café histórico art nouveau · Centro</p>
+          <p class="resto-desc">Café histórico de 1886 com interior art nouveau impecável — a 2 min da Grand Place. Ambiente de época, café tradicional e Half en Half (a bebida clássica belga de champagne e vinho branco). Ícone.</p>
+          <div class="resto-tags"><span class="rtag">Art nouveau</span><span class="rtag">Histórico</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Hoppy Leuven (Ixelles)</span>
+            <span class="resto-price">€4–7</span>
+          </div>
+          <p class="resto-type">Café & cervejas artesanais · Ixelles</p>
+          <p class="resto-desc">No bairro de Ixelles, combina café specialty com cervejas artesanais belgas — dois mundos num só espaço. Ótimo para a tarde depois de explorar o Châtelain e Ixelles.</p>
+          <div class="resto-tags"><span class="rtag">Cervejas</span><span class="rtag">Ixelles</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AMSTERDÃ -->
+  <div class="resto-city">
+    <div class="resto-city-header" style="--c: #3A5C7A">
+      <span class="resto-city-emoji">🌷</span>
+      <div>
+        <h3>Amsterdã</h3>
+        <p>Do arenque nos canais ao rijsttafel indonésio — uma das cidades mais diversas da Europa para comer</p>
+      </div>
+    </div>
+
+    <div class="resto-grid">
+      <div class="resto-col">
+        <div class="resto-col-title">🍽 Restaurantes <span class="resto-price-range">€12–€40/pp</span></div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Kantjil de Tijger</span>
+            <span class="resto-price">€28–38/pp</span>
+          </div>
+          <p class="resto-type">Indonésio · rijsttafel · Centro</p>
+          <p class="resto-desc">Uma das melhores experiências gastronômicas de Amsterdã — o rijsttafel com 20+ pequenos pratos indonésios é espetacular. Ambiente animado, serviço eficiente. Reserve com antecedência.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">Rijsttafel</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">The Pancake Bakery</span>
+            <span class="resto-price">€12–18/pp</span>
+          </div>
+          <p class="resto-type">Pannenkoeken holandesas · Jordaan</p>
+          <p class="resto-desc">Panquecas holandesas gigantes, doces e salgadas, num celeiro histórico do século XVII no Jordaan. Um dos restaurantes mais queridos de Amsterdã — fila esperada, mas vale cada minuto.</p>
+          <div class="resto-tags"><span class="rtag">Fila esperada</span><span class="rtag">Ícone</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Blauw</span>
+            <span class="resto-price">€30–40/pp</span>
+          </div>
+          <p class="resto-type">Indonésio refinado · Oud-West</p>
+          <p class="resto-desc">Considerado o melhor rijsttafel de Amsterdã — ingredientes premium, apresentação cuidada e ambiente elegante mas acessível. Uma das experiências gastronômicas mais memoráveis da viagem.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">Premium</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Café de Jaren</span>
+            <span class="resto-price">€14–22/pp</span>
+          </div>
+          <p class="resto-type">Grand Café · Centro</p>
+          <p class="resto-desc">O grand café mais bonito de Amsterdã — enorme terraço sobre o Rio Amstel, menu variado com sopas, saladas e pratos do dia. Muito popular entre locais para almoço e brunch.</p>
+          <div class="resto-tags"><span class="rtag">Terraço no rio</span><span class="rtag">Vista</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Broodje Bert</span>
+            <span class="resto-price">€6–12/pp</span>
+          </div>
+          <p class="resto-type">Sanduícheria holandesa · De Pijp</p>
+          <p class="resto-desc">A melhor broodje (sanduíche holandês) da cidade segundo os moradores do De Pijp — ingredientes frescos, pão artesanal e preços honestos. Ideal para almoço rápido perto do mercado Albert Cuyp.</p>
+          <div class="resto-tags"><span class="rtag">Rápido</span><span class="rtag">De Pijp</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Moeder's</span>
+            <span class="resto-price">€18–26/pp</span>
+          </div>
+          <p class="resto-type">Holandês clássico · Jordaan</p>
+          <p class="resto-desc">Literalmente "Mãezinha" — restaurante aconchegante no Jordaan com cozinha holandesa clássica: stamppot, hutspot, erwtensoep. Décor único com fotos de mães nas paredes. Muito amado pelos locais.</p>
+          <div class="resto-tags"><span class="rtag">Clássico holandês</span><span class="rtag">Jordaan</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Volt</span>
+            <span class="resto-price">€22–32/pp</span>
+          </div>
+          <p class="resto-type">Bistrô moderno · De Pijp</p>
+          <p class="resto-desc">Bistrô europeu contemporâneo numa antiga subestação elétrica no De Pijp — ambiente industrial charmoso, menu sazonal criativo e carta de vinhos bem selecionada. Um dos favoritos da vizinhança.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">De Pijp</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Foodhallen</span>
+            <span class="resto-price">€10–18/pp</span>
+          </div>
+          <p class="resto-type">Mercado gastronômico · Oud-West</p>
+          <p class="resto-desc">Food court indoor num antigo bonde — dezenas de stands com culinária de todo o mundo. Ótima opção quando o casal quer coisas diferentes: um come ramen, o outro vai de poke. Ambiente animado e descontraído.</p>
+          <div class="resto-tags"><span class="rtag">Food court</span><span class="rtag">Diversidade</span></div>
+        </div>
+      </div>
+
+      <div class="resto-col">
+        <div class="resto-col-title">☕ Cafeterias <span class="resto-price-range">€3,50–7 por café</span></div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Sango Coffee</span>
+            <span class="resto-price">€4–6,50</span>
+          </div>
+          <p class="resto-type">Specialty · Jordaan</p>
+          <p class="resto-desc">Torrefação própria com grãos de origem única — espresso e pour-over de altíssima qualidade. Servem um mini stroopwafel com cada café. Um dos favoritos absolutos do Jordaan.</p>
+          <div class="resto-tags"><span class="rtag">Torrefação própria</span><span class="rtag">Jordaan</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Monks Coffee Roasters</span>
+            <span class="resto-price">€4–7</span>
+          </div>
+          <p class="resto-type">Specialty coffee · Centro</p>
+          <p class="resto-desc">Um dos melhores specialty coffees de Amsterdã — ambiente aconchegante, baristas apaixonados, grãos cuidadosamente selecionados. Muito bem avaliado e frequentado por profissionais de café do mundo todo.</p>
+          <div class="resto-tags"><span class="rtag">Referência</span><span class="rtag">Specialty</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Winkel 43</span>
+            <span class="resto-price">€4–9</span>
+          </div>
+          <p class="resto-type">Café holandês clássico · Jordaan</p>
+          <p class="resto-desc">Famoso pelo melhor appeltaart (torta de maçã) de Amsterdã — fatia generosa com chantilly fresco e café. Fila aos fins de semana, mais tranquilo durante a semana. Vista para o canal do Jordaan.</p>
+          <div class="resto-tags"><span class="rtag">Appeltaart</span><span class="rtag">Vista canal</span></div>
+        </div>
+
+        <div class="resto-card cafe-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Café Papeneiland</span>
+            <span class="resto-price">€3,50–7</span>
+          </div>
+          <p class="resto-type">Café histórico · Jordaan · desde 1642</p>
+          <p class="resto-desc">O café mais antigo de Amsterdã, na esquina mais charmosa do Jordaan — ambiente de época com azulejos delft e lareira. Café tradicional holandês, appeltaart e a sensação de ter voltado 400 anos.</p>
+          <div class="resto-tags"><span class="rtag">Desde 1642</span><span class="rtag">Histórico</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<style>
+  /* RESTAURANT SECTION */
+  .resto-section {
+    margin-top: 70px;
+    padding-top: 60px;
+    border-top: 2px solid rgba(0,0,0,0.08);
+  }
+  .resto-intro { margin-bottom: 48px; }
+  .resto-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .resto-main-sub {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+  }
+  .resto-city { margin-bottom: 64px; }
+  .resto-city-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: var(--dark);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 0;
+  }
+  .resto-city-emoji { font-size: 2rem; flex-shrink: 0; }
+  .resto-city-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 3px;
+    border-left: 3px solid var(--c, var(--accent));
+    padding-left: 12px;
+  }
+  .resto-city-header p {
+    font-size: 12px;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 0.5px;
+    padding-left: 15px;
+  }
+  .resto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  .resto-col { padding: 24px; }
+  .resto-col:first-child {
+    border-right: 1px solid rgba(0,0,0,0.06);
+  }
+  .resto-col-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .resto-price-range {
+    font-size: 10px;
+    color: var(--muted);
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+  .resto-card {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .resto-card:last-child { border-bottom: none; }
+  .cafe-card { background: rgba(196,151,58,0.03); border-radius: 8px; padding: 14px 12px; margin-bottom: 8px; border-bottom: none; border: 1px solid rgba(196,151,58,0.1); }
+  .cafe-card:last-child { margin-bottom: 0; }
+  .resto-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 2px;
+  }
+  .resto-name {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: var(--dark);
+  }
+  .resto-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .resto-type {
+    font-size: 0.74rem;
+    color: var(--accent2);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+  }
+  .resto-desc {
+    font-size: 0.79rem;
+    color: var(--muted);
+    line-height: 1.55;
+    margin-bottom: 7px;
+  }
+  .resto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .rtag {
+    font-size: 10px;
+    padding: 2px 8px;
+    background: rgba(0,0,0,0.05);
+    color: var(--muted);
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    .resto-grid { grid-template-columns: 1fr; }
+    .resto-col:first-child { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .resto-city-header { flex-wrap: wrap; }
+  }
+</style>
 
 </main>
 </body>
