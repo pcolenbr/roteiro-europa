@@ -381,6 +381,95 @@
   .budget-total .price { color: #C9A96E; font-size: 1.15rem; }
 
   /* FREE WALKING TOUR BOX */
+  .accom-box {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-top: 4px solid var(--accent2);
+    border-radius: 0 0 12px 12px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .accom-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .accom-icon { font-size: 1.3rem; }
+  .accom-title {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--dark);
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--accent2);
+  }
+  .accom-intro {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .accom-regions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .accom-region {
+    background: rgba(196,151,58,0.04);
+    border-radius: 8px;
+    padding: 10px 14px;
+    border-left: 3px solid rgba(196,151,58,0.3);
+  }
+  .accom-region-name {
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 3px;
+  }
+  .accom-best {
+    font-weight: 400;
+    color: var(--accent);
+    font-size: 0.8rem;
+  }
+  .accom-region-desc {
+    font-size: 0.79rem;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .accom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+  .accom-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 14px;
+    background: var(--dark);
+    color: var(--cream) !important;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none !important;
+    letter-spacing: 0.3px;
+    transition: opacity 0.15s;
+  }
+  .accom-links a:hover { opacity: 0.8; }
+
+  @media (max-width: 600px) {
+    .accom-box { padding: 16px; }
+  }
   .fwt-box {
     display: flex;
     gap: 16px;
@@ -483,7 +572,24 @@
   <div class="legend-item"><span class="tag tag-seasonal">🍂 Especial outubro</span><span>Só nesta época</span></div>
 </div>
 
-<main>
+<!-- STICKY NAV -->
+<nav class="sticky-nav" id="stickyNav">
+  <div class="snav-inner">
+    <div class="snav-logo">🗺 Europa · Out 2026</div>
+    <div class="snav-links">
+      <a href="#sec-roteiro" class="snav-link active" data-sec="roteiro">📅 Roteiro</a>
+      <a href="#sec-custos" class="snav-link" data-sec="custos">💶 Custos</a>
+      <a href="#sec-resumo" class="snav-link" data-sec="resumo">📋 Resumo</a>
+      <a href="#sec-hospedagem" class="snav-link" data-sec="hospedagem">🏨 Hospedagem</a>
+      <a href="#sec-restaurantes" class="snav-link" data-sec="restaurantes">🍽 Restaurantes</a>
+    </div>
+    <button class="snav-toggle" id="snavToggle" title="Expandir/recolher todos os dias">
+      <span id="snavToggleLabel">− Recolher tudo</span>
+    </button>
+  </div>
+</nav>
+
+<main id="sec-roteiro">
 
 <!-- ======================== PARIS 1 ======================== -->
 <section class="city-section">
@@ -503,10 +609,41 @@
     <strong>Paris em outubro:</strong> Folhagem dourada no Luxembourg, Tuileries e Bois de Boulogne. A cidade ganha um charme outonal único — menos turistas, luz mais suave, cafés mais aconchegantes. Temperatura entre 10°C e 17°C. Leve camadas e um impermeável leve.
   </div>
 
+  <div class="accom-box">
+    <div class="accom-header">
+      <span class="accom-icon">🏠</span>
+      <span class="accom-title">Onde se hospedar em Paris · Booking & Airbnb</span>
+    </div>
+    <p class="accom-intro">Para uma primeira visita, fique nos arrondissements 3º ao 11º — são seguros, bem conectados e têm o melhor custo-benefício. <strong>Evite</strong> o entorno da Gare du Nord/Barbès-Rochechouart (agitado à noite) e os Champs-Élysées (preços inflacionados sem benefício real). A Paris do século 1º ao 8º é a mais central mas também a mais cara.</p>
+    <div class="accom-regions">
+      <div class="accom-region">
+        <p class="accom-region-name">🥇 Le Marais (3º e 4º arr.) — <span class="accom-best">Melhor custo-benefício central</span></p>
+        <p class="accom-region-desc">Bairro histórico, seguro e cheio de vida — equidistante do Louvre e Notre-Dame, a 15 min a pé de ambos. Servido por 5 linhas de metrô (1, 7, 8, 11, 14). Excelente oferta de Airbnbs em apartamentos históricos. Prefira a parte norte (perto do Square du Temple) para preços mais honestos que a área perto do Sena.</p>
+        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linhas 1, 7, 8, 11, 14 · <strong>💶 Faixa:</strong> €90–180/noite hotel · €80–140/noite Airbnb</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥈 République / Oberkampf (10º e 11º arr.) — <span class="accom-best">Melhor preço, muito conectado</span></p>
+        <p class="accom-region-desc">Bairro boêmio e animado, muito bem avaliado por quem quer Paris autêntica sem pagar caro. Ótima gastronomia local, próximo ao Canal Saint-Martin (visita do último dia do roteiro). Hotéis aqui costumam ser 25–40% mais baratos que no Marais, com a mesma qualidade de transporte.</p>
+        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linhas 3, 5, 8, 9 · <strong>💶 Faixa:</strong> €70–130/noite hotel · €60–110/noite Airbnb</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥉 Montparnasse (14º arr.) — <span class="accom-best">Tranquilo e excelente conexão</span></p>
+        <p class="accom-region-desc">Preços mais honestos e conexão excepcional — linhas 4, 6, 12, 13 de metrô e RER B direto ao aeroporto CDG. Próximo ao Jardin du Luxembourg e à Crêperie Josselin. Ideal para quem quer economizar sem sacrificar localização. Bairro calmo e seguro.</p>
+        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linhas 4, 6, 12, 13 + RER B → CDG · <strong>💶 Faixa:</strong> €70–130/noite</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">✅ Também vale: Montmartre / Abbesses (18º arr.) — <span class="accom-best">Charmoso e econômico</span></p>
+        <p class="accom-region-desc">Uma das melhores áreas para Airbnb em Paris — apartamentos charmosos a preços acessíveis. Romantíco e fotogênico. Metrô linha 12 (Abbesses). <strong>Atenção:</strong> Fique próximo ao Sacré-Cœur e à Rue Lepic — evite as ruas perto de Pigalle e Boulevard de Clichy/Rochechouart.</p>
+        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linha 12 (Abbesses) · <strong>💶 Faixa:</strong> €65–120/noite Airbnb</p>
+      </div>
+    </div>
+    <div class="accom-links">
+      <a href="https://www.booking.com/city/fr/paris.html" target="_blank">🔗 Booking.com — Paris</a>
+      <a href="https://www.airbnb.com/paris-france/stays" target="_blank">🔗 Airbnb — Paris</a>
+    </div>
+  </div>
+
   <div class="fwt-box">
-    <div class="fwt-icon">🚶</div>
-    <div class="fwt-content">
-      <p class="fwt-title">Free Walking Tour — Paris</p>
       <p class="fwt-desc">Uma das melhores formas de se ambientar em Paris é fazendo um free walking tour no primeiro ou segundo dia. Os tours são gratuitos — você paga apenas a gorjeta que achar justo no final. Cobrem os grandes marcos (Notre-Dame, Louvre, Marais, Montmartre) com contexto histórico e dicas locais que você não acharia em guia. São 2–3h de passeio a pé com um guia local e fluente em inglês.</p>
       <div class="fwt-links">
         <a href="https://www.guruwalk.com/paris" target="_blank">🔗 GuruWalk Paris</a>
@@ -790,7 +927,7 @@
   </div>
 </section>
 
-<div class="transfer-note">🚆 Trem Paris → Luxemburgo · ~2h10 · TGV/IC (~€30–80) · Reserve com antecedência</div>
+<div class="transfer-note">🚆 Trem Paris → Luxemburgo · ~2h10 · TGV/IC (~€30–80) · <a href="https://www.sncf-connect.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">SNCF Connect</a> · <a href="https://www.raileurope.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Rail Europe</a></div>
 
 <!-- ======================== LUXEMBURGO ======================== -->
 <section class="city-section">
@@ -808,6 +945,35 @@
 
   <div class="tip-box">
     <strong>Bônus único:</strong> Transporte público 100% gratuito em Luxemburgo para todos — turistas incluídos. Use o tram, ônibus e metrô à vontade!
+  </div>
+
+  <div class="accom-box">
+    <div class="accom-header">
+      <span class="accom-icon">🏠</span>
+      <span class="accom-title">Onde se hospedar em Luxemburgo · Booking & Airbnb</span>
+    </div>
+    <p class="accom-intro">Luxemburgo é uma das capitais mais seguras da Europa — praticamente qualquer região central funciona bem para turistas. O transporte público é <strong>100% gratuito</strong> em todo o país, então localização não é questão crítica. Evite apenas as imediações da Gare (Estação Central) à noite, especialmente o triângulo entre Rue de Strasbourg e Avenue de la Liberté, que pode ser agitado.</p>
+    <div class="accom-regions">
+      <div class="accom-region">
+        <p class="accom-region-name">🥇 Ville-Haute / Centro Histórico — <span class="accom-best">Mais conveniente para o roteiro</span></p>
+        <p class="accom-region-desc">A região da Place Guillaume II, Chemin de la Corniche e Cathédrale. Totalmente segura, a pé de todas as atrações do roteiro e com paradas de ônibus e tram por toda parte. Hotéis mais caros mas Airbnbs em apartamentos históricos são ótima alternativa. Maior oferta de short-term rentals da cidade.</p>
+        <p class="accom-region-desc" style="margin-top:4px"><strong>🚌 Transporte:</strong> Tram + múltiplas linhas de ônibus · <strong>💶 Faixa:</strong> €100–180/noite hotel</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥈 Gare / Estação Central — <span class="accom-best">Melhor preço, boa conexão</span></p>
+        <p class="accom-region-desc">A região ao redor da Gare tem hotéis mais baratos e é servida por múltiplas linhas de ônibus que chegam à Cidade Alta em 10 minutos. Boa para quem quer economizar. Escolha hotéis nas ruas paralelas à Boulevard Pétrusse, afastados da área mais movimentada próxima à estação.</p>
+        <p class="accom-region-desc" style="margin-top:4px"><strong>🚌 Transporte:</strong> Trem + ônibus direto ao centro · <strong>💶 Faixa:</strong> €70–130/noite hotel · €60–110/noite Airbnb</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥉 Kirchberg — <span class="accom-best">Moderno, próximo ao MUDAM</span></p>
+        <p class="accom-region-desc">Bairro moderno onde fica o MUDAM e a Philharmonie. Hotéis mais novos (Novotel, Meliá, Mama Shelter) com preços às vezes competitivos. Tram conecta ao centro histórico em ~15 minutos. Mais quieto à noite — ótimo para descansar bem.</p>
+        <p class="accom-region-desc" style="margin-top:4px"><strong>🚌 Transporte:</strong> Tram direto ao centro · <strong>💶 Faixa:</strong> €90–160/noite hotel</p>
+      </div>
+    </div>
+    <div class="accom-links">
+      <a href="https://www.booking.com/city/lu/luxembourg.html" target="_blank">🔗 Booking.com — Luxemburgo</a>
+      <a href="https://www.airbnb.com/luxembourg-city-luxembourg/stays" target="_blank">🔗 Airbnb — Luxemburgo</a>
+    </div>
   </div>
 
   <div class="fwt-box">
@@ -903,7 +1069,7 @@
   </div>
 </section>
 
-<div class="transfer-note">🚆 Trem Luxemburgo → Bruxelas · ~3h · IC (~€25–60)</div>
+<div class="transfer-note">🚆 Trem Luxemburgo → Bruxelas · ~3h · IC (~€25–60) · <a href="https://www.b-europe.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">B-Europe (SNCB)</a> · <a href="https://www.raileurope.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Rail Europe</a></div>
 
 <!-- ======================== BRUXELAS ======================== -->
 <section class="city-section">
@@ -916,6 +1082,32 @@
         <span class="city-pill pill-bru">2 dias</span>
         <span class="city-pill pill-autumn">🍂 Chocolate & Cerveja</span>
       </div>
+    </div>
+  </div>
+
+  <div class="accom-box">
+    <div class="accom-header">
+      <span class="accom-icon">🏨</span>
+      <span class="accom-title">Onde se hospedar em Bruxelas</span>
+    </div>
+    <p class="accom-intro">Bruxelas tem bairros ótimos fora do centro turístico com preços mais honestos e boa conexão por metrô e tram. Evite a região da Gare du Midi e Gare du Nord à noite, e o entorno da rua Anneessens — áreas com mais ocorrências de pequenos crimes.</p>
+    <div class="accom-regions">
+      <div class="accom-region">
+        <p class="accom-region-name">🥇 Ixelles — <span class="accom-best">Melhor equilíbrio geral</span></p>
+        <p class="accom-region-desc">Ixelles é favorita entre expatriados e viajantes que querem experiência local com boa conexão ao centro. Segura, cheia de cafés e restaurantes, próxima ao Flagey Square e ao Châtelain. Bem conectada por metrô e tram. Ótima seleção de Airbnbs em apartamentos com personalidade.</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥈 Saint-Gilles — <span class="accom-best">Mais acessível, boêmio</span></p>
+        <p class="accom-region-desc">Bairro jovem, multicultural e artístico com muitas opções de hospedagem acessível. Bem conectado por tram e ônibus ao centro histórico. Ambiente descontraído — perfect para quem quer sentir o lado mais autêntico de Bruxelas.</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥉 Centro Histórico (Fontainas / Sablon) — <span class="accom-best">Mais próximo das atrações</span></p>
+        <p class="accom-region-desc">Se preferir ficar perto da Grand Place, o bairro de Fontainas e de Sablon (ao sul do centro) são as melhores subáreas — mais seguras e charmosas que o entorno direto da Grand Place. Metrô e tram na porta.</p>
+      </div>
+    </div>
+    <div class="accom-links">
+      <a href="https://www.booking.com/city/be/brussels.html" target="_blank">🔗 Booking.com — Bruxelas</a>
+      <a href="https://www.airbnb.com/brussels-belgium/stays" target="_blank">🔗 Airbnb — Bruxelas</a>
     </div>
   </div>
 
@@ -1033,7 +1225,7 @@
   </div>
 </section>
 
-<div class="transfer-note">🚆 Trem Bruxelas → Amsterdã · ~1h50 · Thalys/Eurostar (~€30–80) · Reserve com antecedência</div>
+<div class="transfer-note">🚆 Trem Bruxelas → Amsterdã · ~1h50 · Thalys/Eurostar (~€30–80) · <a href="https://www.eurostar.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Eurostar</a> · <a href="https://www.raileurope.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Rail Europe</a></div>
 
 <!-- ======================== AMSTERDÃ ======================== -->
 <section class="city-section">
@@ -1051,6 +1243,36 @@
 
   <div class="season-note">
     <strong>Amsterdã em outubro</strong> é simplesmente linda — os canais refletem folhas douradas e laranja das árvores centenárias. A cidade está quieta após o verão, com preços mais acessíveis e atmosfera muito mais local. Keukenhof está fechado em outubro, mas substituímos por experiências outonal igualmente especiais.
+  </div>
+
+  <div class="accom-box">
+    <div class="accom-header">
+      <span class="accom-icon">🏨</span>
+      <span class="accom-title">Onde se hospedar em Amsterdã</span>
+    </div>
+    <p class="accom-intro">Amsterdã é cara — hotéis no centro histórico têm preços altíssimos, especialmente com a taxa turística de 12,5% em 2026. A boa notícia é que os bairros um pouco afastados do Centrum têm ótimas opções e tram que chega ao centro em 10–15 minutos. Evite o Centrum turístico e o entorno da Estação Central para uma experiência mais tranquila e econômica.</p>
+    <div class="accom-regions">
+      <div class="accom-region">
+        <p class="accom-region-name">🥇 De Pijp — <span class="accom-best">Melhor opção geral</span></p>
+        <p class="accom-region-desc">De Pijp é onde muitos amsterdameses vivem de verdade — mais local, menos turístico, mais acessível que o centro. Fica ao lado do Museumplein (Van Gogh e Rijksmuseum a pé). Tem o mercado Albert Cuyp, ótimos restaurantes e bares. Bem servido pelos trams 3 e 12.</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥈 Jordaan — <span class="accom-best">Mais charmoso, preço médio</span></p>
+        <p class="accom-region-desc">O bairro mais charmoso de Amsterdã. Hotéis aqui são mais baratos que no Centrum mas mais caros que De Pijp. Ótimas opções de Airbnb em casas do século XVII com vista para o canal. Próximo à Casa de Anne Frank e com trams para todo o centro.</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">🥉 Oud-West / Museumplein — <span class="accom-best">Conveniente para museus</span></p>
+        <p class="accom-region-desc">Próximo ao Vondelpark, Van Gogh e Rijksmuseum. Bairro residencial e seguro com boa oferta de hospedagem. Muitas opções de boutique hotel e Airbnb. O tram 2 e o 12 conectam ao centro em 15 minutos.</p>
+      </div>
+      <div class="accom-region">
+        <p class="accom-region-name">✅ Também vale: Amsterdam Oost (Leste)</p>
+        <p class="accom-region-desc">Mais afastado mas com atmosfera local autêntica e preços menores. Excelente conexão por metro e tram — 15 minutos para o centro. Ótimo custo-benefício para estadias mais longas como os 5 dias de Amsterdã do roteiro.</p>
+      </div>
+    </div>
+    <div class="accom-links">
+      <a href="https://www.booking.com/city/nl/amsterdam.html" target="_blank">🔗 Booking.com — Amsterdã</a>
+      <a href="https://www.airbnb.com/amsterdam-netherlands/stays" target="_blank">🔗 Airbnb — Amsterdã</a>
+    </div>
   </div>
 
   <div class="fwt-box">
@@ -1262,7 +1484,7 @@
       <div>
         <p class="activity-time">Tarde/Noite</p>
         <p class="activity-name">🚆 Trem Amsterdã → Paris (Thalys)</p>
-        <p class="activity-desc">Trem direto entre Amsterdã Centraal e Paris Gare du Nord em ~3h20. <strong>Reserve com bastante antecedência</strong> — os trens Thalys/Eurostar para Paris costumam lotar, especialmente nas sextas-feiras de outubro. Chegada à noite em Paris.</p>
+        <p class="activity-desc">Trem direto entre Amsterdã Centraal e Paris Gare du Nord em ~3h20. <strong>Reserve com bastante antecedência</strong> — os trens Thalys/Eurostar para Paris costumam lotar, especialmente nas sextas-feiras de outubro. Chegada à noite em Paris. · <a href="https://www.eurostar.com" target="_blank">eurostar.com</a> · <a href="https://www.raileurope.com" target="_blank">Rail Europe</a></p>
       </div>
       <div class="activity-right">
         <span class="price">~€40–120/pp</span>
@@ -1339,7 +1561,7 @@
 </section>
 
 <!-- COST TABLE -->
-<div class="cost-section">
+<div class="cost-section" id="sec-custos">
   <h3 class="cost-title">💶 Estimativa de Custos por Cidade <span class="cost-subtitle">Por casal · outubro 2026 · categoria moderada</span></h3>
 
   <div class="cost-note">
@@ -1968,7 +2190,7 @@
 </style>
 
 <!-- SUMMARY -->
-<div class="summary">
+<div class="summary" id="sec-resumo">
   <h3>📋 Resumo Prático — Outubro 2026</h3>
   <div class="summary-grid">
 
@@ -1986,18 +2208,6 @@
       </ul>
     </div>
 
-    <div class="summary-card">
-      <h4>💰 Estimativa de ingressos por cidade</h4>
-      <div class="budget-row"><span>Paris (museus + Versalhes + Orangerie)</span><span>~€130–160/pp</span></div>
-      <div class="budget-row"><span>Luxemburgo (Casemates + MUDAM)</span><span>~€17/pp</span></div>
-      <div class="budget-row"><span>Bruxelas (Magritte + Atomium)</span><span>~€28/pp</span></div>
-      <div class="budget-row"><span>Amsterdã (museus + passeio de barco)</span><span>~€85–100/pp</span></div>
-      <div class="budget-row"><span>Trens entre cidades (ida)</span><span>~€125–260/pp</span></div>
-      <div class="budget-total">
-        <span>Total estimado (ingressos + trens)</span>
-        <span class="price">~€385–560/pp</span>
-      </div>
-    </div>
 
     <div class="summary-card">
       <h4>🍂 Especial outubro — Não perca</h4>
@@ -2030,8 +2240,423 @@
   </div>
 </div>
 
+<!-- ======================== HOSPEDAGEM ======================== -->
+<div class="accom-section" id="sec-hospedagem">
+  <h3 class="accom-main-title">🏨 Onde Se Hospedar em Cada Cidade</h3>
+  <p class="accom-main-sub">Regiões seguras · Bem conectadas ao transporte · Custo-benefício moderado · Para buscar no Booking e Airbnb</p>
+
+  <!-- PARIS -->
+  <div class="accom-city">
+    <div class="accom-city-header" style="--c: #2C4A6E">
+      <span class="accom-emoji">🗼</span>
+      <div>
+        <h4>Paris</h4>
+        <p>Fique nos arrondissements 3 ao 11 — centrais, bem servidos de metrô e com preços mais honestos que o 1º e 6º</p>
+      </div>
+    </div>
+    <div class="accom-grid">
+
+      <div class="accom-card accom-top">
+        <div class="accom-card-header">
+          <span class="accom-badge">⭐ Melhor opção</span>
+        </div>
+        <div class="accom-name">Le Marais <span class="accom-arr">(3º e 4º arr.)</span></div>
+        <p class="accom-desc">O bairro mais charmoso de Paris para se hospedar — ruelas históricas, cafés, galerias e excelente acesso ao metrô (linhas 1, 7, 8, 11). Seguro, animado e bem localizado no centro. Airbnb é especialmente bom aqui — apartamentos em edifícios do século XVII.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚇 Metrô L1, 7, 11</span>
+          <span class="atag atag-price">€120–180/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1456928&dest_type=city&ss=Le+Marais+Paris" target="_blank">Booking — Le Marais</a>
+          <a href="https://www.airbnb.com.br/s/Le-Marais--Paris/homes" target="_blank">Airbnb — Le Marais</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">République / Oberkampf <span class="accom-arr">(10º e 11º arr.)</span></div>
+        <p class="accom-desc">Bairro vibrante e autêntico, muito frequentado por parisienses jovens. Ótimos restaurantes, bares independentes e preços de hospedagem mais acessíveis que o centro. Metro lines 5 and 11 conectam direto ao Marais e ao centro em minutos. Seguro e bem iluminado.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚇 Metrô L3, 5, 9, 11</span>
+          <span class="atag atag-price">€90–150/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1456928&dest_type=city&ss=Republique+Paris" target="_blank">Booking — République</a>
+          <a href="https://www.airbnb.com.br/s/Republique--Paris/homes" target="_blank">Airbnb — République</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">Bastille <span class="accom-arr">(11º e 12º arr.)</span></div>
+        <p class="accom-desc">Bastille is centrally located, has lots of subway connections, and offers great restaurants at good prices. Um dos melhores custo-benefício de Paris para casais — animado, com fácil acesso ao Marais e ao centro histórico. Muito seguro.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚇 Metrô L1, 5, 8</span>
+          <span class="atag atag-price">€90–150/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1456928&dest_type=city&ss=Bastille+Paris" target="_blank">Booking — Bastille</a>
+          <a href="https://www.airbnb.com.br/s/Bastille--Paris/homes" target="_blank">Airbnb — Bastille</a>
+        </div>
+      </div>
+
+      <div class="accom-card accom-avoid">
+        <div class="accom-card-header">
+          <span class="accom-badge accom-badge-avoid">⚠️ Evite</span>
+        </div>
+        <p class="accom-desc">Barbès–Rochechouart, Château Rouge e arredores da Gare du Nord são áreas com maior concentração de furtos e podem ser caóticas, especialmente à noite. Evite hospedagem nessas regiões mesmo que o preço seja atrativo.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LUXEMBURGO -->
+  <div class="accom-city">
+    <div class="accom-city-header" style="--c: #3D6B4F">
+      <span class="accom-emoji">🏰</span>
+      <div>
+        <h4>Luxemburgo</h4>
+        <p>Cidade pequena e muito segura — qualquer região central funciona. O transporte público é gratuito!</p>
+      </div>
+    </div>
+    <div class="accom-grid">
+
+      <div class="accom-card accom-top">
+        <div class="accom-card-header">
+          <span class="accom-badge">⭐ Melhor opção</span>
+        </div>
+        <div class="accom-name">Cidade Alta (Centre-Ville)</div>
+        <p class="accom-desc">O centro histórico de Luxemburgo — patrimonial, seguro e com fácil acesso ao tram e ônibus (todos gratuitos). A 10 min a pé das principais atrações: Chemin de la Corniche, Place Guillaume II e a Cathédrale. Ótima opção de Airbnb em apartamentos históricos.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Muito seguro</span>
+          <span class="atag atag-transport">🚌 Tram + ônibus gratuitos</span>
+          <span class="atag atag-price">€100–160/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1971973&dest_type=city&ss=Luxembourg+City+Centre" target="_blank">Booking — Cidade Alta</a>
+          <a href="https://www.airbnb.com.br/s/Luxembourg-City/homes" target="_blank">Airbnb — Luxemburgo</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">Gare (Estação Central)</div>
+        <p class="accom-desc">O bairro da estação central tem opções mais acessíveis de hospedagem, especialmente hotéis 3★ com bom custo-benefício. Acesso imediato ao trem para Paris e Bruxelas, e ônibus para toda a cidade. Seguro e prático.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚌 Estação central</span>
+          <span class="atag atag-price">€80–130/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1971973&dest_type=city&ss=Luxembourg+Gare" target="_blank">Booking — Gare</a>
+          <a href="https://www.airbnb.com.br/s/Luxembourg-City/homes" target="_blank">Airbnb — Luxemburgo</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">Kirchberg</div>
+        <p class="accom-desc">O bairro moderno com o MUDAM e instituições europeias — hotéis de negócios com boa relação qualidade/preço, especialmente em outubro (fora do período de reuniões da UE). Bem conectado pelo tram ao centro histórico em 10 minutos.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Muito seguro</span>
+          <span class="atag atag-transport">🚋 Tram direto ao centro</span>
+          <span class="atag atag-price">€90–140/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1971973&dest_type=city&ss=Kirchberg+Luxembourg" target="_blank">Booking — Kirchberg</a>
+          <a href="https://www.airbnb.com.br/s/Kirchberg--Luxembourg-City/homes" target="_blank">Airbnb — Kirchberg</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BRUXELAS -->
+  <div class="accom-city">
+    <div class="accom-city-header" style="--c: #7A3030">
+      <span class="accom-emoji">🍫</span>
+      <div>
+        <h4>Bruxelas</h4>
+        <p>Fique entre o centro histórico e Ixelles — seguro, bem conectado por metrô e tram, e com vida de bairro autêntica</p>
+      </div>
+    </div>
+    <div class="accom-grid">
+
+      <div class="accom-card accom-top">
+        <div class="accom-card-header">
+          <span class="accom-badge">⭐ Melhor opção</span>
+        </div>
+        <div class="accom-name">Ixelles / Châtelain</div>
+        <p class="accom-desc">Ixelles atrai todo tipo de viajante — é bairro universitário com bares e restaurantes acessíveis, vida cultural intensa e a estação Brussels-Luxembourg ali do lado. Excelente para Airbnb em apartamentos bem equipados. A 15 min do centro de tram.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚌 Tram 81, 93 · Metrô L2</span>
+          <span class="atag atag-price">€90–150/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1970854&dest_type=city&ss=Ixelles+Brussels" target="_blank">Booking — Ixelles</a>
+          <a href="https://www.airbnb.com.br/s/Ixelles--Brussels/homes" target="_blank">Airbnb — Ixelles</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">Saint-Gilles</div>
+        <p class="accom-desc">A falta de atrações turísticas em Saint-Gilles significa preços de hospedagem mais acessíveis. O bairro do Parvis de Saint-Gilles tem ótimo acesso a restaurantes, cafés e arquitetura Art Nouveau, com muitos apartamentos convertidos de townhouses. Jovem, boêmio e bem conectado.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚌 Tram 81, 97 · Metrô L2</span>
+          <span class="atag atag-price">€80–130/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1970854&dest_type=city&ss=Saint-Gilles+Brussels" target="_blank">Booking — Saint-Gilles</a>
+          <a href="https://www.airbnb.com.br/s/Saint-Gilles--Brussels/homes" target="_blank">Airbnb — Saint-Gilles</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">Sablon / Centro Histórico</div>
+        <p class="accom-desc">O Sablon fica a meio caminho entre a Grand Place e o bairro Louise — dá para chegar a pé aos principais pontos históricos e também às melhores opções de jantar. Um pouco mais caro que Ixelles, mas a localização é imbatível para 2 dias.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Muito seguro</span>
+          <span class="atag atag-transport">🚇 Metrô L2, 6 · Tram 92, 93</span>
+          <span class="atag atag-price">€100–170/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-1970854&dest_type=city&ss=Sablon+Brussels" target="_blank">Booking — Sablon</a>
+          <a href="https://www.airbnb.com.br/s/Sablon--Brussels/homes" target="_blank">Airbnb — Sablon</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- AMSTERDÃ -->
+  <div class="accom-city">
+    <div class="accom-city-header" style="--c: #3A5C7A">
+      <span class="accom-emoji">🌷</span>
+      <div>
+        <h4>Amsterdã</h4>
+        <p>Fuja do Centrum turístico — De Pijp e Jordaan oferecem muito mais charme, melhor custo-benefício e ótimas conexões de tram</p>
+      </div>
+    </div>
+    <div class="accom-grid">
+
+      <div class="accom-card accom-top">
+        <div class="accom-card-header">
+          <span class="accom-badge">⭐ Melhor opção</span>
+        </div>
+        <div class="accom-name">De Pijp</div>
+        <p class="accom-desc">De Pijp oferece o melhor custo-benefício de Amsterdã — opções entre €80–150/noite, atmosfera multicultural vibrante e acesso direto ao Mercado Albert Cuyp. O tram 12 leva ao Van Gogh Museum sem precisar trocar de linha. Ótimo para Airbnb — muitos apartamentos charmosos e bem equipados.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚋 Tram 3, 12, 24</span>
+          <span class="atag atag-price">€80–150/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-2140479&dest_type=city&ss=De+Pijp+Amsterdam" target="_blank">Booking — De Pijp</a>
+          <a href="https://www.airbnb.com.br/s/De-Pijp--Amsterdam/homes" target="_blank">Airbnb — De Pijp</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">Jordaan</div>
+        <p class="accom-desc">Os hotéis no Jordaan são muito mais baratos que no centro da cidade — você precisa caminhar um pouco mais para as atrações, mas a troca frequentemente vale a pena. O bairro mais charmoso de Amsterdã, com canais, cafés e vibes locais. Boas opções em B&Bs e apartamentos no Airbnb.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Muito seguro</span>
+          <span class="atag atag-transport">🚋 Tram 13, 17</span>
+          <span class="atag atag-price">€100–200/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-2140479&dest_type=city&ss=Jordaan+Amsterdam" target="_blank">Booking — Jordaan</a>
+          <a href="https://www.airbnb.com.br/s/Jordaan--Amsterdam/homes" target="_blank">Airbnb — Jordaan</a>
+        </div>
+      </div>
+
+      <div class="accom-card">
+        <div class="accom-name">Oud-West</div>
+        <p class="accom-desc">Oud-West é um bairro residencial e trendy, menos turístico — melhor valor pelo dinheiro e qualidade de acomodação mais alta. O tram 13 conecta ao Centraal Station em ~15 minutos. Próximo ao Vondelpark, Van Gogh e Foodhallen. Perfeito para estadias de 5 dias.</p>
+        <div class="accom-tags">
+          <span class="atag atag-safe">✅ Seguro</span>
+          <span class="atag atag-transport">🚋 Tram 13, 17 · Ônibus</span>
+          <span class="atag atag-price">€90–160/noite</span>
+        </div>
+        <div class="accom-links">
+          <a href="https://www.booking.com/searchresults.html?dest_id=-2140479&dest_type=city&ss=Oud-West+Amsterdam" target="_blank">Booking — Oud-West</a>
+          <a href="https://www.airbnb.com.br/s/Oud-West--Amsterdam/homes" target="_blank">Airbnb — Oud-West</a>
+        </div>
+      </div>
+
+      <div class="accom-card accom-avoid">
+        <div class="accom-card-header">
+          <span class="accom-badge accom-badge-avoid">⚠️ Evite</span>
+        </div>
+        <p class="accom-desc">Evite o Red Light District (De Wallen) e arredores da Centraal Station para dormir — muito barulhento à noite, cheio de turistas e com menos qualidade de hospedagem para o preço cobrado. Reserve nesses bairros apenas se for para aproveitar a vida noturna.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="accom-tip-global">
+    <strong>💡 Dicas gerais para Booking e Airbnb nessa rota:</strong>
+    <ul>
+      <li>Reserve com <strong>2–3 meses de antecedência</strong> — outubro ainda tem demanda turística e os melhores apartamentos saem cedo.</li>
+      <li>No <strong>Airbnb</strong>, prefira anfitriões com avaliação acima de 4,8★ e mais de 20 avaliações — especialmente em Paris e Amsterdã, onde há muitos imóveis irregulares.</li>
+      <li>No <strong>Booking</strong>, filtre por "cancelamento gratuito" para manter flexibilidade até confirmar seus trens.</li>
+      <li>Verifique sempre no Google Maps se o endereço fica a <strong>menos de 10 minutos a pé de uma estação de metrô ou tram</strong> — isso faz toda a diferença no dia a dia.</li>
+      <li>Em Paris, Amsterdã e Bruxelas, <strong>taxa turística</strong> é cobrada à parte na maioria das hospedagens — verifique se está incluída no preço exibido.</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  /* ACCOMMODATION SECTION */
+  .accom-section {
+    margin-top: 70px;
+    padding-top: 60px;
+    border-top: 2px solid rgba(0,0,0,0.08);
+  }
+  .accom-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .accom-main-sub {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+  .accom-city { margin-bottom: 48px; }
+  .accom-city-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 24px;
+    background: var(--dark);
+    border-radius: 12px 12px 0 0;
+  }
+  .accom-emoji { font-size: 1.8rem; flex-shrink: 0; }
+  .accom-city-header h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cream);
+    border-left: 3px solid var(--c, var(--accent));
+    padding-left: 12px;
+    margin-bottom: 3px;
+  }
+  .accom-city-header p {
+    font-size: 11px;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 0.5px;
+    padding-left: 15px;
+  }
+  .accom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(0,0,0,0.06);
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+  }
+  .accom-card {
+    background: white;
+    padding: 20px;
+  }
+  .accom-card-header { margin-bottom: 8px; }
+  .accom-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    background: rgba(181,98,30,0.1);
+    color: var(--accent);
+    border-radius: 20px;
+    border: 1px solid rgba(181,98,30,0.2);
+  }
+  .accom-badge-avoid {
+    background: rgba(180,40,40,0.08);
+    color: #B42828;
+    border-color: rgba(180,40,40,0.2);
+  }
+  .accom-top { background: #FFFDF8; }
+  .accom-avoid { background: #FFF8F8; }
+  .accom-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+  .accom-arr {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .accom-desc {
+    font-size: 0.81rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .accom-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .atag {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .atag-safe { background: rgba(74,122,58,0.1); color: #3A7A2A; }
+  .atag-transport { background: rgba(44,74,110,0.1); color: #2C4A6E; }
+  .atag-price { background: rgba(181,98,30,0.1); color: var(--accent); }
+  .accom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .accom-links a {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: var(--dark);
+    color: var(--cream) !important;
+    border: none !important;
+    transition: opacity 0.15s;
+  }
+  .accom-links a:hover { opacity: 0.8; }
+  .accom-tip-global {
+    background: rgba(44,74,110,0.05);
+    border: 1px solid rgba(44,74,110,0.12);
+    border-left: 4px solid #2C4A6E;
+    border-radius: 0 10px 10px 0;
+    padding: 18px 22px;
+    margin-top: 8px;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+  .accom-tip-global strong { color: #2C4A6E; display: block; margin-bottom: 10px; }
+  .accom-tip-global ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .accom-tip-global ul li::before { content: '→ '; color: #2C4A6E; }
+
+  @media (max-width: 600px) {
+    .accom-grid { grid-template-columns: 1fr; }
+    .accom-city-header { flex-wrap: wrap; gap: 10px; }
+  }
+</style>
+
 <!-- ======================== GUIA DE RESTAURANTES ======================== -->
-<section class="resto-section">
+<section class="resto-section" id="sec-restaurantes">
   <div class="resto-intro">
     <h2 class="resto-main-title">🍽 Guia de Restaurantes & Cafeterias de Backup</h2>
     <p class="resto-main-sub">Restaurantes bem avaliados e com preços acessíveis · Cafeterias com personalidade · Ordenados por custo-benefício</p>
@@ -2745,5 +3370,212 @@
 </style>
 
 </main>
+<style>
+  /* ── STICKY NAV ── */
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--dark);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  }
+  .snav-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .snav-logo {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .snav-links {
+    display: flex;
+    gap: 4px;
+    flex: 1;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .snav-links::-webkit-scrollbar { display: none; }
+  .snav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(245,240,232,0.6);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+    border: 1px solid transparent;
+  }
+  .snav-link:hover {
+    background: rgba(255,255,255,0.07);
+    color: var(--cream);
+  }
+  .snav-link.active {
+    background: rgba(181,98,30,0.2);
+    color: #E8A86A;
+    border-color: rgba(181,98,30,0.3);
+  }
+  .snav-toggle {
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(245,240,232,0.7);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .snav-toggle:hover {
+    background: rgba(255,255,255,0.11);
+    color: var(--cream);
+  }
+
+  /* ── COLLAPSIBLE DAYS ── */
+  .day-block { overflow: hidden; }
+  .day-header {
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+  }
+  .day-header:hover { background: #2a2420; }
+  .day-chevron {
+    margin-left: auto;
+    font-size: 14px;
+    color: rgba(245,240,232,0.4);
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+  }
+  .day-block.collapsed .day-chevron { transform: rotate(-90deg); }
+  .day-body {
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+    max-height: 2000px;
+    opacity: 1;
+    overflow: hidden;
+  }
+  .day-block.collapsed .day-body {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  @media (max-width: 600px) {
+    .snav-logo { display: none; }
+    .snav-inner { gap: 10px; padding: 0 12px; }
+    .snav-link { font-size: 11px; padding: 4px 9px; }
+    .snav-toggle { font-size: 10px; padding: 4px 8px; }
+  }
+</style>
+
+<script>
+  // ── COLLAPSIBLE DAYS ──
+  // Wrap day-block content in .day-body, add chevron to header
+  document.querySelectorAll('.day-block').forEach((block, i) => {
+    const header = block.querySelector('.day-header');
+    if (!header) return;
+
+    // Add chevron to header
+    const chevron = document.createElement('span');
+    chevron.className = 'day-chevron';
+    chevron.textContent = '▾';
+    header.appendChild(chevron);
+
+    // Wrap everything after the header in .day-body
+    const body = document.createElement('div');
+    body.className = 'day-body';
+    const children = [...block.children].slice(1); // everything after header
+    children.forEach(c => body.appendChild(c));
+    block.appendChild(body);
+
+    // Start all days collapsed except first of each city
+    block.classList.add('collapsed');
+
+    // Toggle on header click
+    header.addEventListener('click', () => {
+      block.classList.toggle('collapsed');
+      updateToggleLabel();
+    });
+  });
+
+  // Expand Dia 1 of each city section by default
+  document.querySelectorAll('.city-section').forEach(section => {
+    const firstDay = section.querySelector('.day-block');
+    if (firstDay) firstDay.classList.remove('collapsed');
+  });
+
+  // ── EXPAND / COLLAPSE ALL ──
+  const toggleBtn = document.getElementById('snavToggle');
+  const toggleLabel = document.getElementById('snavToggleLabel');
+  let allCollapsed = false;
+
+  function updateToggleLabel() {
+    const allBlocks = document.querySelectorAll('.day-block');
+    const collapsedCount = document.querySelectorAll('.day-block.collapsed').length;
+    allCollapsed = collapsedCount === allBlocks.length;
+    toggleLabel.textContent = allCollapsed ? '+ Expandir tudo' : '− Recolher tudo';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const blocks = document.querySelectorAll('.day-block');
+    if (allCollapsed) {
+      blocks.forEach(b => b.classList.remove('collapsed'));
+    } else {
+      blocks.forEach(b => b.classList.add('collapsed'));
+    }
+    updateToggleLabel();
+  });
+
+  // ── STICKY NAV ACTIVE STATE ──
+  const sections = [
+    { id: 'sec-roteiro',      link: 'roteiro' },
+    { id: 'sec-custos',       link: 'custos' },
+    { id: 'sec-resumo',       link: 'resumo' },
+    { id: 'sec-hospedagem',   link: 'hospedagem' },
+    { id: 'sec-restaurantes', link: 'restaurantes' },
+  ];
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const sec = sections.find(s => s.id === entry.target.id);
+        if (!sec) return;
+        document.querySelectorAll('.snav-link').forEach(l => l.classList.remove('active'));
+        document.querySelector(`.snav-link[data-sec="${sec.link}"]`)?.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-52px 0px -60% 0px', threshold: 0 });
+
+  sections.forEach(s => {
+    const el = document.getElementById(s.id);
+    if (el) observer.observe(el);
+  });
+
+  // Smooth scroll offset for sticky nav
+  document.querySelectorAll('.snav-link[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (!target) return;
+      const offset = 60;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+</script>
 </body>
 </html>
