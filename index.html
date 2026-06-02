@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roteiro Europa — Outubro — Paris · Luxemburgo · Bruxelas · Amsterdã · Paris</title>
+<title>Roteiro Europa — Outubro/Novembro — BH · Paris · Luxemburgo · Amsterdã · Lisboa</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -15,8 +15,8 @@
     --muted: #7A7068;
     --paris: #2C4A6E;
     --lux: #3D6B4F;
-    --bru: #7A3030;
     --ams: #3A5C7A;
+    --lis: #D4A017;
     --paris2: #4A3A6E;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -187,8 +187,8 @@
   .pill-paris { background: rgba(44,74,110,0.1); color: var(--paris); }
   .pill-paris2 { background: rgba(74,58,110,0.1); color: var(--paris2); }
   .pill-lux { background: rgba(61,107,79,0.1); color: var(--lux); }
-  .pill-bru { background: rgba(122,48,48,0.1); color: var(--bru); }
   .pill-ams { background: rgba(58,92,122,0.1); color: var(--ams); }
+  .pill-lis { background: rgba(212,160,23,0.1); color: var(--lis); }
   .pill-autumn { background: rgba(181,98,30,0.1); color: var(--accent); }
 
   /* DAY */
@@ -540,21 +540,23 @@
 <body>
 
 <header>
-  <p class="header-label">Roteiro Personalizado · Casal · Outubro 2026</p>
+  <p class="header-label">Roteiro Personalizado · Casal · Outubro/Novembro 2026</p>
   <h1>Outono na <em>Europa</em></h1>
   <div class="header-route">
+    <span class="route-city">BH ✈</span>
+    <span class="route-arrow">→</span>
+    <span class="route-city">Lisboa (conexão)</span>
+    <span class="route-arrow">→</span>
     <span class="route-city">Paris</span>
     <span class="route-arrow">→</span>
     <span class="route-city">Luxemburgo</span>
     <span class="route-arrow">→</span>
-    <span class="route-city">Bruxelas</span>
-    <span class="route-arrow">→</span>
     <span class="route-city">Amsterdã</span>
     <span class="route-arrow">→</span>
-    <span class="route-city">Paris ✈</span>
+    <span class="route-city">Lisboa ✈</span>
   </div>
   <div class="header-meta">
-    <span>🗓 08 out – 22 out · 15 dias</span>
+    <span>🗓 27 out – 11 nov · 16 dias</span>
     <span>🍂 Estação: outono</span>
     <span>💶 €80–150/dia por pessoa</span>
     <span>🎨 Arte · Gastronomia · Bairros</span>
@@ -562,42 +564,41 @@
 </header>
 
 <div class="autumn-banner">
-  🍂 <strong>Outubro é uma das melhores épocas para a Europa:</strong> folhagem dourada, menos turistas que o verão, clima agradável (10–17°C) e uma programação cultural intensa. Traga camadas e um impermeável leve!
+  🍂 <strong>Outubro/novembro é uma das melhores épocas para a Europa:</strong> folhagem dourada, menos turistas que o verão, clima agradável (10–17°C) e uma programação cultural intensa. Traga camadas e um impermeável leve!
 </div>
 
 <div class="legend">
   <div class="legend-item"><span class="tag tag-free">✓ Gratuito</span><span>Entrada livre</span></div>
   <div class="legend-item"><span class="tag tag-advance">⚡ Compre antes</span><span>Reserve com antecedência</span></div>
   <div class="legend-item"><span class="tag tag-local">🏷 No local</span><span>Pode comprar na hora</span></div>
-  <div class="legend-item"><span class="tag tag-seasonal">🍂 Especial outubro</span><span>Só nesta época</span></div>
+  <div class="legend-item"><span class="tag tag-seasonal">🍂 Especial outono</span><span>Só nesta época</span></div>
 </div>
 
 <!-- STICKY NAV -->
 <nav class="sticky-nav" id="stickyNav">
   <div class="snav-inner">
-    <div class="snav-logo">🗺 Europa · Out 2026</div>
     <div class="snav-links">
-      <a href="#sec-roteiro" class="snav-link active" data-sec="roteiro">📅 Roteiro</a>
+      <a href="#city-paris" class="snav-link active" data-sec="city-paris">🗼 Paris</a>
+      <a href="#city-luxemburgo" class="snav-link" data-sec="city-luxemburgo">🏰 Lux</a>
+      <a href="#city-amsterda" class="snav-link" data-sec="city-amsterda">🌷 Ams</a>
+      <a href="#city-lisboa" class="snav-link" data-sec="city-lisboa">🇵🇹 Lisboa</a>
       <a href="#sec-custos" class="snav-link" data-sec="custos">💶 Custos</a>
-      <a href="#sec-resumo" class="snav-link" data-sec="resumo">📋 Resumo</a>
       <a href="#sec-hospedagem" class="snav-link" data-sec="hospedagem">🏨 Hospedagem</a>
+      <a href="#sec-fwt" class="snav-link" data-sec="fwt">🚶 Tours</a>
       <a href="#sec-restaurantes" class="snav-link" data-sec="restaurantes">🍽 Restaurantes</a>
     </div>
-    <button class="snav-toggle" id="snavToggle" title="Expandir/recolher todos os dias">
-      <span id="snavToggleLabel">− Recolher tudo</span>
-    </button>
   </div>
 </nav>
 
 <main id="sec-roteiro">
 
 <!-- ======================== PARIS 1 ======================== -->
-<section class="city-section">
+<section class="city-section" id="city-paris">
   <div class="city-header">
     <div class="city-num">01</div>
     <div class="city-info">
       <h2>Paris</h2>
-      <p class="city-subtitle">08–12 out · Chegada · Cidade Luz no Outono</p>
+      <p class="city-subtitle">27 out–01 nov · Chegada · Cidade Luz no Outono</p>
       <div class="city-pills">
         <span class="city-pill pill-paris">5 dias</span>
         <span class="city-pill pill-autumn">🍂 Outono em Paris</span>
@@ -609,62 +610,73 @@
     <strong>Paris em outubro:</strong> Folhagem dourada no Luxembourg, Tuileries e Bois de Boulogne. A cidade ganha um charme outonal único — menos turistas, luz mais suave, cafés mais aconchegantes. Temperatura entre 10°C e 17°C. Leve camadas e um impermeável leve.
   </div>
 
-  <div class="accom-box">
-    <div class="accom-header">
-      <span class="accom-icon">🏠</span>
-      <span class="accom-title">Onde se hospedar em Paris · Booking & Airbnb</span>
-    </div>
-    <p class="accom-intro">Para uma primeira visita, fique nos arrondissements 3º ao 11º — são seguros, bem conectados e têm o melhor custo-benefício. <strong>Evite</strong> o entorno da Gare du Nord/Barbès-Rochechouart (agitado à noite) e os Champs-Élysées (preços inflacionados sem benefício real). A Paris do século 1º ao 8º é a mais central mas também a mais cara.</p>
-    <div class="accom-regions">
-      <div class="accom-region">
-        <p class="accom-region-name">🥇 Le Marais (3º e 4º arr.) — <span class="accom-best">Melhor custo-benefício central</span></p>
-        <p class="accom-region-desc">Bairro histórico, seguro e cheio de vida — equidistante do Louvre e Notre-Dame, a 15 min a pé de ambos. Servido por 5 linhas de metrô (1, 7, 8, 11, 14). Excelente oferta de Airbnbs em apartamentos históricos. Prefira a parte norte (perto do Square du Temple) para preços mais honestos que a área perto do Sena.</p>
-        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linhas 1, 7, 8, 11, 14 · <strong>💶 Faixa:</strong> €90–180/noite hotel · €80–140/noite Airbnb</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥈 République / Oberkampf (10º e 11º arr.) — <span class="accom-best">Melhor preço, muito conectado</span></p>
-        <p class="accom-region-desc">Bairro boêmio e animado, muito bem avaliado por quem quer Paris autêntica sem pagar caro. Ótima gastronomia local, próximo ao Canal Saint-Martin (visita do último dia do roteiro). Hotéis aqui costumam ser 25–40% mais baratos que no Marais, com a mesma qualidade de transporte.</p>
-        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linhas 3, 5, 8, 9 · <strong>💶 Faixa:</strong> €70–130/noite hotel · €60–110/noite Airbnb</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥉 Montparnasse (14º arr.) — <span class="accom-best">Tranquilo e excelente conexão</span></p>
-        <p class="accom-region-desc">Preços mais honestos e conexão excepcional — linhas 4, 6, 12, 13 de metrô e RER B direto ao aeroporto CDG. Próximo ao Jardin du Luxembourg e à Crêperie Josselin. Ideal para quem quer economizar sem sacrificar localização. Bairro calmo e seguro.</p>
-        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linhas 4, 6, 12, 13 + RER B → CDG · <strong>💶 Faixa:</strong> €70–130/noite</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">✅ Também vale: Montmartre / Abbesses (18º arr.) — <span class="accom-best">Charmoso e econômico</span></p>
-        <p class="accom-region-desc">Uma das melhores áreas para Airbnb em Paris — apartamentos charmosos a preços acessíveis. Romantíco e fotogênico. Metrô linha 12 (Abbesses). <strong>Atenção:</strong> Fique próximo ao Sacré-Cœur e à Rue Lepic — evite as ruas perto de Pigalle e Boulevard de Clichy/Rochechouart.</p>
-        <p class="accom-region-desc" style="margin-top:4px"><strong>🚇 Metrô:</strong> Linha 12 (Abbesses) · <strong>💶 Faixa:</strong> €65–120/noite Airbnb</p>
-      </div>
-    </div>
-    <div class="accom-links">
-      <a href="https://www.booking.com/city/fr/paris.html" target="_blank">🔗 Booking.com — Paris</a>
-      <a href="https://www.airbnb.com/paris-france/stays" target="_blank">🔗 Airbnb — Paris</a>
-    </div>
-  </div>
-
-  <div class="fwt-box">
-      <p class="fwt-desc">Uma das melhores formas de se ambientar em Paris é fazendo um free walking tour no primeiro ou segundo dia. Os tours são gratuitos — você paga apenas a gorjeta que achar justo no final. Cobrem os grandes marcos (Notre-Dame, Louvre, Marais, Montmartre) com contexto histórico e dicas locais que você não acharia em guia. São 2–3h de passeio a pé com um guia local e fluente em inglês.</p>
-      <div class="fwt-links">
-        <a href="https://www.guruwalk.com/paris" target="_blank">🔗 GuruWalk Paris</a>
-        <a href="https://www.neweuropetours.eu/sandemans-tours/paris/free-tour-of-paris/" target="_blank">🔗 SANDEMANs Paris</a>
-      </div>
-      <p class="fwt-tip">💡 Reserve com antecedência pelo site — os melhores horários (10h e 14h) esgotam rápido em outubro.</p>
-    </div>
-  </div>
-
   <!-- DIA 1 -->
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 1 — Chegada & Île de la Cité</p>
-        <p class="day-theme">Chegada · Centro Histórico · Ambientação</p>
+        <p class="day-title">Dia 1 — Viagem: Brasil → Lisboa → Paris</p>
+        <p class="day-theme">Voos · Conexão em Lisboa · Chegada em Paris</p>
       </div>
-      <span class="day-date">08 out</span>
+      <span class="day-date">27–28 out</span>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Tarde</p>
+        <p class="activity-time">15h30 – 17h05 (27/10)</p>
+        <p class="activity-name">✈ Voo Belo Horizonte → Campinas</p>
+        <p class="activity-desc">Primeiro trecho doméstico. Pouso em Campinas (VCP) às 17h05. Espera no aeroporto para o voo internacional.</p>
+      </div>
+      <div class="activity-right">
+        <span class="tag tag-advance">⚡ Compre antes</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">22h15 – 10h55+1 (27–28/10)</p>
+        <p class="activity-name">✈ Voo Campinas → Lisboa</p>
+        <p class="activity-desc">Voo noturno internacional. Chegada em Lisboa na manhã do dia 28/10 às 10h55. Conexão rápida para o voo a Paris.</p>
+      </div>
+      <div class="activity-right">
+        <span class="tag tag-advance">⚡ Compre antes</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">13h50 – 17h25 (28/10)</p>
+        <p class="activity-name">✈ Voo Lisboa → Paris</p>
+        <p class="activity-desc">Último trecho. Chegada em Paris (CDG ou Orly) às 17h25. Após um dia inteiro de viagem, vá direto para o hotel para descansar.</p>
+      </div>
+      <div class="activity-right">
+        <span class="tag tag-advance">⚡ Compre antes</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Noite (28/10)</p>
+        <p class="activity-name">Check-in no hotel & Jantar leve</p>
+        <p class="activity-desc">Após a longa viagem, apenas check-in e um jantar tranquilo no bairro do hotel. Descanse bem para começar a explorar Paris amanhã com energia. Uma sopa quente ou um croque-monsieur num café do bairro são perfeitos para a primeira noite.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€30–50/casal</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Dica:</strong> Tente dormir no voo noturno para chegar mais disposto. Do aeroporto de Paris ao hotel, use o RER B (CDG) ou Orlyval+metrô (Orly) — mais barato e rápido que táxi nos horários de pico.
+    </div>
+  </div>
+
+  <!-- DIA 2 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div>
+        <p class="day-title">Dia 2 — Île de la Cité & Notre-Dame</p>
+        <p class="day-theme">Centro Histórico · Catedral · Ambientação</p>
+      </div>
+      <span class="day-date">29 out</span>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Manhã</p>
         <p class="activity-name">Catedral de Notre-Dame de Paris ⭐ Visita obrigatória</p>
         <p class="activity-desc">Após o incêndio de 2019 e anos de restauração, Notre-Dame reabriu suas portas em dezembro de 2024 — uma das ressurreições mais emocionantes da arquitetura mundial. A catedral gótica do século XII está mais deslumbrante do que nunca por dentro. A entrada é gratuita, mas <strong>reserve um horário com antecedência</strong> pelo site oficial — a demanda é altíssima. <a href="https://www.notredamedeparis.fr" target="_blank">notredamedeparis.fr</a></p>
       </div>
@@ -709,14 +721,14 @@
     </div>
   </div>
 
-  <!-- DIA 2 -->
+  <!-- DIA 3 -->
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 2 — Louvre (dia inteiro) & Saint-Germain</p>
+        <p class="day-title">Dia 3 — Louvre (dia inteiro) & Saint-Germain</p>
         <p class="day-theme">Arte · Dia completo no maior museu do mundo · Cafés Literários</p>
       </div>
-      <span class="day-date">09 out</span>
+      <span class="day-date">30 out</span>
     </div>
     <div class="activity">
       <div>
@@ -756,32 +768,6 @@
     </div>
   </div>
 
-  <!-- DIA 3 -->
-  <div class="day-block">
-    <div class="day-header">
-      <div>
-        <p class="day-title">Dia 3 — Versalhes (excursão)</p>
-        <p class="day-theme">Palácio · Jardins de Outono · História</p>
-      </div>
-      <span class="day-date">10 out</span>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Dia inteiro (saída ~8h30)</p>
-        <p class="activity-name">Palácio e Jardins de Versalhes</p>
-        <p class="activity-desc">Outubro é um dos melhores meses para Versalhes — as filas são menores que no verão e os jardins ficam cobertos de folhas douradas e alaranjadas, criando um cenário teatral. O Salão dos Espelhos, os Trianons e o Grand Canal valem cada minuto. Chegue pelo RER C (€3–4). <strong>Reserve com 2–3 meses de antecedência.</strong> <a href="https://www.chateauversailles.fr" target="_blank">chateauversailles.fr</a></p>
-      </div>
-      <div class="activity-right">
-        <span class="price">€25–€35/pp</span>
-        <span class="tag tag-advance">⚡ Compre antes</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
-      </div>
-    </div>
-    <div class="tip-box">
-      <strong>Dica de outubro:</strong> Os shows de fontes musicais (Grandes Eaux) acontecem até o início de outubro aos sábados e domingos — verifique se ainda estarão no programa no início do mês. Os jardins com folhagem outonal são espetaculares mesmo sem as fontes.
-    </div>
-  </div>
-
   <!-- DIA 4 -->
   <div class="day-block">
     <div class="day-header">
@@ -789,7 +775,7 @@
         <p class="day-title">Dia 4 — Grande Rota do Oeste: Torre Eiffel → Arco do Triunfo</p>
         <p class="day-theme">Ícones · Champs-Élysées · Show de Luzes Noturno</p>
       </div>
-      <span class="day-date">11 out</span>
+      <span class="day-date">31 out</span>
     </div>
     <div class="activity">
       <div>
@@ -857,16 +843,16 @@
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 5 — Montmartre, Jardin du Luxembourg & Le Marais</p>
-        <p class="day-theme">Bairro Boêmio · Parque Outonal · Sacré-Cœur · Bairro Histórico</p>
+        <p class="day-title">Dia 5 — Montmartre & Sacré-Cœur + Trem para Luxemburgo</p>
+        <p class="day-theme">Bairro Boêmio · Sacré-Cœur · Deslocamento</p>
       </div>
-      <span class="day-date">12 out</span>
+      <span class="day-date">01 nov</span>
     </div>
     <div class="activity">
       <div>
         <p class="activity-time">Manhã</p>
         <p class="activity-name">Basílica do Sacré-Cœur & Bairro de Montmartre</p>
-        <p class="activity-desc">Suba até o Sacré-Cœur de manhã — a vista panorâmica de Paris com luz outonal é deslumbrante (entrada gratuita). Depois explore o bairro: as escadarias cobertas de folhas, a Place du Tertre com artistas de rua, ateliês e as vinhas de Montmartre. <strong>Atenção:</strong> a <strong>Fête des Vendanges</strong> (festival de vinho de Montmartre) acontece na 1ª semana de outubro — como a visita está programada para o dia 12, o festival já terá encerrado, mas as vinhas ainda estarão decoradas e o clima do bairro continua especial.</p>
+        <p class="activity-desc">Suba até o Sacré-Cœur de manhã — a vista panorâmica de Paris com luz outonal é deslumbrante (entrada gratuita). Depois explore o bairro: as escadarias cobertas de folhas, a Place du Tertre com artistas de rua, ateliês e as vinhas de Montmartre. <strong>Atenção:</strong> a <strong>Fête des Vendanges</strong> (festival de vinho de Montmartre) acontece na 1ª semana de outubro — como a visita está programada para novembro, o festival já terá encerrado, mas as vinhas ainda estarão decoradas e o clima do bairro continua especial.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
@@ -876,53 +862,39 @@
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Início da tarde (~13h) — metrô ~20 min</p>
-        <p class="activity-name">Jardin du Luxembourg no outono 🍂</p>
-        <p class="activity-desc">De Montmartre, pegue o metrô direto até Notre-Dame-des-Champs ou Odéon — o Luxembourg fica a poucos minutos. Em outubro, é um dos parques mais bonitos de Paris: folhagem dourada e alaranjada, castanheiras, parisenses nas icônicas cadeiras verdes ao sol fraco do outono. Almoce por aqui antes de entrar — há boas opções de padaria no entorno da Rue Soufflot. Um dos cenários mais fotogênicos de toda a viagem.</p>
+        <p class="activity-time">Almoço (~12h30)</p>
+        <p class="activity-name">Almoço em Montmartre</p>
+        <p class="activity-desc">Almoce numa das crêperies ou bistrots do bairro antes de descer para pegar o trem. A Rue Lepic e arredores da Place du Tertre têm boas opções com preços honestos se você se afastar um pouco da praça dos artistas.</p>
       </div>
       <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+        <span class="price">~€20–35/casal</span>
+        <span class="tag tag-local">🏷 No local</span>
       </div>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Final da tarde — metrô ~15 min</p>
-        <p class="activity-name">Le Marais & Place des Vosges</p>
-        <p class="activity-desc">A praça mais antiga de Paris com arcadas medievais — linda em outubro com folhas caindo. Visite o Musée Carnavalet (história de Paris, entrada gratuita), explore galerias de arte e coma o famoso falafel da Rue des Rosiers — L'As du Fallafel é o mais icônico.</p>
+        <p class="activity-time">Tarde (~14h–16h)</p>
+        <p class="activity-name">🚆 Trem Paris → Luxemburgo</p>
+        <p class="activity-desc">TGV ou IC direto da Gare de l'Est. Viagem de ~2h10. Reserve com antecedência pela <a href="https://www.sncf-connect.com" target="_blank">SNCF Connect</a> para melhores preços. Chegada em Luxemburgo no final da tarde — check-in no hotel e jantar no Grund ou Place Guillaume II.</p>
       </div>
       <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Noite (opcional)</p>
-        <p class="activity-name">Musée de l'Orangerie — Nenúfares de Monet</p>
-        <p class="activity-desc">Se o cansaço permitir, o Orangerie fica próximo ao Louvre (Jardins das Tulherias) e fecha às 21h às sextas — pode ser encaixado no final do dia. Caso prefira descansar, reserve para outra tarde livre. As duas salas ovais com os nenúfares monumentais de Monet são uma das experiências mais meditativas de Paris. Reserve online. <a href="https://www.musee-orangerie.fr" target="_blank">musee-orangerie.fr</a></p>
-      </div>
-      <div class="activity-right">
-        <span class="price">~€12,50/pp</span>
+        <span class="price">~€30–80/pp</span>
         <span class="tag tag-advance">⚡ Compre antes</span>
       </div>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">À noite (opcional)</p>
-        <p class="activity-name">🍫 Salon du Chocolat (se na 2ª quinzena de outubro)</p>
-        <p class="activity-desc">O maior festival de chocolate do mundo acontece anualmente em Paris em outubro/novembro — esculturas de chocolate, degustações e chefs de todo o mundo. Verifique as datas exatas de 2026. <a href="https://www.salon-du-chocolat.com" target="_blank">salon-du-chocolat.com</a></p>
+        <p class="activity-time">Noite</p>
+        <p class="activity-name">Chegada em Luxemburgo — Check-in & Jantar</p>
+        <p class="activity-desc">Após o check-in, jantar tranquilo para conhecer a cidade. O Grund (bairro no vale) ou a Place Guillaume II têm ótimas opções. Transporte público é gratuito em todo o país!</p>
       </div>
       <div class="activity-right">
-        <span class="price">~€15–20/pp</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
-        <span class="tag tag-advance">⚡ Compre antes</span>
+        <span class="price">~€40–70/casal</span>
+        <span class="tag tag-local">🏷 No local</span>
       </div>
     </div>
     <div class="tip-box">
-      <strong>Rota do dia:</strong> Montmartre (manhã, norte) → metrô linha 12 até Notre-Dame-des-Champs → Jardin du Luxembourg (centro-sul, almoço + passeio) → metrô linha 4 até Saint-Paul → Le Marais (tarde, leste). Um dia com três bairros completamente diferentes, sem correria.
+      <strong>Dica:</strong> O Navigo Semaine de Paris cobre o RER até a Gare de l'Est. Reserve o trem TGV/IC para Luxemburgo com antecedência — preços variam muito (€30 antecipado vs €80 em cima da hora).
     </div>
   </div>
 </section>
@@ -930,14 +902,14 @@
 <div class="transfer-note">🚆 Trem Paris → Luxemburgo · ~2h10 · TGV/IC (~€30–80) · <a href="https://www.sncf-connect.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">SNCF Connect</a> · <a href="https://www.raileurope.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Rail Europe</a></div>
 
 <!-- ======================== LUXEMBURGO ======================== -->
-<section class="city-section">
+<section class="city-section" id="city-luxemburgo">
   <div class="city-header">
     <div class="city-num">02</div>
     <div class="city-info">
       <h2>Luxemburgo</h2>
-      <p class="city-subtitle">13–14 out · A Pequena Capital Europeia</p>
+      <p class="city-subtitle">01–03 nov · A Pequena Capital Europeia</p>
       <div class="city-pills">
-        <span class="city-pill pill-lux">2 dias (ritmo leve)</span>
+        <span class="city-pill pill-lux">3 dias (ritmo leve)</span>
         <span class="city-pill pill-autumn">🍂 Vales outonal</span>
       </div>
     </div>
@@ -947,48 +919,6 @@
     <strong>Bônus único:</strong> Transporte público 100% gratuito em Luxemburgo para todos — turistas incluídos. Use o tram, ônibus e metrô à vontade!
   </div>
 
-  <div class="accom-box">
-    <div class="accom-header">
-      <span class="accom-icon">🏠</span>
-      <span class="accom-title">Onde se hospedar em Luxemburgo · Booking & Airbnb</span>
-    </div>
-    <p class="accom-intro">Luxemburgo é uma das capitais mais seguras da Europa — praticamente qualquer região central funciona bem para turistas. O transporte público é <strong>100% gratuito</strong> em todo o país, então localização não é questão crítica. Evite apenas as imediações da Gare (Estação Central) à noite, especialmente o triângulo entre Rue de Strasbourg e Avenue de la Liberté, que pode ser agitado.</p>
-    <div class="accom-regions">
-      <div class="accom-region">
-        <p class="accom-region-name">🥇 Ville-Haute / Centro Histórico — <span class="accom-best">Mais conveniente para o roteiro</span></p>
-        <p class="accom-region-desc">A região da Place Guillaume II, Chemin de la Corniche e Cathédrale. Totalmente segura, a pé de todas as atrações do roteiro e com paradas de ônibus e tram por toda parte. Hotéis mais caros mas Airbnbs em apartamentos históricos são ótima alternativa. Maior oferta de short-term rentals da cidade.</p>
-        <p class="accom-region-desc" style="margin-top:4px"><strong>🚌 Transporte:</strong> Tram + múltiplas linhas de ônibus · <strong>💶 Faixa:</strong> €100–180/noite hotel</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥈 Gare / Estação Central — <span class="accom-best">Melhor preço, boa conexão</span></p>
-        <p class="accom-region-desc">A região ao redor da Gare tem hotéis mais baratos e é servida por múltiplas linhas de ônibus que chegam à Cidade Alta em 10 minutos. Boa para quem quer economizar. Escolha hotéis nas ruas paralelas à Boulevard Pétrusse, afastados da área mais movimentada próxima à estação.</p>
-        <p class="accom-region-desc" style="margin-top:4px"><strong>🚌 Transporte:</strong> Trem + ônibus direto ao centro · <strong>💶 Faixa:</strong> €70–130/noite hotel · €60–110/noite Airbnb</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥉 Kirchberg — <span class="accom-best">Moderno, próximo ao MUDAM</span></p>
-        <p class="accom-region-desc">Bairro moderno onde fica o MUDAM e a Philharmonie. Hotéis mais novos (Novotel, Meliá, Mama Shelter) com preços às vezes competitivos. Tram conecta ao centro histórico em ~15 minutos. Mais quieto à noite — ótimo para descansar bem.</p>
-        <p class="accom-region-desc" style="margin-top:4px"><strong>🚌 Transporte:</strong> Tram direto ao centro · <strong>💶 Faixa:</strong> €90–160/noite hotel</p>
-      </div>
-    </div>
-    <div class="accom-links">
-      <a href="https://www.booking.com/city/lu/luxembourg.html" target="_blank">🔗 Booking.com — Luxemburgo</a>
-      <a href="https://www.airbnb.com/luxembourg-city-luxembourg/stays" target="_blank">🔗 Airbnb — Luxemburgo</a>
-    </div>
-  </div>
-
-  <div class="fwt-box">
-    <div class="fwt-icon">🚶</div>
-    <div class="fwt-content">
-      <p class="fwt-title">Free Walking Tour — Luxemburgo</p>
-      <p class="fwt-desc">Luxemburgo é pequena mas densa em história — um free tour no primeiro dia é ideal para entender como a cidade foi construída literalmente em cima de séculos de fortalezas. Os guias explicam a relação entre a Cidade Alta, o Grund e os vales de um jeito que faz o roteiro fazer muito mais sentido. Tour de ~2h, em inglês, gorjeta livre no final.</p>
-      <div class="fwt-links">
-        <a href="https://twentytour.com/free-walking-tour-luxembourg/" target="_blank">🔗 TwentyTour Luxembourg</a>
-        <a href="https://www.guruwalk.com/luxembourg" target="_blank">🔗 GuruWalk Luxembourg</a>
-      </div>
-      <p class="fwt-tip">💡 O TwentyTour é o mais bem avaliado em Luxemburgo — ponto de encontro em frente à estátua Monument Dicks et Lentz, na Place Guillaume II. Funciona todos os dias.</p>
-    </div>
-  </div>
-
   <!-- DIA 6 -->
   <div class="day-block">
     <div class="day-header">
@@ -996,7 +926,7 @@
         <p class="day-title">Dia 6 — Cidade Velha & Vales do Outono</p>
         <p class="day-theme">Patrimônio UNESCO · Mirantes · Folhagem</p>
       </div>
-      <span class="day-date">13 out</span>
+      <span class="day-date">02 nov</span>
     </div>
     <div class="activity">
       <div>
@@ -1042,7 +972,7 @@
         <p class="day-title">Dia 7 — MUDAM & Tempo com o Amigo</p>
         <p class="day-theme">Arte Contemporânea · Local · Descanso</p>
       </div>
-      <span class="day-date">14 out</span>
+      <span class="day-date">03 nov</span>
     </div>
     <div class="activity">
       <div>
@@ -1069,251 +999,52 @@
   </div>
 </section>
 
-<div class="transfer-note">🚆 Trem Luxemburgo → Bruxelas · ~3h · IC (~€25–60) · <a href="https://www.b-europe.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">B-Europe (SNCB)</a> · <a href="https://www.raileurope.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Rail Europe</a></div>
+<div class="transfer-note">🚆 Trem Luxemburgo → Amsterdã · ~5h (via Bruxelas) · IC + Thalys (~€60–140) · <a href="https://www.b-europe.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">B-Europe (SNCB)</a> · <a href="https://www.raileurope.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Rail Europe</a></div>
 
-<!-- ======================== BRUXELAS ======================== -->
-<section class="city-section">
+<!-- ======================== AMSTERDÃ ======================== -->
+<section class="city-section" id="city-amsterda">
   <div class="city-header">
     <div class="city-num">03</div>
     <div class="city-info">
-      <h2>Bruxelas</h2>
-      <p class="city-subtitle">15–16 out · Capital da Bélgica</p>
-      <div class="city-pills">
-        <span class="city-pill pill-bru">2 dias</span>
-        <span class="city-pill pill-autumn">🍂 Chocolate & Cerveja</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="accom-box">
-    <div class="accom-header">
-      <span class="accom-icon">🏨</span>
-      <span class="accom-title">Onde se hospedar em Bruxelas</span>
-    </div>
-    <p class="accom-intro">Bruxelas tem bairros ótimos fora do centro turístico com preços mais honestos e boa conexão por metrô e tram. Evite a região da Gare du Midi e Gare du Nord à noite, e o entorno da rua Anneessens — áreas com mais ocorrências de pequenos crimes.</p>
-    <div class="accom-regions">
-      <div class="accom-region">
-        <p class="accom-region-name">🥇 Ixelles — <span class="accom-best">Melhor equilíbrio geral</span></p>
-        <p class="accom-region-desc">Ixelles é favorita entre expatriados e viajantes que querem experiência local com boa conexão ao centro. Segura, cheia de cafés e restaurantes, próxima ao Flagey Square e ao Châtelain. Bem conectada por metrô e tram. Ótima seleção de Airbnbs em apartamentos com personalidade.</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥈 Saint-Gilles — <span class="accom-best">Mais acessível, boêmio</span></p>
-        <p class="accom-region-desc">Bairro jovem, multicultural e artístico com muitas opções de hospedagem acessível. Bem conectado por tram e ônibus ao centro histórico. Ambiente descontraído — perfect para quem quer sentir o lado mais autêntico de Bruxelas.</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥉 Centro Histórico (Fontainas / Sablon) — <span class="accom-best">Mais próximo das atrações</span></p>
-        <p class="accom-region-desc">Se preferir ficar perto da Grand Place, o bairro de Fontainas e de Sablon (ao sul do centro) são as melhores subáreas — mais seguras e charmosas que o entorno direto da Grand Place. Metrô e tram na porta.</p>
-      </div>
-    </div>
-    <div class="accom-links">
-      <a href="https://www.booking.com/city/be/brussels.html" target="_blank">🔗 Booking.com — Bruxelas</a>
-      <a href="https://www.airbnb.com/brussels-belgium/stays" target="_blank">🔗 Airbnb — Bruxelas</a>
-    </div>
-  </div>
-
-  <div class="fwt-box">
-    <div class="fwt-icon">🚶</div>
-    <div class="fwt-content">
-      <p class="fwt-title">Free Walking Tour — Bruxelas</p>
-      <p class="fwt-desc">Bruxelas tem alguns dos free walking tours mais bem avaliados da Europa — a cidade tem camadas de história política, artística e gastronômica que um guia local sabe contar muito bem. Os tours cobrem a Grand Place, Galeries Saint-Hubert, Manneken Pis e o bairro histórico em cerca de 2h30. O Tell Me Stories About Brussels é consistentemente o mais bem avaliado de toda a cidade (4.9★ no TripAdvisor).</p>
-      <div class="fwt-links">
-        <a href="https://ambassadorstours.com/en/brussels/free-walking-tour-brussels" target="_blank">🔗 Tell Me Stories About Brussels</a>
-        <a href="https://www.neweuropetours.eu/sandemans-tours/brussels/free-tour-of-brussels/" target="_blank">🔗 SANDEMANs Brussels</a>
-        <a href="https://www.guruwalk.com/brussels" target="_blank">🔗 GuruWalk Brussels</a>
-      </div>
-      <p class="fwt-tip">💡 O Tell Me Stories costuma esgotar — reserve com alguns dias de antecedência. Ponto de encontro: Grand Place, em frente à Torre da Câmara Municipal. Funciona todos os dias do ano.</p>
-    </div>
-  </div>
-
-  <!-- DIA 8 -->
-  <div class="day-block">
-    <div class="day-header">
-      <div>
-        <p class="day-title">Dia 8 — Grand Place & Centro Histórico</p>
-        <p class="day-theme">Arquitetura · Gastronomia Belga · Patrimônio UNESCO</p>
-      </div>
-      <span class="day-date">15 out</span>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Manhã</p>
-        <p class="activity-name">Grand Place — A mais bela praça da Europa</p>
-        <p class="activity-desc">Em outubro, com menos turistas que no verão, a Grand Place recupera sua grandiosidade — guildhalls dourados, Hôtel de Ville gótico e a atmosfera medieval intacta. Chegue cedo pela manhã. À noite é iluminada de forma deslumbrante.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Manhã</p>
-        <p class="activity-name">Galeries Royales Saint-Hubert + Chocolatiers</p>
-        <p class="activity-desc">A galeria coberta mais antiga da Europa (1847) — chocolatiers artesanais como Neuhaus e Mary, cafés históricos, livrarias. Outubro é época de chocolates com especiarias de outono.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">Grátis + chocolates ~€15</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Almoço</p>
-        <p class="activity-name">Moules-frites + Cerveja Trappist</p>
-        <p class="activity-desc">Mexilhões belgas com fritas — o prato mais icônico de Bruxelas. Chez Léon é o clássico. Combine com uma Chimay, Rochefort ou Westvleteren — as melhores cervejas do mundo são belgas e trappistas.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">~€25–35/pp</span>
-        <span class="tag tag-local">🏷 No local</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Tarde</p>
-        <p class="activity-name">Musée Magritte</p>
-        <p class="activity-desc">O maior acervo do surrealista René Magritte — pintor belga e um dos maiores nomes do século XX. Museu bem curado, ideal para quem aprecia alguns museus. Sem reserva necessária em outubro. <a href="https://www.musee-magritte-museum.be" target="_blank">musee-magritte-museum.be</a></p>
-      </div>
-      <div class="activity-right">
-        <span class="price">~€10/pp</span>
-        <span class="tag tag-local">🏷 No local</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- DIA 9 -->
-  <div class="day-block">
-    <div class="day-header">
-      <div>
-        <p class="day-title">Dia 9 — Atomium & Bairros Locais</p>
-        <p class="day-theme">Ícone Futurista · Art Nouveau · Ixelles</p>
-      </div>
-      <span class="day-date">16 out</span>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Manhã</p>
-        <p class="activity-name">Atomium</p>
-        <p class="activity-desc">O símbolo de Bruxelas — 102m representando um átomo de ferro, construído para a Expo 1958. Vista panorâmica da cidade. Em outubro, sem as longas filas de verão, pode entrar quase sem espera. <a href="https://www.atomium.be" target="_blank">atomium.be</a></p>
-      </div>
-      <div class="activity-right">
-        <span class="price">~€16–18/pp</span>
-        <span class="tag tag-local">🏷 No local</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Tarde</p>
-        <p class="activity-name">Bairros de Ixelles & Châtelain</p>
-        <p class="activity-desc">O lado mais local e autêntico de Bruxelas — casas Art Nouveau, mercado do Châtelain (quarta à tarde), cafés independentes e concept stores. Em outubro, o bairro tem uma atmosfera muito agradável, com menos turistas e mais locais.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Noite</p>
-        <p class="activity-name">Waffle + Delirium Café — Despedida de Bruxelas</p>
-        <p class="activity-desc">Waffle de Bruxelas crocante da Maison Dandoy, e uma última cerveja belga no Delirium Café (3.000+ tipos de cerveja) — a 1 min da Grand Place iluminada à noite.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">~€10–20/pp</span>
-        <span class="tag tag-local">🏷 No local</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="transfer-note">🚆 Trem Bruxelas → Amsterdã · ~1h50 · Thalys/Eurostar (~€30–80) · <a href="https://www.eurostar.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Eurostar</a> · <a href="https://www.raileurope.com" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">Rail Europe</a></div>
-
-<!-- ======================== AMSTERDÃ ======================== -->
-<section class="city-section">
-  <div class="city-header">
-    <div class="city-num">04</div>
-    <div class="city-info">
       <h2>Amsterdã</h2>
-      <p class="city-subtitle">17–21 out · A Veneza do Norte no Outono</p>
+      <p class="city-subtitle">04–07 nov · A Veneza do Norte no Outono</p>
       <div class="city-pills">
-        <span class="city-pill pill-ams">5 dias</span>
+        <span class="city-pill pill-ams">4 dias</span>
         <span class="city-pill pill-autumn">🍂 Canais Dourados</span>
       </div>
     </div>
   </div>
 
   <div class="season-note">
-    <strong>Amsterdã em outubro</strong> é simplesmente linda — os canais refletem folhas douradas e laranja das árvores centenárias. A cidade está quieta após o verão, com preços mais acessíveis e atmosfera muito mais local. Keukenhof está fechado em outubro, mas substituímos por experiências outonal igualmente especiais.
-  </div>
-
-  <div class="accom-box">
-    <div class="accom-header">
-      <span class="accom-icon">🏨</span>
-      <span class="accom-title">Onde se hospedar em Amsterdã</span>
-    </div>
-    <p class="accom-intro">Amsterdã é cara — hotéis no centro histórico têm preços altíssimos, especialmente com a taxa turística de 12,5% em 2026. A boa notícia é que os bairros um pouco afastados do Centrum têm ótimas opções e tram que chega ao centro em 10–15 minutos. Evite o Centrum turístico e o entorno da Estação Central para uma experiência mais tranquila e econômica.</p>
-    <div class="accom-regions">
-      <div class="accom-region">
-        <p class="accom-region-name">🥇 De Pijp — <span class="accom-best">Melhor opção geral</span></p>
-        <p class="accom-region-desc">De Pijp é onde muitos amsterdameses vivem de verdade — mais local, menos turístico, mais acessível que o centro. Fica ao lado do Museumplein (Van Gogh e Rijksmuseum a pé). Tem o mercado Albert Cuyp, ótimos restaurantes e bares. Bem servido pelos trams 3 e 12.</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥈 Jordaan — <span class="accom-best">Mais charmoso, preço médio</span></p>
-        <p class="accom-region-desc">O bairro mais charmoso de Amsterdã. Hotéis aqui são mais baratos que no Centrum mas mais caros que De Pijp. Ótimas opções de Airbnb em casas do século XVII com vista para o canal. Próximo à Casa de Anne Frank e com trams para todo o centro.</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">🥉 Oud-West / Museumplein — <span class="accom-best">Conveniente para museus</span></p>
-        <p class="accom-region-desc">Próximo ao Vondelpark, Van Gogh e Rijksmuseum. Bairro residencial e seguro com boa oferta de hospedagem. Muitas opções de boutique hotel e Airbnb. O tram 2 e o 12 conectam ao centro em 15 minutos.</p>
-      </div>
-      <div class="accom-region">
-        <p class="accom-region-name">✅ Também vale: Amsterdam Oost (Leste)</p>
-        <p class="accom-region-desc">Mais afastado mas com atmosfera local autêntica e preços menores. Excelente conexão por metro e tram — 15 minutos para o centro. Ótimo custo-benefício para estadias mais longas como os 5 dias de Amsterdã do roteiro.</p>
-      </div>
-    </div>
-    <div class="accom-links">
-      <a href="https://www.booking.com/city/nl/amsterdam.html" target="_blank">🔗 Booking.com — Amsterdã</a>
-      <a href="https://www.airbnb.com/amsterdam-netherlands/stays" target="_blank">🔗 Airbnb — Amsterdã</a>
-    </div>
-  </div>
-
-  <div class="fwt-box">
-    <div class="fwt-icon">🚶</div>
-    <div class="fwt-content">
-      <p class="fwt-title">Free Walking Tour — Amsterdã</p>
-      <p class="fwt-desc">Amsterdã tem uma cena de free walking tours excelente — da história do século de ouro holandês ao Jordaan, passando pelo Barrio Vermelho e a Casa de Anne Frank (por fora). Com 5 dias na cidade, vale fazer um tour geral no primeiro dia para se orientar e um tour temático depois (Jordaan, História Judaica, ou tour noturno). Ambos os grandes operadores têm presença forte aqui.</p>
-      <div class="fwt-links">
-        <a href="https://www.neweuropetours.eu/sandemans-tours/amsterdam/free-tour-of-amsterdam/" target="_blank">🔗 SANDEMANs Amsterdam</a>
-        <a href="https://www.guruwalk.com/amsterdam" target="_blank">🔗 GuruWalk Amsterdam</a>
-      </div>
-      <p class="fwt-tip">💡 O SANDEMANs é o operador original de free tours na Europa e tem excelente reputação em Amsterdã. Ponto de encontro: Dam Square. Horários às 11h, 13h e 15h. Reserve online para garantir vaga — outubro ainda tem boa demanda.</p>
-    </div>
+    <strong>Amsterdã em novembro</strong> é simplesmente linda — os canais refletem folhas douradas e laranja das árvores centenárias. A cidade está quieta após o verão, com preços mais acessíveis e atmosfera muito mais local. Keukenhof está fechado nesta época, mas substituímos por experiências outonal igualmente especiais.
   </div>
 
   <!-- DIA 10 -->
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 10 — Chegada & Jordaan Outonal</p>
+        <p class="day-title">Dia 8 — Chegada & Jordaan Outonal</p>
         <p class="day-theme">Canais Dourados · Jordaan · Culinária Local</p>
       </div>
-      <span class="day-date">17 out</span>
+      <span class="day-date">04 nov</span>
     </div>
     <div class="activity">
       <div>
         <p class="activity-time">Tarde</p>
-        <p class="activity-name">Passeio pelo Jordaan — O bairro mais charmoso em outubro</p>
-        <p class="activity-desc">Casas do século XVII, canais com reflexo de folhas douradas, galerias e cafés aconchegantes. Outubro é o mês mais bonito do ano para o Jordaan. Não perca a Lomanstraat — famosa pelas árvores de outono sobre o canal, uma das fotos mais icônicas de Amsterdã.</p>
+        <p class="activity-name">Passeio pelo Jordaan — O bairro mais charmoso no outono</p>
+        <p class="activity-desc">Casas do século XVII, canais com reflexo de folhas douradas, galerias e cafés aconchegantes. O outono é a época mais bonita do ano para o Jordaan. Não perca a Lomanstraat — famosa pelas árvores de outono sobre o canal, uma das fotos mais icônicas de Amsterdã.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
         <span class="tag tag-free">✓ Gratuito</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+        <span class="tag tag-seasonal">🍂 Especial outono</span>
       </div>
     </div>
     <div class="activity">
       <div>
         <p class="activity-time">Final da tarde</p>
         <p class="activity-name">9 Straatjes (Nove Ruelas) + Bloemenmarkt</p>
-        <p class="activity-desc">As 9 Ruelas têm as melhores lojas independentes de Amsterdã — design, vintage, chocolates. Depois, o Bloemenmarkt (mercado flutuante de flores) no canal Singel — em outubro vende tulipas secas e bulbos para trazer de lembrança.</p>
+        <p class="activity-desc">As 9 Ruelas têm as melhores lojas independentes de Amsterdã — design, vintage, chocolates. Depois, o Bloemenmarkt (mercado flutuante de flores) no canal Singel — no outono vende tulipas secas e bulbos para trazer de lembrança.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
@@ -1337,16 +1068,16 @@
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 11 — Casa de Anne Frank & Van Gogh</p>
+        <p class="day-title">Dia 9 — Casa de Anne Frank & Van Gogh</p>
         <p class="day-theme">História · Arte · Vondelpark de Outono</p>
       </div>
-      <span class="day-date">18 out</span>
+      <span class="day-date">05 nov</span>
     </div>
     <div class="activity">
       <div>
         <p class="activity-time">Manhã (9h)</p>
         <p class="activity-name">Casa de Anne Frank</p>
-        <p class="activity-desc">Uma das visitas mais impactantes da Europa. <strong>Os ingressos abrem toda terça-feira às 10h (hora de Amsterdã) para 6 semanas depois — esgotam em minutos.</strong> Em outubro há mais disponibilidade, mas não arrisque. Reserve assim que a data abrir. <a href="https://www.annefrank.org/en/museum/tickets/" target="_blank">annefrank.org</a></p>
+        <p class="activity-desc">Uma das visitas mais impactantes da Europa. <strong>Os ingressos abrem toda terça-feira às 10h (hora de Amsterdã) para 6 semanas depois — esgotam em minutos.</strong> Em novembro há mais disponibilidade, mas não arrisque. Reserve assim que a data abrir. <a href="https://www.annefrank.org/en/museum/tickets/" target="_blank">annefrank.org</a></p>
       </div>
       <div class="activity-right">
         <span class="price">€16,50/pp</span>
@@ -1357,7 +1088,7 @@
       <div>
         <p class="activity-time">Tarde</p>
         <p class="activity-name">Museu Van Gogh</p>
-        <p class="activity-desc">O maior acervo de Van Gogh do mundo — 200+ pinturas. Em outubro, os museus têm iluminação quente que combina perfeitamente com a paleta outonal de Van Gogh. Reserve online com antecedência. <a href="https://www.vangoghmuseum.nl/en/visit/tickets-and-ticket-prices" target="_blank">vangoghmuseum.nl</a></p>
+        <p class="activity-desc">O maior acervo de Van Gogh do mundo — 200+ pinturas. No outono, os museus têm iluminação quente que combina perfeitamente com a paleta outonal de Van Gogh. Reserve online com antecedência. <a href="https://www.vangoghmuseum.nl/en/visit/tickets-and-ticket-prices" target="_blank">vangoghmuseum.nl</a></p>
       </div>
       <div class="activity-right">
         <span class="price">€25/pp</span>
@@ -1368,12 +1099,12 @@
       <div>
         <p class="activity-time">Final da tarde</p>
         <p class="activity-name">Vondelpark no outono</p>
-        <p class="activity-desc">Logo ao lado do Museumplein — outubro é considerado o melhor mês do ano para o Vondelpark, com folhagem de cores intensas. Pegue um stroopwafel quente de um vendedor ambulante e aproveite o clima.</p>
+        <p class="activity-desc">Logo ao lado do Museumplein — o outono é considerado a melhor época do ano para o Vondelpark, com folhagem de cores intensas. Pegue um stroopwafel quente de um vendedor ambulante e aproveite o clima.</p>
       </div>
       <div class="activity-right">
         <span class="price">Grátis</span>
         <span class="tag tag-free">✓ Gratuito</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+        <span class="tag tag-seasonal">🍂 Especial outono</span>
       </div>
     </div>
   </div>
@@ -1382,16 +1113,16 @@
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 12 — Rijksmuseum & Amsterdamse Bos</p>
-        <p class="day-theme">Arte Clássica · Floresta de Outono · De Pijp</p>
+        <p class="day-title">Dia 10 — Rijksmuseum & Zaanse Schans</p>
+        <p class="day-theme">Arte Clássica · Moinhos de Vento · Passeio de Barco</p>
       </div>
-      <span class="day-date">19 out</span>
+      <span class="day-date">06 nov</span>
     </div>
     <div class="activity">
       <div>
         <p class="activity-time">Manhã</p>
         <p class="activity-name">Rijksmuseum</p>
-        <p class="activity-desc">O maior museu dos Países Baixos — Rembrandt, Vermeer, a Ronda Noturna. Em outubro, filas menores e atmosfera mais tranquila. Reserve online com antecedência. <a href="https://www.rijksmuseum.nl/en/tickets" target="_blank">rijksmuseum.nl</a></p>
+        <p class="activity-desc">O maior museu dos Países Baixos — Rembrandt, Vermeer, a Ronda Noturna. Em novembro, filas menores e atmosfera mais tranquila. Reserve online com antecedência. <a href="https://www.rijksmuseum.nl/en/tickets" target="_blank">rijksmuseum.nl</a></p>
       </div>
       <div class="activity-right">
         <span class="price">€23,50/pp</span>
@@ -1401,73 +1132,38 @@
     <div class="activity">
       <div>
         <p class="activity-time">Tarde</p>
-        <p class="activity-name">🌲 Amsterdamse Bos — A floresta urbana em outubro</p>
-        <p class="activity-desc">O Keukenhof está fechado em outubro, mas o Amsterdamse Bos (Floresta de Amsterdã) é a alternativa local perfeita — 1.000 hectares de floresta a 15 min do centro, com trilhas ciclísticas e a pedestres, folhagem espetacular de outono, e o charme de misturar com moradores locais. Totalmente gratuito. Alugue uma bike para chegar (~€12/dia).</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Final do dia</p>
-        <p class="activity-name">Mercado Albert Cuyp & De Pijp</p>
-        <p class="activity-desc">O maior mercado de rua dos Países Baixos, de segunda a sábado. Experimente o haring (arenque curado com cebola) — o street food clássico holandês. O bairro De Pijp tem ótimos bares e restaurantes para jantar.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-        <span class="price">Comidas: ~€5–10</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- DIA 13 -->
-  <div class="day-block">
-    <div class="day-header">
-      <div>
-        <p class="day-title">Dia 13 — Zaanse Schans & Canais de Bicicleta</p>
-        <p class="day-theme">Moinhos de Vento · Outono Holandês · Passeio de Barco</p>
-      </div>
-      <span class="day-date">20 out</span>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Manhã</p>
         <p class="activity-name">🌬 Zaanse Schans — Moinhos e Outono Holandês</p>
-        <p class="activity-desc">Vilarejo preservado com moinhos de vento funcionais a 20 min de Amsterdã — um dos cenários mais icônicos da Holanda. Em outubro, a paisagem rural holandesa fica coberta de folhagem, tornando a visita ainda mais fotogênica que no verão. Acesso gratuito ao vilarejo; moinhos e museus têm entrada.</p>
+        <p class="activity-desc">Vilarejo preservado com moinhos de vento funcionais a 20 min de Amsterdã — um dos cenários mais icônicos da Holanda. Em novembro, a paisagem rural holandesa fica coberta de folhagem, tornando a visita ainda mais fotogênica que no verão. Acesso gratuito ao vilarejo; moinhos e museus têm entrada.</p>
       </div>
       <div class="activity-right">
         <span class="price">Vilarejo: Grátis</span>
         <span class="tag tag-free">✓ Gratuito</span>
         <span class="price">Atrações: ~€5–8</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+        <span class="tag tag-seasonal">🍂 Especial outono</span>
       </div>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Tarde</p>
+        <p class="activity-time">Final do dia</p>
         <p class="activity-name">Passeio de barco pelos canais — Reflexos de outono</p>
-        <p class="activity-desc">Um passeio de canal em outubro é particularmente especial — os reflexos das folhas douradas e alaranjadas na água são espetaculares. Muitos barcos oferecem cobertores e chocolates quentes. ~€20/pp.</p>
+        <p class="activity-desc">Um passeio de canal em novembro é particularmente especial — os reflexos das folhas douradas e alaranjadas na água são espetaculares. Muitos barcos oferecem cobertores e chocolates quentes. ~€20/pp.</p>
       </div>
       <div class="activity-right">
         <span class="price">~€20/pp</span>
         <span class="tag tag-local">🏷 No local</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
+        <span class="tag tag-seasonal">🍂 Especial outono</span>
       </div>
     </div>
   </div>
 
-  <!-- DIA 14 -->
+  <!-- DIA 11 -->
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 14 — Manhã em Amsterdã + Viagem a Paris</p>
-        <p class="day-theme">Últimas Memórias · Deslocamento para Paris</p>
+        <p class="day-title">Dia 11 — Última manhã em Amsterdã + Voo para Lisboa</p>
+        <p class="day-theme">Últimas Memórias · Deslocamento para Lisboa</p>
       </div>
-      <span class="day-date">21 out</span>
+      <span class="day-date">07 nov</span>
     </div>
     <div class="activity">
       <div>
@@ -1482,32 +1178,214 @@
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Tarde/Noite</p>
-        <p class="activity-name">🚆 Trem Amsterdã → Paris (Thalys)</p>
-        <p class="activity-desc">Trem direto entre Amsterdã Centraal e Paris Gare du Nord em ~3h20. <strong>Reserve com bastante antecedência</strong> — os trens Thalys/Eurostar para Paris costumam lotar, especialmente nas sextas-feiras de outubro. Chegada à noite em Paris. · <a href="https://www.eurostar.com" target="_blank">eurostar.com</a> · <a href="https://www.raileurope.com" target="_blank">Rail Europe</a></p>
+        <p class="activity-time">Tarde</p>
+        <p class="activity-name">✈ Voo Amsterdã → Lisboa</p>
+        <p class="activity-desc">Voo direto entre Schiphol (AMS) e Lisboa (LIS) em ~2h50. Diversas opções com KLM, TAP e easyJet. O aeroporto de Schiphol fica a 17 min de trem do centro de Amsterdã. <strong>Reserve com antecedência</strong> para melhores preços. Chegada em Lisboa no final da tarde.</p>
       </div>
       <div class="activity-right">
-        <span class="price">~€40–120/pp</span>
+        <span class="price">~€60–180/pp</span>
         <span class="tag tag-advance">⚡ Compre antes</span>
-        <span class="price-note">Depende da antecedência</span>
       </div>
     </div>
   </div>
 </section>
 
-<div class="transfer-note">✈ Volta a Paris para o voo de retorno ao Brasil</div>
+<div class="transfer-note">✈ Voo Amsterdã → Lisboa · ~2h50 · KLM / TAP / easyJet</div>
 
-<!-- ======================== PARIS 2 ======================== -->
-<section class="city-section">
+<!-- ======================== LISBOA ======================== -->
+<section class="city-section" id="city-lisboa">
   <div class="city-header">
-    <div class="city-num">05</div>
+    <div class="city-num">04</div>
     <div class="city-info">
-      <h2>Paris — Retorno</h2>
-      <p class="city-subtitle">22 out · Última noite antes do voo</p>
+      <h2>Lisboa</h2>
+      <p class="city-subtitle">08–11 nov · A Cidade das Sete Colinas</p>
       <div class="city-pills">
-        <span class="city-pill pill-paris2">1 dia</span>
-        <span class="city-pill pill-autumn">🍂 Despedida da Europa</span>
+        <span class="city-pill pill-lis">3 dias</span>
+        <span class="city-pill pill-autumn">🍂 Luz Dourada Atlântica</span>
       </div>
+    </div>
+  </div>
+
+  <div class="season-note">
+    <strong>Lisboa em novembro:</strong> Uma das melhores épocas para visitar — temperatura amena (13–18°C), luz dourada atlântica espetacular, poucos turistas e preços mais baixos. A cidade ganha um charme melancólico com o fado ecoando pelas ruelas de Alfama. Traga um casaco leve e um guarda-chuva compacto.
+  </div>
+
+  <!-- DIA 12 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div>
+        <p class="day-title">Dia 12 — Alfama, Castelo & Fado</p>
+        <p class="day-theme">Bairro Histórico · Miradouros · Música Portuguesa</p>
+      </div>
+      <span class="day-date">08 nov</span>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Manhã</p>
+        <p class="activity-name">Castelo de São Jorge ⭐</p>
+        <p class="activity-desc">O ponto mais alto de Lisboa com vistas panorâmicas sobre o Tejo, os telhados vermelhos e a Ponte 25 de Abril. Construído pelos mouros no século XI, é o marco mais icônico da cidade. Chegue cedo para evitar filas. A luz da manhã de novembro é espetacular daqui. <a href="https://castelodesaojorge.pt" target="_blank">castelodesaojorge.pt</a></p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€15/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Manhã/Início da tarde</p>
+        <p class="activity-name">Alfama — O bairro mais antigo de Lisboa</p>
+        <p class="activity-desc">Desça do Castelo pelas ruelas labirínticas de Alfama — azulejos centenários, roupa estendida nas janelas, gatos nos telhados e o som do fado escapando das portas. Passe pelo Miradouro de Santa Luzia (a vista mais romântica de Lisboa) e pela Sé Catedral (entrada gratuita). Em novembro, sem as multidões do verão, Alfama é mágica.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Grátis</span>
+        <span class="tag tag-free">✓ Gratuito</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Almoço</p>
+        <p class="activity-name">Tasca tradicional em Alfama</p>
+        <p class="activity-desc">Almoce numa tasca típica — bacalhau à Brás, sardinhas assadas (se ainda na temporada) ou caldo verde. Acompanhe com um vinho verde ou tinto do Alentejo. As tascas de Alfama são autênticas e acessíveis — evite as que têm menu em 5 idiomas na porta.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€12–20/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Tarde</p>
+        <p class="activity-name">Panteão Nacional & Feira da Ladra (se terça ou sábado)</p>
+        <p class="activity-desc">O Panteão Nacional tem uma cúpula com vista 360° de Lisboa (€5). Se for terça ou sábado, a Feira da Ladra (mercado de pulgas) acontece ao lado — antiguidades, vinis, azulejos antigos e curiosidades portuguesas.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€5/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Noite</p>
+        <p class="activity-name">🎵 Casa de Fado em Alfama</p>
+        <p class="activity-desc">O fado é a alma musical de Lisboa — Patrimônio Imaterial da UNESCO. Reserve uma noite numa casa de fado tradicional em Alfama para ouvir os fadistas ao vivo. Recomendações: <strong>Clube de Fado</strong>, <strong>Mesa de Frades</strong> ou <strong>Tasca do Chico</strong> (mais informal, sem reserva). Jantar incluído na maioria.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€30–60/pp</span>
+        <span class="tag tag-advance">⚡ Compre antes</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIA 13 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div>
+        <p class="day-title">Dia 13 — Belém, Pastéis & Chiado</p>
+        <p class="day-theme">Descobrimentos · Gastronomia · Bairro Cultural</p>
+      </div>
+      <span class="day-date">09 nov</span>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Manhã</p>
+        <p class="activity-name">Torre de Belém & Mosteiro dos Jerónimos ⭐</p>
+        <p class="activity-desc">Os dois monumentos mais icônicos de Lisboa — ambos Patrimônio UNESCO. A Torre de Belém (€10) é o símbolo dos Descobrimentos portugueses. O Mosteiro dos Jerónimos (€10) é uma obra-prima do estilo manuelino com claustros deslumbrantes. Em novembro, filas muito menores que no verão. Chegue pelo elétrico 15E ou trem de Cais do Sodré.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€10/pp cada</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Manhã</p>
+        <p class="activity-name">Pastéis de Belém — O original desde 1837</p>
+        <p class="activity-desc">A pastelaria mais famosa de Portugal — os pastéis de nata originais, feitos com a receita secreta dos monges dos Jerónimos. A fila é constante mas anda rápido. Peça quente, com canela e açúcar de confeiteiro. Imperdível.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€3–5/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Almoço</p>
+        <p class="activity-name">Ponto Final — Almoço com vista para o Tejo</p>
+        <p class="activity-desc">Atravesse o Tejo de ferry (€1,30, 10 min) até Cacilhas para almoçar no Ponto Final — restaurante à beira-rio com vista espetacular para Lisboa e comida portuguesa honesta a preços muito acessíveis. Uma das melhores experiências gastronômicas da viagem.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€15–22/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Tarde</p>
+        <p class="activity-name">Chiado & Elevador de Santa Justa</p>
+        <p class="activity-desc">O bairro cultural de Lisboa — livraria Bertrand (a mais antiga do mundo em funcionamento, desde 1732), Café A Brasileira com a estátua de Fernando Pessoa, e o Elevador de Santa Justa com vista panorâmica. Passeie pelas ruas elegantes, entre em lojas de design português e aprecie a arquitetura.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Elevador: ~€5/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Final da tarde</p>
+        <p class="activity-name">Miradouro de São Pedro de Alcântara — Pôr do sol</p>
+        <p class="activity-desc">Um dos miradouros mais bonitos de Lisboa — vista para o Castelo de São Jorge e toda a cidade. Em novembro, o pôr do sol por volta das 17h30 pinta o céu de tons dourados e rosados. Leve um vinho verde e aprecie o momento.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Grátis</span>
+        <span class="tag tag-free">✓ Gratuito</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Jantar</p>
+        <p class="activity-name">Jantar no Bairro Alto ou Príncipe Real</p>
+        <p class="activity-desc">O Bairro Alto e Príncipe Real concentram alguns dos melhores restaurantes de Lisboa — desde tascas tradicionais até cozinha contemporânea portuguesa. Experimente o polvo à lagareiro, arroz de marisco ou um bom bife à portuguesa.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">~€20–35/pp</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIA 14 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div>
+        <p class="day-title">Dia 14 — Sintra ou Dia Livre & Despedida</p>
+        <p class="day-theme">Palácio Encantado · Último Dia Completo · Última Noite</p>
+      </div>
+      <span class="day-date">10 nov</span>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Dia inteiro (opção A)</p>
+        <p class="activity-name">🏰 Excursão a Sintra — Palácios de Conto de Fadas</p>
+        <p class="activity-desc">A 40 min de trem de Lisboa (€2,30), Sintra é Patrimônio UNESCO com palácios coloridos em meio a florestas. O <strong>Palácio da Pena</strong> (€14) é o mais icônico — cores vibrantes no topo da serra. O <strong>Palácio Nacional</strong> (€10) e a <strong>Quinta da Regaleira</strong> (€10) com seu poço iniciático também são imperdíveis. Em novembro, a neblina sobre a serra cria uma atmosfera mística única. Escolha 2 dos 3 palácios para não correr.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">€10–14/pp por palácio</span>
+        <span class="tag tag-local">🏷 No local</span>
+      </div>
+    </div>
+    <div class="activity">
+      <div>
+        <p class="activity-time">Dia inteiro (opção B)</p>
+        <p class="activity-name">Dia livre em Lisboa — Mercado da Ribeira & LX Factory</p>
+        <p class="activity-desc">Se preferir ficar em Lisboa: o <strong>Time Out Market</strong> (Mercado da Ribeira) reúne os melhores chefs portugueses num food hall. Depois, a <strong>LX Factory</strong> — complexo industrial convertido em espaço criativo com lojas, restaurantes e a livraria Ler Devagar (uma das mais bonitas do mundo). Termine no <strong>Miradouro da Graça</strong> para o último pôr do sol.</p>
+      </div>
+      <div class="activity-right">
+        <span class="price">Grátis (entrada)</span>
+        <span class="tag tag-free">✓ Gratuito</span>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Dica:</strong> Se escolher Sintra, saia cedo (trem das 9h de Lisboa-Rossio) para aproveitar o dia. Os palácios fecham por volta das 18h em novembro. Volte a Lisboa no final da tarde para um último jantar tranquilo.
     </div>
   </div>
 
@@ -1515,50 +1393,48 @@
   <div class="day-block">
     <div class="day-header">
       <div>
-        <p class="day-title">Dia 15 — Última manhã em Paris & Voo de Volta</p>
-        <p class="day-theme">Despedida · Canal Saint-Martin · Aeroporto</p>
+        <p class="day-title">Dia 15 — Volta: Lisboa → Campinas → Belo Horizonte</p>
+        <p class="day-theme">Voos de Retorno · Fim da Viagem</p>
       </div>
-      <span class="day-date">22 out</span>
+      <span class="day-date">11 nov</span>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Manhã</p>
-        <p class="activity-name">Canal Saint-Martin — O passeio mais bonito do outono parisiense</p>
-        <p class="activity-desc">O Canal Saint-Martin em outubro tem as folhas mais bonitas de Paris — plátanos centenários com folhagem dourada refletindo na água verde. Um passeio a pé de 1–2h ao longo do canal, com padarias, bistrots e lojas locais. Muito diferente do centro turístico — Paris autêntica.</p>
+        <p class="activity-time">Manhã (~10h)</p>
+        <p class="activity-name">Check-out & Ida ao Aeroporto</p>
+        <p class="activity-desc">Check-out do hotel e deslocamento até o aeroporto de Lisboa (LIS). O metrô linha vermelha vai direto ao Aeroporto Humberto Delgado em ~20 min do centro. Chegue com pelo menos 2h de antecedência para voo internacional.</p>
       </div>
       <div class="activity-right">
-        <span class="price">Grátis</span>
-        <span class="tag tag-free">✓ Gratuito</span>
-        <span class="tag tag-seasonal">🍂 Especial outubro</span>
-      </div>
-    </div>
-    <div class="activity">
-      <div>
-        <p class="activity-time">Café da manhã</p>
-        <p class="activity-name">Du Pain et des Idées — A melhor padaria de Paris</p>
-        <p class="activity-desc">Bem ao lado do Canal Saint-Martin. Considerada uma das melhores boulangeries do mundo — o pain des amis e os escargots de chocolate são imperdíveis. Um último café parisiense de verdade.</p>
-      </div>
-      <div class="activity-right">
-        <span class="price">~€8–12/pp</span>
         <span class="tag tag-local">🏷 No local</span>
       </div>
     </div>
     <div class="activity">
       <div>
-        <p class="activity-time">Tarde</p>
-        <p class="activity-name">Aeroporto Charles de Gaulle</p>
-        <p class="activity-desc">O CDG fica a ~40 min do centro pelo RER B (€12,10). Chegue com pelo menos 3h de antecedência para voos internacionais transoceânicos. Há lojas duty-free com macarons Ladurée, vinhos e presentes de última hora.</p>
+        <p class="activity-time">12h50 – 19h50 (11/11)</p>
+        <p class="activity-name">✈ Voo Lisboa → Campinas</p>
+        <p class="activity-desc">Voo direto de Lisboa para Campinas (VCP). Duração de ~9h (fuso horário favorável na volta). Chegada às 19h50 no horário de Brasília.</p>
       </div>
       <div class="activity-right">
-        <span class="price">~€12 trem</span>
-        <span class="tag tag-local">🏷 No local</span>
+        <span class="tag tag-advance">⚡ Compre antes</span>
       </div>
     </div>
-    <div class="season-note">
-      <strong>Dica de despedida:</strong> Se o voo for à noite, ainda dá para almoçar bem. O bairro de République (ao lado do Canal Saint-Martin) tem ótimos restaurantes modernos de culinária francesa contemporânea, com preços mais honestos que o centro turístico.
+    <div class="activity">
+      <div>
+        <p class="activity-time">21h45 – 22h55 (11/11)</p>
+        <p class="activity-name">✈ Voo Campinas → Belo Horizonte</p>
+        <p class="activity-desc">Último trecho doméstico. Conexão rápida em Campinas (~2h entre pousar e embarcar). Chegada em BH às 22h55. Fim da viagem!</p>
+      </div>
+      <div class="activity-right">
+        <span class="tag tag-advance">⚡ Compre antes</span>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Dica:</strong> Aproveite o duty free de Lisboa para comprar vinhos portugueses, azeites e chocolates. O aeroporto de Lisboa tem boas lojas. Em Campinas, a conexão de ~2h é confortável — tempo de pegar mala, reimigração e redespachar.
     </div>
   </div>
 </section>
+
+<div class="transfer-note">✈ Voo Lisboa → Campinas → BH · 11 nov · Chegada em BH às 22h55</div>
 
 <!-- COST TABLE -->
 <div class="cost-section" id="sec-custos">
@@ -1569,7 +1445,7 @@
   </div>
 
   <!-- PARIS 1 -->
-  <div class="cost-city-label" style="--city-color: #2C4A6E">🗼 Paris — chegada (5 noites · 5 dias)</div>
+  <div class="cost-city-label" style="--city-color: #2C4A6E">🗼 Paris — chegada (4 noites · 5 dias)</div>
   <div class="table-wrap">
     <table class="cost-table">
       <thead>
@@ -1577,7 +1453,7 @@
           <th>Categoria</th>
           <th>Detalhes</th>
           <th>Por noite/dia (casal)</th>
-          <th>Total (5 dias)</th>
+          <th>Total (4 noites)</th>
         </tr>
       </thead>
       <tbody>
@@ -1585,49 +1461,49 @@
           <td class="cat-label">🏨 Hotel</td>
           <td class="cat-detail">Hotel 3★ bem localizado (Marais, Saint-Germain, République). Outubro é temporada moderada — preços menores que verão.</td>
           <td class="cat-range">€150 – €220 <span class="per">/noite</span></td>
-          <td class="cat-total">€750 – €1.100</td>
+          <td class="cat-total">€600 – €880</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">☕ Café da manhã</td>
           <td class="cat-detail">Boulangerie local: croissant + café. Não incluso na maioria dos hotéis parisienses 3★.</td>
           <td class="cat-range">€8 – €14 <span class="per">/casal</span></td>
-          <td class="cat-total">€40 – €70</td>
+          <td class="cat-total">€24 – €42</td>
         </tr>
         <tr>
           <td class="cat-label">🥗 Almoço</td>
           <td class="cat-detail">Bistrots, crêperies, mercados. Fórmula "menu du jour" (prato + bebida) é ótimo custo-benefício.</td>
           <td class="cat-range">€25 – €45 <span class="per">/casal</span></td>
-          <td class="cat-total">€125 – €225</td>
+          <td class="cat-total">€100 – €180</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">🍽 Jantar</td>
           <td class="cat-detail">Restaurantes tradicionais franceses. 2 pratos + vinho. Evite a área do Trocadéro e Champs-Élysées para preços mais honestos.</td>
           <td class="cat-range">€55 – €90 <span class="per">/casal</span></td>
-          <td class="cat-total">€275 – €450</td>
+          <td class="cat-total">€220 – €360</td>
         </tr>
         <tr>
           <td class="cat-label">🥐 Lanches</td>
           <td class="cat-detail">Sorvete Berthillon, châtaignes de rua, café, waffles, macarons.</td>
           <td class="cat-range">€10 – €20 <span class="per">/casal</span></td>
-          <td class="cat-total">€50 – €100</td>
+          <td class="cat-total">€40 – €80</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">🎟 Ingressos</td>
-          <td class="cat-detail">Louvre (€64), Torre Eiffel (€30–74), Versalhes (€50–70), Orangerie (€25), Arco do Triunfo (€26), Notre-Dame (grátis).</td>
-          <td class="cat-range">€40 – €60 <span class="per">/dia médio</span></td>
-          <td class="cat-total">€195 – €259</td>
+          <td class="cat-detail">Louvre (€64), Torre Eiffel (€30–74), Arco do Triunfo (€26), Notre-Dame (grátis).</td>
+          <td class="cat-range">€30 – €50 <span class="per">/dia médio</span></td>
+          <td class="cat-total">€120 – €164</td>
         </tr>
         <tr>
           <td class="cat-label">🚇 Transporte interno</td>
-          <td class="cat-detail">Metrô/RER (Navigo Semaine ~€30/pessoa, cobre toda a semana ilimitado + RER Versalhes e CDG). Uma semana cobre 08–14 out; para o dia de retorno em Paris (22 out) compre bilhete avulso t+.</td>
+          <td class="cat-detail">Metrô/RER (Navigo Semaine ~€30/pessoa, cobre toda a semana ilimitado + RER e CDG). Uma semana cobre 28 out–01 nov.</td>
           <td class="cat-range">€8 – €12 <span class="per">/casal/dia</span></td>
           <td class="cat-total">€60 (passe semanal)</td>
         </tr>
         <tr class="alt total-row">
-          <td class="cat-label">📊 Total Paris 1</td>
-          <td class="cat-detail">5 noites · 5 dias · 2 pessoas</td>
-          <td class="cat-range">€296 – €457 <span class="per">/dia</span></td>
-          <td class="cat-total highlight">€1.495 – €2.264</td>
+          <td class="cat-label">📊 Total Paris</td>
+          <td class="cat-detail">4 noites · 5 dias · 2 pessoas</td>
+          <td class="cat-range">€260 – €415 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€1.164 – €1.766</td>
         </tr>
       </tbody>
     </table>
@@ -1698,8 +1574,8 @@
     </table>
   </div>
 
-  <!-- BRUXELAS -->
-  <div class="cost-city-label" style="--city-color: #7A3030">🍫 Bruxelas (2 noites · 2 dias)</div>
+  <!-- LISBOA -->
+  <div class="cost-city-label" style="--city-color: #D4A017">🇵🇹 Lisboa (3 noites · 3 dias)</div>
   <div class="table-wrap">
     <table class="cost-table">
       <thead>
@@ -1707,64 +1583,64 @@
           <th>Categoria</th>
           <th>Detalhes</th>
           <th>Por noite/dia (casal)</th>
-          <th>Total (2 dias)</th>
+          <th>Total (3 dias)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td class="cat-label">🏨 Hotel</td>
-          <td class="cat-detail">Hotel 3★ próximo à Grand Place ou Ixelles. Bruxelas é mais acessível que Paris/Amsterdã para hospedagem.</td>
-          <td class="cat-range">€110 – €170 <span class="per">/noite</span></td>
-          <td class="cat-total">€220 – €340</td>
+          <td class="cat-detail">Hotel 3★ no Chiado, Alfama ou Príncipe Real. Lisboa é uma das capitais mais acessíveis da Europa Ocidental.</td>
+          <td class="cat-range">€80 – €140 <span class="per">/noite</span></td>
+          <td class="cat-total">€240 – €420</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">☕ Café da manhã</td>
-          <td class="cat-detail">Padarias e cafés belgas. Waffles e café são excelentes e acessíveis.</td>
-          <td class="cat-range">€10 – €18 <span class="per">/casal</span></td>
-          <td class="cat-total">€20 – €36</td>
+          <td class="cat-detail">Pastelarias tradicionais — pastel de nata, torrada mista, café. Muito acessível.</td>
+          <td class="cat-range">€8 – €14 <span class="per">/casal</span></td>
+          <td class="cat-total">€24 – €42</td>
         </tr>
         <tr>
           <td class="cat-label">🥗 Almoço</td>
-          <td class="cat-detail">Bistrots e restaurantes belgas tradicionais. Moules-frites, croque-monsieur, falafel belga.</td>
-          <td class="cat-range">€28 – €50 <span class="per">/casal</span></td>
-          <td class="cat-total">€56 – €100</td>
+          <td class="cat-detail">Tascas tradicionais, mercados e restaurantes locais. Excelente custo-benefício.</td>
+          <td class="cat-range">€20 – €40 <span class="per">/casal</span></td>
+          <td class="cat-total">€60 – €120</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">🍽 Jantar</td>
-          <td class="cat-detail">Restaurantes tradicionais belgas. Moules-frites + cervejas trappistas. Evite a Rue des Bouchers para preços mais honestos.</td>
-          <td class="cat-range">€55 – €85 <span class="per">/casal</span></td>
-          <td class="cat-total">€110 – €170</td>
+          <td class="cat-detail">Restaurantes tradicionais portugueses. Casa de fado com jantar (~€60/pp) incluída numa noite.</td>
+          <td class="cat-range">€40 – €80 <span class="per">/casal</span></td>
+          <td class="cat-total">€120 – €240</td>
         </tr>
         <tr>
           <td class="cat-label">🥐 Lanches</td>
-          <td class="cat-detail">Waffles (€3–5 cada), chocolates artesanais, cervejas no Delirium.</td>
-          <td class="cat-range">€15 – €30 <span class="per">/casal</span></td>
-          <td class="cat-total">€30 – €60</td>
+          <td class="cat-detail">Pastéis de nata, ginjinha, bifanas, gelatos.</td>
+          <td class="cat-range">€8 – €15 <span class="per">/casal</span></td>
+          <td class="cat-total">€24 – €45</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">🎟 Ingressos</td>
-          <td class="cat-detail">Magritte (€20 casal), Atomium (€32–36 casal). Grand Place: gratuito.</td>
-          <td class="cat-range">€26 – €30 <span class="per">/dia médio</span></td>
-          <td class="cat-total">€52 – €56</td>
+          <td class="cat-detail">Castelo São Jorge (€30 casal), Torre de Belém (€20), Jerónimos (€20), Sintra (~€28–48 casal).</td>
+          <td class="cat-range">€30 – €45 <span class="per">/dia médio</span></td>
+          <td class="cat-total">€98 – €118</td>
         </tr>
         <tr>
           <td class="cat-label">🚇 Transporte interno</td>
-          <td class="cat-detail">Rede STIB-MIVB (metrô, tram, ônibus). Passe de 24h ~€8/pessoa ou bilhete único ~€2,50.</td>
-          <td class="cat-range">€10 – €16 <span class="per">/casal/dia</span></td>
-          <td class="cat-total">€20 – €32</td>
+          <td class="cat-detail">Viva Viagem (metrô, elétrico, ônibus). Passe 24h ~€7/pessoa. Trem para Sintra ~€5/pp ida e volta.</td>
+          <td class="cat-range">€12 – €20 <span class="per">/casal/dia</span></td>
+          <td class="cat-total">€36 – €60</td>
         </tr>
         <tr class="alt total-row">
-          <td class="cat-label">📊 Total Bruxelas</td>
-          <td class="cat-detail">2 noites · 2 dias · 2 pessoas</td>
-          <td class="cat-range">€254 – €399 <span class="per">/dia</span></td>
-          <td class="cat-total highlight">€508 – €794</td>
+          <td class="cat-label">📊 Total Lisboa</td>
+          <td class="cat-detail">3 noites · 3 dias · 2 pessoas</td>
+          <td class="cat-range">€200 – €348 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€602 – €1.045</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <!-- AMSTERDÃ -->
-  <div class="cost-city-label" style="--city-color: #3A5C7A">🌷 Amsterdã (5 noites · 5 dias)</div>
+  <div class="cost-city-label" style="--city-color: #3A5C7A">🌷 Amsterdã (4 noites · 4 dias)</div>
   <div class="table-wrap">
     <table class="cost-table">
       <thead>
@@ -1772,7 +1648,7 @@
           <th>Categoria</th>
           <th>Detalhes</th>
           <th>Por noite/dia (casal)</th>
-          <th>Total (5 dias)</th>
+          <th>Total (4 dias)</th>
         </tr>
       </thead>
       <tbody>
@@ -1780,115 +1656,95 @@
           <td class="cat-label">🏨 Hotel</td>
           <td class="cat-detail">Hotel 3★ em De Pijp, Jordaan ou perto do Museumplein. <strong>Atenção:</strong> a taxa turística de Amsterdã subiu para 12,5% em 2026 — já inclusa nos valores abaixo.</td>
           <td class="cat-range">€160 – €240 <span class="per">/noite</span></td>
-          <td class="cat-total">€800 – €1.200</td>
+          <td class="cat-total">€640 – €960</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">☕ Café da manhã</td>
           <td class="cat-detail">Cafés holandeses (appeltaart, broodjes). Café Papeneiland, Winkel 43. Alguns hotéis incluem.</td>
           <td class="cat-range">€10 – €20 <span class="per">/casal</span></td>
-          <td class="cat-total">€50 – €100</td>
+          <td class="cat-total">€40 – €80</td>
         </tr>
         <tr>
           <td class="cat-label">🥗 Almoço</td>
           <td class="cat-detail">Cafés, mercado Albert Cuyp, broodjeswinkel (sanduícheria). Evite restaurantes próximos ao Dam Square — até 35% mais caros.</td>
           <td class="cat-range">€25 – €45 <span class="per">/casal</span></td>
-          <td class="cat-total">€125 – €225</td>
+          <td class="cat-total">€100 – €180</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">🍽 Jantar</td>
-          <td class="cat-detail">Restaurantes locais em De Pijp ou Jordaan. Rijsttafel indonésio (~€35–50/pp) é especial mas caro — inclua 1–2x no orçamento.</td>
+          <td class="cat-detail">Restaurantes locais em De Pijp ou Jordaan. Rijsttafel indonésio (~€35–50/pp) é especial mas caro — inclua 1x no orçamento.</td>
           <td class="cat-range">€60 – €100 <span class="per">/casal</span></td>
-          <td class="cat-total">€300 – €500</td>
+          <td class="cat-total">€240 – €400</td>
         </tr>
         <tr>
           <td class="cat-label">🥐 Lanches</td>
           <td class="cat-detail">Haring no mercado, stroopwafel fresco, kaas (queijo), poffertjes.</td>
           <td class="cat-range">€10 – €18 <span class="per">/casal</span></td>
-          <td class="cat-total">€50 – €90</td>
+          <td class="cat-total">€40 – €72</td>
         </tr>
         <tr class="alt">
           <td class="cat-label">🎟 Ingressos</td>
-          <td class="cat-detail">Anne Frank (€33), Van Gogh (€50), Rijksmuseum (€47), Passeio de barco (€40), Zaanse Schans atrações (~€20). Amsterdamse Bos: grátis.</td>
+          <td class="cat-detail">Anne Frank (€33), Van Gogh (€50), Rijksmuseum (€47), Passeio de barco (€40), Zaanse Schans atrações (~€20).</td>
           <td class="cat-range">€35 – €50 <span class="per">/dia médio</span></td>
           <td class="cat-total">€190</td>
         </tr>
         <tr>
           <td class="cat-label">🚲 Transporte interno</td>
-          <td class="cat-detail">GVB passe 72h (~€20/pessoa) + aluguel de bike 2 dias (~€12–15/dia). Amsterdã é muito caminhável no centro.</td>
-          <td class="cat-range">€15 – €25 <span class="per">/casal/dia</span></td>
-          <td class="cat-total">€75 – €125</td>
+          <td class="cat-detail">GVB passe 72h (~€20/pessoa) + aluguel de bike 1 dia (~€12–15/dia). Amsterdã é muito caminhável no centro.</td>
+          <td class="cat-range">€12 – €20 <span class="per">/casal/dia</span></td>
+          <td class="cat-total">€55 – €95</td>
         </tr>
         <tr class="alt total-row">
           <td class="cat-label">📊 Total Amsterdã</td>
-          <td class="cat-detail">5 noites · 5 dias · 2 pessoas</td>
-          <td class="cat-range">€315 – €493 <span class="per">/dia</span></td>
-          <td class="cat-total highlight">€1.590 – €2.430</td>
+          <td class="cat-detail">4 noites · 4 dias · 2 pessoas</td>
+          <td class="cat-range">€312 – €487 <span class="per">/dia</span></td>
+          <td class="cat-total highlight">€1.305 – €1.977</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <!-- PARIS RETORNO -->
-  <div class="cost-city-label" style="--city-color: #4A3A6E">✈ Paris — retorno (1 noite · 1 dia)</div>
-  <div class="table-wrap">
-    <table class="cost-table">
-      <thead>
-        <tr>
-          <th>Categoria</th>
-          <th>Detalhes</th>
-          <th>Por noite/dia (casal)</th>
-          <th>Total (1 dia)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="cat-label">🏨 Hotel</td>
-          <td class="cat-detail">Hotel 3★ próximo ao Canal Saint-Martin ou próximo ao CDG. Recomendamos perto do centro para aproveitar a manhã.</td>
-          <td class="cat-range">€150 – €220 <span class="per">/noite</span></td>
-          <td class="cat-total">€150 – €220</td>
-        </tr>
-        <tr class="alt">
-          <td class="cat-label">☕ Café da manhã</td>
-          <td class="cat-detail">Du Pain et des Idées — a última boulangerie parisiense de verdade.</td>
-          <td class="cat-range">€16 – €24 <span class="per">/casal</span></td>
-          <td class="cat-total">€16 – €24</td>
-        </tr>
-        <tr>
-          <td class="cat-label">🥗 Almoço</td>
-          <td class="cat-detail">Bistrots do bairro de République — preços mais honestos que o centro turístico.</td>
-          <td class="cat-range">€30 – €50 <span class="per">/casal</span></td>
-          <td class="cat-total">€30 – €50</td>
-        </tr>
-        <tr class="alt">
-          <td class="cat-label">🍽 Jantar</td>
-          <td class="cat-detail">No aeroporto ou no hotel (voo geralmente noturno para o Brasil).</td>
-          <td class="cat-range">€20 – €40 <span class="per">/casal</span></td>
-          <td class="cat-total">€20 – €40</td>
-        </tr>
-        <tr>
-          <td class="cat-label">🎟 Ingressos</td>
-          <td class="cat-detail">Canal Saint-Martin e bairro de République: passeio gratuito.</td>
-          <td class="cat-range">€0</td>
-          <td class="cat-total">€0</td>
-        </tr>
-        <tr class="alt">
-          <td class="cat-label">🚇 Transporte</td>
-          <td class="cat-detail">Metrô (bilhete avulso t+, ~€2,15/pp) + RER B ao CDG (€12,10/pp = €24,20 casal). O Navigo da 1ª semana não cobre o dia 22.</td>
-          <td class="cat-range">€24 – €30 <span class="per">/casal</span></td>
-          <td class="cat-total">€24 – €30</td>
-        </tr>
-        <tr class="alt total-row">
-          <td class="cat-label">📊 Total Paris retorno</td>
-          <td class="cat-detail">1 noite · 1 dia · 2 pessoas</td>
-          <td class="cat-range">€240 – €384 <span class="per">/dia</span></td>
-          <td class="cat-total highlight">€240 – €364</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- GRAND TOTAL -->
+  <div class="grand-total">
+    <div class="grand-total-title">💰 Total Geral Estimado da Viagem</div>
+    <div class="grand-total-subtitle">2 pessoas · 16 dias · outubro/novembro 2026 · excluindo voos Brasil–Europa e Lisboa–Brasil</div>
+    <div class="grand-total-grid">
+      <div class="grand-row">
+        <span>🗼 Paris (5 dias)</span>
+        <span>€1.164 – €1.766</span>
+      </div>
+      <div class="grand-row">
+        <span>🏰 Luxemburgo (2 dias)</span>
+        <span>€406 – €636</span>
+      </div>
+      <div class="grand-row">
+        <span>🌷 Amsterdã (4 dias)</span>
+        <span>€1.305 – €1.977</span>
+      </div>
+      <div class="grand-row">
+        <span>🇵🇹 Lisboa (3 dias)</span>
+        <span>€602 – €1.045</span>
+      </div>
+      <div class="grand-row">
+        <span>🚆✈ Transportes entre cidades</span>
+        <span>€260 – €720</span>
+      </div>
+      <div class="grand-divider"></div>
+      <div class="grand-row grand-final">
+        <span>TOTAL GERAL</span>
+        <span class="grand-price">€3.737 – €6.144</span>
+      </div>
+      <div class="grand-per-person">
+        Por pessoa: <strong>~€1.869 – €3.072</strong> · Por dia: <strong>~€267 – €438/casal</strong>
+      </div>
+    </div>
+    <div class="grand-tips">
+      <div class="grand-tip">💡 <strong>Para economizar:</strong> Reserve trens e voos com 2–3 meses de antecedência, fique em hotéis em bairros um pouco mais afastados do centro (mas bem conectados), e prefira almoços em bistrots/tascas locais a restaurantes turísticos.</div>
+      <div class="grand-tip">💡 <strong>Não incluso:</strong> Passagens aéreas Brasil–Paris e Lisboa–Brasil, seguro viagem, compras pessoais e souvenirs, chips/roaming, e gastos extras imprevistos. Recomendamos reserva de ~€200–300 extras por casal.</div>
+    </div>
   </div>
-
-  <!-- TRENS ENTRE CIDADES -->
-  <div class="cost-city-label" style="--city-color: #5C3A1A">🚆 Trens entre cidades (ida · casal)</div>
+</div>
+  <div class="cost-city-label" style="--city-color: #5C3A1A">🚆✈ Transporte entre cidades (ida · casal)</div>
   <div class="table-wrap">
     <table class="cost-table">
       <thead>
@@ -1907,77 +1763,26 @@
           <td class="cat-total">€60 – €160</td>
         </tr>
         <tr class="alt">
-          <td class="cat-label">Luxemburgo → Bruxelas</td>
-          <td class="cat-detail">IC direto</td>
-          <td class="cat-range">~3h</td>
-          <td class="cat-total">€50 – €120</td>
+          <td class="cat-label">Luxemburgo → Amsterdã</td>
+          <td class="cat-detail">IC + Thalys (via Bruxelas)</td>
+          <td class="cat-range">~5h</td>
+          <td class="cat-total">€80 – €200</td>
         </tr>
         <tr>
-          <td class="cat-label">Bruxelas → Amsterdã</td>
-          <td class="cat-detail">Thalys / Eurostar</td>
-          <td class="cat-range">~1h50</td>
-          <td class="cat-total">€60 – €160</td>
-        </tr>
-        <tr class="alt">
-          <td class="cat-label">Amsterdã → Paris</td>
-          <td class="cat-detail">Thalys direto</td>
-          <td class="cat-range">~3h20</td>
-          <td class="cat-total">€80 – €240</td>
+          <td class="cat-label">Amsterdã → Lisboa (voo)</td>
+          <td class="cat-detail">KLM / TAP / easyJet</td>
+          <td class="cat-range">~2h50</td>
+          <td class="cat-total">€120 – €360</td>
         </tr>
         <tr class="total-row">
-          <td class="cat-label">📊 Total trens</td>
+          <td class="cat-label">📊 Total transportes</td>
           <td class="cat-detail">Reservando com antecedência (2–3 meses) → valor mínimo. Última hora → valor máximo.</td>
           <td class="cat-range">—</td>
-          <td class="cat-total highlight">€250 – €680</td>
+          <td class="cat-total highlight">€260 – €720</td>
         </tr>
       </tbody>
     </table>
   </div>
-
-  <!-- GRAND TOTAL -->
-  <div class="grand-total">
-    <div class="grand-total-title">💰 Total Geral Estimado da Viagem</div>
-    <div class="grand-total-subtitle">2 pessoas · 15 dias · outubro 2026 · excluindo voos Brasil–Europa</div>
-    <div class="grand-total-grid">
-      <div class="grand-row">
-        <span>🗼 Paris chegada (5 dias)</span>
-        <span>€1.495 – €2.264</span>
-      </div>
-      <div class="grand-row">
-        <span>🏰 Luxemburgo (2 dias)</span>
-        <span>€406 – €636</span>
-      </div>
-      <div class="grand-row">
-        <span>🍫 Bruxelas (2 dias)</span>
-        <span>€508 – €794</span>
-      </div>
-      <div class="grand-row">
-        <span>🌷 Amsterdã (5 dias)</span>
-        <span>€1.590 – €2.430</span>
-      </div>
-      <div class="grand-row">
-        <span>✈ Paris retorno (1 dia)</span>
-        <span>€240 – €364</span>
-      </div>
-      <div class="grand-row">
-        <span>🚆 Trens entre cidades</span>
-        <span>€250 – €680</span>
-      </div>
-      <div class="grand-divider"></div>
-      <div class="grand-row grand-final">
-        <span>TOTAL GERAL</span>
-        <span class="grand-price">€4.489 – €7.168</span>
-      </div>
-      <div class="grand-per-person">
-        Por pessoa: <strong>~€2.245 – €3.584</strong> · Por dia: <strong>~€300 – €478/casal</strong>
-      </div>
-    </div>
-    <div class="grand-tips">
-      <div class="grand-tip">💡 <strong>Para economizar:</strong> Reserve trens com 2–3 meses de antecedência, fique em hotéis em bairros um pouco mais afastados do centro (mas bem conectados), e prefira almoços em bistrots locais a restaurantes turísticos.</div>
-      <div class="grand-tip">💡 <strong>Não incluso:</strong> Passagens aéreas Brasil–Paris, seguro viagem, compras pessoais e souvenirs, chips/roaming, e gastos extras imprevistos. Recomendamos reserva de ~€200–300 extras por casal.</div>
-    </div>
-  </div>
-</div>
 
 <style>
   /* COST TABLE STYLES */
@@ -2189,57 +1994,6 @@
   }
 </style>
 
-<!-- SUMMARY -->
-<div class="summary" id="sec-resumo">
-  <h3>📋 Resumo Prático — Outubro 2026</h3>
-  <div class="summary-grid">
-
-    <div class="summary-card">
-      <h4>⚡ Compre com muita antecedência</h4>
-      <ul>
-        <li>Louvre — €32/pp · <a href="https://ticket.louvre.fr" target="_blank" style="color:var(--accent2)">ticket.louvre.fr</a></li>
-        <li>Torre Eiffel — €14–37/pp · <a href="https://www.toureiffel.paris" target="_blank" style="color:var(--accent2)">toureiffel.paris</a></li>
-        <li>Versalhes — €25–35/pp · <a href="https://www.chateauversailles.fr" target="_blank" style="color:var(--accent2)">chateauversailles.fr</a></li>
-        <li>Van Gogh Museum — €25/pp · <a href="https://tickets.vangoghmuseum.com" target="_blank" style="color:var(--accent2)">vangoghmuseum.nl</a></li>
-        <li>Casa de Anne Frank — €16,50/pp · <a href="https://www.annefrank.org/en/museum/tickets/" target="_blank" style="color:var(--accent2)">annefrank.org</a> (terça às 10h)</li>
-        <li>Rijksmuseum — €23,50/pp · <a href="https://www.rijksmuseum.nl/en/tickets" target="_blank" style="color:var(--accent2)">rijksmuseum.nl</a></li>
-        <li>Trens entre cidades (SNCF/Thalys/NS)</li>
-        <li>Trem Amsterdã → Paris no dia 14</li>
-      </ul>
-    </div>
-
-
-    <div class="summary-card">
-      <h4>🍂 Especial outubro — Não perca</h4>
-      <ul>
-        <li>Paris: Jardim de Luxembourg com folhagem dourada</li>
-        <li>Paris: Fête des Vendanges em Montmartre (1ª semana de out — já encerrado na chegada)</li>
-        <li>Paris: Salon du Chocolat (outubro/novembro)</li>
-        <li>Luxemburgo: Chemin de la Corniche com folhagem</li>
-        <li>Amsterdã: Lomanstraat — a rua mais fotogênica do outono</li>
-        <li>Amsterdã: Canal cruise com reflexos dourados na água</li>
-        <li>Amsterdã: Amsterdamse Bos — floresta urbana em outubro</li>
-        <li>Paris (retorno): Canal Saint-Martin com plátanos dourados</li>
-      </ul>
-    </div>
-
-    <div class="summary-card">
-      <h4>🍽 Gastronomia — Sabores de Outono</h4>
-      <ul>
-        <li>Paris: Soupe à l'oignon gratinée nos bistrots</li>
-        <li>Paris: Châtaignes assadas nas ruas (outubro)</li>
-        <li>Paris: Vinho beaujolais novo (novembro, mas ótima seleção em outubro)</li>
-        <li>Lux: Judd mat Gaardebounen — prato nacional</li>
-        <li>Bruxelas: Moules-frites + cerveja Trappist</li>
-        <li>Amsterdã: Rijsttafel indonésio</li>
-        <li>Amsterdã: Appeltaart com creme no Winkel 43</li>
-        <li>Amsterdã: Haring (arenque) no Albert Cuyp</li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
 <!-- ======================== HOSPEDAGEM ======================== -->
 <div class="accom-section" id="sec-hospedagem">
   <h3 class="accom-main-title">🏨 Onde Se Hospedar em Cada Cidade</h3>
@@ -2341,7 +2095,7 @@
 
       <div class="accom-card">
         <div class="accom-name">Gare (Estação Central)</div>
-        <p class="accom-desc">O bairro da estação central tem opções mais acessíveis de hospedagem, especialmente hotéis 3★ com bom custo-benefício. Acesso imediato ao trem para Paris e Bruxelas, e ônibus para toda a cidade. Seguro e prático.</p>
+        <p class="accom-desc">O bairro da estação central tem opções mais acessíveis de hospedagem, especialmente hotéis 3★ com bom custo-benefício. Acesso imediato ao trem para Paris e Amsterdã, e ônibus para toda a cidade. Seguro e prático.</p>
         <div class="accom-tags">
           <span class="atag atag-safe">✅ Seguro</span>
           <span class="atag atag-transport">🚌 Estação central</span>
@@ -2370,13 +2124,13 @@
     </div>
   </div>
 
-  <!-- BRUXELAS -->
+  <!-- LISBOA -->
   <div class="accom-city">
-    <div class="accom-city-header" style="--c: #7A3030">
-      <span class="accom-emoji">🍫</span>
+    <div class="accom-city-header" style="--c: #D4A017">
+      <span class="accom-emoji">🇵🇹</span>
       <div>
-        <h4>Bruxelas</h4>
-        <p>Fique entre o centro histórico e Ixelles — seguro, bem conectado por metrô e tram, e com vida de bairro autêntica</p>
+        <h4>Lisboa</h4>
+        <p>Fique no Chiado, Alfama ou Príncipe Real — centrais, charmosos e com excelente acesso ao metrô e elétricos</p>
       </div>
     </div>
     <div class="accom-grid">
@@ -2385,45 +2139,52 @@
         <div class="accom-card-header">
           <span class="accom-badge">⭐ Melhor opção</span>
         </div>
-        <div class="accom-name">Ixelles / Châtelain</div>
-        <p class="accom-desc">Ixelles atrai todo tipo de viajante — é bairro universitário com bares e restaurantes acessíveis, vida cultural intensa e a estação Brussels-Luxembourg ali do lado. Excelente para Airbnb em apartamentos bem equipados. A 15 min do centro de tram.</p>
+        <div class="accom-name">Chiado / Bairro Alto</div>
+        <p class="accom-desc">O coração cultural de Lisboa — livrarias, cafés históricos, restaurantes e vida noturna. Metrô Baixa-Chiado na porta. Ótima oferta de Airbnbs em apartamentos com azulejos e varandas. Localização central perfeita para 3 dias.</p>
         <div class="accom-tags">
           <span class="atag atag-safe">✅ Seguro</span>
-          <span class="atag atag-transport">🚌 Tram 81, 93 · Metrô L2</span>
-          <span class="atag atag-price">€90–150/noite</span>
+          <span class="atag atag-transport">🚇 Metrô Verde/Azul</span>
+          <span class="atag atag-price">€80–150/noite</span>
         </div>
         <div class="accom-links">
-          <a href="https://www.booking.com/searchresults.html?dest_id=-1970854&dest_type=city&ss=Ixelles+Brussels" target="_blank">Booking — Ixelles</a>
-          <a href="https://www.airbnb.com.br/s/Ixelles--Brussels/homes" target="_blank">Airbnb — Ixelles</a>
+          <a href="https://www.booking.com/searchresults.html?dest_id=-2167973&dest_type=city&ss=Chiado+Lisbon" target="_blank">Booking — Chiado</a>
+          <a href="https://www.airbnb.com.br/s/Chiado--Lisbon/homes" target="_blank">Airbnb — Chiado</a>
         </div>
       </div>
 
       <div class="accom-card">
-        <div class="accom-name">Saint-Gilles</div>
-        <p class="accom-desc">A falta de atrações turísticas em Saint-Gilles significa preços de hospedagem mais acessíveis. O bairro do Parvis de Saint-Gilles tem ótimo acesso a restaurantes, cafés e arquitetura Art Nouveau, com muitos apartamentos convertidos de townhouses. Jovem, boêmio e bem conectado.</p>
+        <div class="accom-name">Alfama</div>
+        <p class="accom-desc">O bairro mais antigo e atmosférico de Lisboa — ruelas medievais, miradouros, casas de fado. Muito fotogênico e romântico. Prepare-se para subidas íngremes. Elétrico 28 passa por aqui. Ótimas opções de Airbnb em casas tradicionais.</p>
         <div class="accom-tags">
           <span class="atag atag-safe">✅ Seguro</span>
-          <span class="atag atag-transport">🚌 Tram 81, 97 · Metrô L2</span>
-          <span class="atag atag-price">€80–130/noite</span>
+          <span class="atag atag-transport">🚋 Elétrico 28 · Metrô</span>
+          <span class="atag atag-price">€70–130/noite</span>
         </div>
         <div class="accom-links">
-          <a href="https://www.booking.com/searchresults.html?dest_id=-1970854&dest_type=city&ss=Saint-Gilles+Brussels" target="_blank">Booking — Saint-Gilles</a>
-          <a href="https://www.airbnb.com.br/s/Saint-Gilles--Brussels/homes" target="_blank">Airbnb — Saint-Gilles</a>
+          <a href="https://www.booking.com/searchresults.html?dest_id=-2167973&dest_type=city&ss=Alfama+Lisbon" target="_blank">Booking — Alfama</a>
+          <a href="https://www.airbnb.com.br/s/Alfama--Lisbon/homes" target="_blank">Airbnb — Alfama</a>
         </div>
       </div>
 
       <div class="accom-card">
-        <div class="accom-name">Sablon / Centro Histórico</div>
-        <p class="accom-desc">O Sablon fica a meio caminho entre a Grand Place e o bairro Louise — dá para chegar a pé aos principais pontos históricos e também às melhores opções de jantar. Um pouco mais caro que Ixelles, mas a localização é imbatível para 2 dias.</p>
+        <div class="accom-name">Príncipe Real</div>
+        <p class="accom-desc">Bairro elegante e trendy com jardins, lojas de design e restaurantes modernos. Mais calmo que o Bairro Alto vizinho, perfeito para casais. A 10 min a pé do Chiado. Ótimos boutique hotels e apartamentos no Airbnb.</p>
         <div class="accom-tags">
           <span class="atag atag-safe">✅ Muito seguro</span>
-          <span class="atag atag-transport">🚇 Metrô L2, 6 · Tram 92, 93</span>
-          <span class="atag atag-price">€100–170/noite</span>
+          <span class="atag atag-transport">🚇 Metrô Rato (10 min)</span>
+          <span class="atag atag-price">€80–140/noite</span>
         </div>
         <div class="accom-links">
-          <a href="https://www.booking.com/searchresults.html?dest_id=-1970854&dest_type=city&ss=Sablon+Brussels" target="_blank">Booking — Sablon</a>
-          <a href="https://www.airbnb.com.br/s/Sablon--Brussels/homes" target="_blank">Airbnb — Sablon</a>
+          <a href="https://www.booking.com/searchresults.html?dest_id=-2167973&dest_type=city&ss=Principe+Real+Lisbon" target="_blank">Booking — Príncipe Real</a>
+          <a href="https://www.airbnb.com.br/s/Principe-Real--Lisbon/homes" target="_blank">Airbnb — Príncipe Real</a>
         </div>
+      </div>
+
+      <div class="accom-card accom-avoid">
+        <div class="accom-card-header">
+          <span class="accom-badge accom-badge-avoid">⚠️ Evite</span>
+        </div>
+        <p class="accom-desc">Evite o entorno da Estação do Oriente e Parque das Nações (longe do centro histórico) e Martim Moniz / Intendente à noite (pode ser agitado). Prefira sempre os bairros centrais históricos para uma experiência mais autêntica.</p>
       </div>
 
     </div>
@@ -2473,7 +2234,7 @@
 
       <div class="accom-card">
         <div class="accom-name">Oud-West</div>
-        <p class="accom-desc">Oud-West é um bairro residencial e trendy, menos turístico — melhor valor pelo dinheiro e qualidade de acomodação mais alta. O tram 13 conecta ao Centraal Station em ~15 minutos. Próximo ao Vondelpark, Van Gogh e Foodhallen. Perfeito para estadias de 5 dias.</p>
+        <p class="accom-desc">Oud-West é um bairro residencial e trendy, menos turístico — melhor valor pelo dinheiro e qualidade de acomodação mais alta. O tram 13 conecta ao Centraal Station em ~15 minutos. Próximo ao Vondelpark, Van Gogh e Foodhallen. Perfeito para estadias de 4 dias.</p>
         <div class="accom-tags">
           <span class="atag atag-safe">✅ Seguro</span>
           <span class="atag atag-transport">🚋 Tram 13, 17 · Ônibus</span>
@@ -2495,16 +2256,6 @@
     </div>
   </div>
 
-  <div class="accom-tip-global">
-    <strong>💡 Dicas gerais para Booking e Airbnb nessa rota:</strong>
-    <ul>
-      <li>Reserve com <strong>2–3 meses de antecedência</strong> — outubro ainda tem demanda turística e os melhores apartamentos saem cedo.</li>
-      <li>No <strong>Airbnb</strong>, prefira anfitriões com avaliação acima de 4,8★ e mais de 20 avaliações — especialmente em Paris e Amsterdã, onde há muitos imóveis irregulares.</li>
-      <li>No <strong>Booking</strong>, filtre por "cancelamento gratuito" para manter flexibilidade até confirmar seus trens.</li>
-      <li>Verifique sempre no Google Maps se o endereço fica a <strong>menos de 10 minutos a pé de uma estação de metrô ou tram</strong> — isso faz toda a diferença no dia a dia.</li>
-      <li>Em Paris, Amsterdã e Bruxelas, <strong>taxa turística</strong> é cobrada à parte na maioria das hospedagens — verifique se está incluída no preço exibido.</li>
-    </ul>
-  </div>
 </div>
 
 <style>
@@ -2655,6 +2406,57 @@
   }
 </style>
 
+<!-- ======================== FREE WALKING TOURS ======================== -->
+<section class="resto-section" id="sec-fwt">
+  <div class="resto-intro">
+    <h2 class="resto-main-title">🚶 Free Walking Tours</h2>
+    <p class="resto-main-sub">Tours gratuitos com guias locais · Gorjeta livre no final · Reserve com antecedência online</p>
+  </div>
+
+  <div class="table-wrap" style="margin-bottom: 24px;">
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Cidade</th>
+          <th>Operadores</th>
+          <th>Duração</th>
+          <th>Dica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cat-label">🗼 Paris</td>
+          <td class="cat-detail"><a href="https://www.guruwalk.com/paris" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">GuruWalk Paris</a> · <a href="https://www.neweuropetours.eu/sandemans-tours/paris/free-tour-of-paris/" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">SANDEMANs Paris</a></td>
+          <td class="cat-range">2–3h</td>
+          <td class="cat-detail">Reserve com antecedência — os melhores horários (10h e 14h) esgotam rápido em outubro. Cobrem Notre-Dame, Louvre, Marais e Montmartre.</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🏰 Luxemburgo</td>
+          <td class="cat-detail"><a href="https://twentytour.com/free-walking-tour-luxembourg/" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">TwentyTour Luxembourg</a> · <a href="https://www.guruwalk.com/luxembourg" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">GuruWalk Luxembourg</a></td>
+          <td class="cat-range">~2h</td>
+          <td class="cat-detail">TwentyTour é o mais bem avaliado. Ponto de encontro: estátua Monument Dicks et Lentz, Place Guillaume II. Funciona todos os dias.</td>
+        </tr>
+        <tr>
+          <td class="cat-label">🌷 Amsterdã</td>
+          <td class="cat-detail"><a href="https://www.neweuropetours.eu/sandemans-tours/amsterdam/free-tour-of-amsterdam/" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">SANDEMANs Amsterdam</a> · <a href="https://www.guruwalk.com/amsterdam" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">GuruWalk Amsterdam</a></td>
+          <td class="cat-range">2–3h</td>
+          <td class="cat-detail">SANDEMANs é o operador original de free tours na Europa. Ponto de encontro: Dam Square. Horários às 11h, 13h e 15h.</td>
+        </tr>
+        <tr class="alt">
+          <td class="cat-label">🇵🇹 Lisboa</td>
+          <td class="cat-detail"><a href="https://www.guruwalk.com/lisbon" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">GuruWalk Lisboa</a> · <a href="https://www.neweuropetours.eu/sandemans-tours/lisbon/free-tour-of-lisbon/" target="_blank" style="color:var(--accent);border-bottom:1px solid rgba(181,98,30,0.3);text-decoration:none">SANDEMANs Lisboa</a></td>
+          <td class="cat-range">~3h</td>
+          <td class="cat-detail">Ponto de encontro: Praça do Comércio. Cobrem Alfama, Baixa, Chiado e miradouros. Muitos guias falam português.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tip-box">
+    <strong>Como funcionam:</strong> Os free walking tours são gratuitos — você paga apenas a gorjeta que achar justo no final (€5–15/pp é o padrão). Reserve com antecedência pelo site do operador. São 2–3h de passeio a pé com um guia local fluente em inglês. Ideal para o primeiro dia em cada cidade para se orientar e pegar dicas locais.
+  </div>
+</section>
+
 <!-- ======================== GUIA DE RESTAURANTES ======================== -->
 <section class="resto-section" id="sec-restaurantes">
   <div class="resto-intro">
@@ -2796,7 +2598,7 @@
             <span class="resto-price">€4–10</span>
           </div>
           <p class="resto-type">Boulangerie artesanal · Canal Saint-Martin · 10º arr.</p>
-          <p class="resto-desc">Considerada uma das melhores padarias do mundo — o pain des amis e os escargots de chocolate são lendários. Perfeito para o café da manhã no dia do retorno a Paris. Fecha fins de semana.</p>
+          <p class="resto-desc">Considerada uma das melhores padarias do mundo — o pain des amis e os escargots de chocolate são lendários. Perfeito para o café da manhã no último dia em Paris. Fecha fins de semana.</p>
           <div class="resto-tags"><span class="rtag">Padaria icônica</span><span class="rtag">Fecha fins de semana</span></div>
         </div>
       </div>
@@ -2944,142 +2746,142 @@
     </div>
   </div>
 
-  <!-- BRUXELAS -->
+  <!-- LISBOA -->
   <div class="resto-city">
-    <div class="resto-city-header" style="--c: #7A3030">
-      <span class="resto-city-emoji">🍫</span>
+    <div class="resto-city-header" style="--c: #D4A017">
+      <span class="resto-city-emoji">🇵🇹</span>
       <div>
-        <h3>Bruxelas</h3>
-        <p>Moules, carbonnade, cervejas trappistas e uma cena gastronômica surpreendentemente diversa</p>
+        <h3>Lisboa</h3>
+        <p>Tascas, marisqueiras, pastéis de nata e uma cena gastronômica vibrante e acessível</p>
       </div>
     </div>
 
     <div class="resto-grid">
       <div class="resto-col">
-        <div class="resto-col-title">🍽 Restaurantes <span class="resto-price-range">€12–€35/pp</span></div>
+        <div class="resto-col-title">🍽 Restaurantes <span class="resto-price-range">€10–€30/pp</span></div>
 
         <div class="resto-card">
           <div class="resto-card-top">
-            <span class="resto-name">Fin de Siècle</span>
-            <span class="resto-price">€15–22/pp</span>
+            <span class="resto-name">Cervejaria Ramiro</span>
+            <span class="resto-price">€25–40/pp</span>
           </div>
-          <p class="resto-type">Belga tradicional · Ixelles</p>
-          <p class="resto-desc">Um dos restaurantes mais queridos de Bruxelas pelos locais — cozinha belga clássica, porções generosas, sem floreios. Carbonnade flamande, stoofvlees e waterzooi a preços muito honestos. Sem reserva.</p>
-          <div class="resto-tags"><span class="rtag">Sem reserva</span><span class="rtag">Favorito local</span></div>
+          <p class="resto-type">Marisqueira · Intendente</p>
+          <p class="resto-desc">A marisqueira mais famosa de Lisboa — camarão tigre, percebes, sapateira e lagostins fresquíssimos. Fila constante mas anda rápido. Termine com um prego (sanduíche de bife) — tradição da casa. Reserve ou chegue cedo.</p>
+          <div class="resto-tags"><span class="rtag">Ícone</span><span class="rtag">Marisco</span></div>
         </div>
 
         <div class="resto-card">
           <div class="resto-card-top">
-            <span class="resto-name">Chez Léon</span>
-            <span class="resto-price">€20–28/pp</span>
-          </div>
-          <p class="resto-type">Moules-frites · Centro · Rue des Bouchers</p>
-          <p class="resto-desc">A instituição das moules-frites desde 1893 — turístico mas genuíno. Mexilhões frescos em dezenas de preparações diferentes com fritas crocantes e cervejas belgas. Uma experiência que precisa acontecer.</p>
-          <div class="resto-tags"><span class="rtag">Ícone</span><span class="rtag">Moules</span></div>
-        </div>
-
-        <div class="resto-card">
-          <div class="resto-card-top">
-            <span class="resto-name">Nuetnigenough</span>
+            <span class="resto-name">Taberna da Rua das Flores</span>
             <span class="resto-price">€18–28/pp</span>
           </div>
-          <p class="resto-type">Belga tradicional · Centro</p>
-          <p class="resto-desc">Um dos bistrots mais autênticos do centro histórico — ambiente de pub belga com menu que inclui stoofvlees com fritas, croquetes de camarão e uma carta enorme de cervejas artesanais belgas.</p>
-          <div class="resto-tags"><span class="rtag">Cervejas artesanais</span><span class="rtag">Pub belga</span></div>
+          <p class="resto-type">Petiscos portugueses · Chiado</p>
+          <p class="resto-desc">Uma das melhores tascas modernas de Lisboa — petiscos criativos com ingredientes portugueses de qualidade. Sem reserva, sem menu fixo — o chef decide o que servir no dia. Sempre lotada, chegue cedo.</p>
+          <div class="resto-tags"><span class="rtag">Sem reserva</span><span class="rtag">Criativo</span></div>
         </div>
 
         <div class="resto-card">
           <div class="resto-card-top">
-            <span class="resto-name">Bia Mara</span>
+            <span class="resto-name">Ponto Final</span>
+            <span class="resto-price">€12–20/pp</span>
+          </div>
+          <p class="resto-type">Português tradicional · Cacilhas (ferry)</p>
+          <p class="resto-desc">Restaurante à beira do Tejo com vista espetacular para Lisboa. Atravesse de ferry (€1,30) até Cacilhas. Comida portuguesa honesta — peixe grelhado, arroz de marisco, bifanas. Um dos melhores custo-benefícios da região.</p>
+          <div class="resto-tags"><span class="rtag">Vista Tejo</span><span class="rtag">Acessível</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">Zé da Mouraria</span>
+            <span class="resto-price">€10–16/pp</span>
+          </div>
+          <p class="resto-type">Tasca tradicional · Mouraria</p>
+          <p class="resto-desc">Tasca autêntica no bairro da Mouraria — menu do dia com sopa, prato e sobremesa por ~€10. Frequentada por moradores locais, sem turistas. Bacalhau, cozido à portuguesa e arroz de pato caseiros.</p>
+          <div class="resto-tags"><span class="rtag">Menu do dia</span><span class="rtag">Autêntico</span></div>
+        </div>
+
+        <div class="resto-card">
+          <div class="resto-card-top">
+            <span class="resto-name">O Velho Eurico</span>
             <span class="resto-price">€12–18/pp</span>
           </div>
-          <p class="resto-type">Fish & chips belga · Centro</p>
-          <p class="resto-desc">Fish & chips com ingredientes premium e fritas belgas — o melhor dos dois mundos. Uma das melhores opções de comida acessível no centro de Bruxelas. Muito bem avaliado e sempre movimentado.</p>
-          <div class="resto-tags"><span class="rtag">Rápido</span><span class="rtag">Acessível</span></div>
+          <p class="resto-type">Tasca · Alfama</p>
+          <p class="resto-desc">Tasca tradicional em Alfama com ambiente acolhedor e porções generosas. Bacalhau à Brás, polvo à lagareiro e carne de porco alentejana. Vinho da casa honesto. Frequentado por locais e viajantes que sabem onde comer.</p>
+          <div class="resto-tags"><span class="rtag">Alfama</span><span class="rtag">Tradicional</span></div>
         </div>
 
         <div class="resto-card">
           <div class="resto-card-top">
-            <span class="resto-name">Le Petit Boxeur</span>
-            <span class="resto-price">€16–24/pp</span>
+            <span class="resto-name">Time Out Market (Mercado da Ribeira)</span>
+            <span class="resto-price">€12–25/pp</span>
           </div>
-          <p class="resto-type">Bistrô moderno · Saint-Gilles</p>
-          <p class="resto-desc">Bistrô descontraído no bairro de Saint-Gilles — menu com pratos do dia sazonais, vinho natural e ambiente jovem. O tipo de lugar que os moradores do bairro frequentam toda semana.</p>
-          <div class="resto-tags"><span class="rtag">Vinho natural</span><span class="rtag">Bairro local</span></div>
+          <p class="resto-type">Food hall · Cais do Sodré</p>
+          <p class="resto-desc">Os melhores chefs de Lisboa reunidos num food hall — desde pastéis de nata do Manteigaria até sushi do Henrique Sá Pessoa. Ideal para quando cada um quer comer algo diferente. Ambiente animado, preços variados.</p>
+          <div class="resto-tags"><span class="rtag">Food hall</span><span class="rtag">Variedade</span></div>
         </div>
 
         <div class="resto-card">
           <div class="resto-card-top">
-            <span class="resto-name">Comptoir Florian</span>
-            <span class="resto-price">€14–22/pp</span>
+            <span class="resto-name">Cervejaria Trindade</span>
+            <span class="resto-price">€15–25/pp</span>
           </div>
-          <p class="resto-type">Mercado / bistrô · Ixelles</p>
-          <p class="resto-desc">Conceito de mercado e restaurante integrados no bairro de Ixelles — produtos frescos que viram pratos do dia. Muito bem avaliado e frequentado pela comunidade local criativa.</p>
-          <div class="resto-tags"><span class="rtag">Mercado</span><span class="rtag">Sazonal</span></div>
+          <p class="resto-type">Cervejaria histórica · Bairro Alto</p>
+          <p class="resto-desc">A cervejaria mais antiga de Lisboa (1836) num antigo convento com azulejos deslumbrantes. Bife à Trindade, ameijoas à Bulhão Pato e cerveja artesanal. Ambiente histórico único.</p>
+          <div class="resto-tags"><span class="rtag">Histórico</span><span class="rtag">Azulejos</span></div>
         </div>
 
         <div class="resto-card">
           <div class="resto-card-top">
-            <span class="resto-name">La Brouette</span>
-            <span class="resto-price">€20–30/pp</span>
+            <span class="resto-name">Solar dos Presuntos</span>
+            <span class="resto-price">€20–35/pp</span>
           </div>
-          <p class="resto-type">Belga clássico · Grand Place</p>
-          <p class="resto-desc">Um dos poucos restaurantes na Grand Place que ainda oferece boa comida belga a preços relativamente razoáveis — waterzooi, coelho à belga e excelente lista de cervejas. Localização imbatível.</p>
-          <div class="resto-tags"><span class="rtag">Grand Place</span><span class="rtag">Clássico</span></div>
-        </div>
-
-        <div class="resto-card">
-          <div class="resto-card-top">
-            <span class="resto-name">Maison Antoine (friterie)</span>
-            <span class="resto-price">€4–8/pp</span>
-          </div>
-          <p class="resto-type">Friterie · Place Jourdan</p>
-          <p class="resto-desc">Considerada a melhor friterie de Bruxelas desde 1948 — fritas belgas em banha de boi, molhos artesanais. Fila constante de locais é a melhor recomendação. Um ritual obrigatório em Bruxelas.</p>
-          <div class="resto-tags"><span class="rtag">Ícone</span><span class="rtag">Street food</span></div>
+          <p class="resto-type">Português clássico · Restauradores</p>
+          <p class="resto-desc">Restaurante clássico lisboeta frequentado por políticos e artistas há décadas. Presunto ibérico, bacalhau e marisco de qualidade superior. Mais caro mas vale para uma noite especial.</p>
+          <div class="resto-tags"><span class="rtag">Reserve online</span><span class="rtag">Clássico</span></div>
         </div>
       </div>
 
       <div class="resto-col">
-        <div class="resto-col-title">☕ Cafeterias <span class="resto-price-range">€3–7 por café</span></div>
+        <div class="resto-col-title">☕ Cafeterias <span class="resto-price-range">€1–5 por café</span></div>
 
         <div class="resto-card cafe-card">
           <div class="resto-card-top">
-            <span class="resto-name">OR Coffee</span>
-            <span class="resto-price">€3,50–6</span>
+            <span class="resto-name">Pastéis de Belém</span>
+            <span class="resto-price">€1,50–4</span>
           </div>
-          <p class="resto-type">Specialty coffee pioneiro · Centro</p>
-          <p class="resto-desc">O pioneiro do specialty coffee em Bruxelas — torrefação própria, espresso e filtrados de alta qualidade. Várias unidades na cidade. Um marco da cena de café belga há mais de uma década.</p>
-          <div class="resto-tags"><span class="rtag">Torrefação própria</span><span class="rtag">Pioneiro</span></div>
+          <p class="resto-type">Pastelaria histórica · Belém</p>
+          <p class="resto-desc">A pastelaria mais famosa de Portugal desde 1837 — os pastéis de nata originais com a receita secreta dos monges. Fila constante mas anda rápido. Peça quente, com canela e açúcar. Imperdível.</p>
+          <div class="resto-tags"><span class="rtag">Ícone</span><span class="rtag">Pastel de nata</span></div>
         </div>
 
         <div class="resto-card cafe-card">
           <div class="resto-card-top">
-            <span class="resto-name">Café Walvis</span>
-            <span class="resto-price">€3–5,50</span>
+            <span class="resto-name">Manteigaria</span>
+            <span class="resto-price">€1,50–3</span>
           </div>
-          <p class="resto-type">Café e bar · Molenbeek</p>
-          <p class="resto-desc">Café cultural no bairro criativo de Molenbeek — música ao vivo às vezes, cerveja artesanal, café bem feito. Um dos lugares mais autênticos e menos turísticos de Bruxelas.</p>
-          <div class="resto-tags"><span class="rtag">Cultural</span><span class="rtag">Autêntico</span></div>
+          <p class="resto-type">Pastelaria · Chiado + outras</p>
+          <p class="resto-desc">Concorrente direto dos Pastéis de Belém — muitos lisboetas preferem os pastéis de nata daqui. Feitos à vista, sempre quentinhos. Várias unidades pela cidade. Sem fila como em Belém.</p>
+          <div class="resto-tags"><span class="rtag">Pastel de nata</span><span class="rtag">Sem fila</span></div>
         </div>
 
         <div class="resto-card cafe-card">
           <div class="resto-card-top">
-            <span class="resto-name">Le Cirio</span>
-            <span class="resto-price">€3–8</span>
+            <span class="resto-name">Copenhagen Coffee Lab</span>
+            <span class="resto-price">€3–5</span>
           </div>
-          <p class="resto-type">Café histórico art nouveau · Centro</p>
-          <p class="resto-desc">Café histórico de 1886 com interior art nouveau impecável — a 2 min da Grand Place. Ambiente de época, café tradicional e Half en Half (a bebida clássica belga de champagne e vinho branco). Ícone.</p>
-          <div class="resto-tags"><span class="rtag">Art nouveau</span><span class="rtag">Histórico</span></div>
+          <p class="resto-type">Specialty coffee · Chiado / Príncipe Real</p>
+          <p class="resto-desc">Um dos melhores specialty coffees de Lisboa — grãos de origem única, métodos de filtrado e espresso de qualidade. Ambiente minimalista escandinavo com vista para o Tejo na unidade de Santos.</p>
+          <div class="resto-tags"><span class="rtag">Specialty coffee</span><span class="rtag">Filtrado</span></div>
         </div>
 
         <div class="resto-card cafe-card">
           <div class="resto-card-top">
-            <span class="resto-name">Hoppy Leuven (Ixelles)</span>
-            <span class="resto-price">€4–7</span>
+            <span class="resto-name">A Brasileira</span>
+            <span class="resto-price">€2–5</span>
           </div>
-          <p class="resto-type">Café & cervejas artesanais · Ixelles</p>
-          <p class="resto-desc">No bairro de Ixelles, combina café specialty com cervejas artesanais belgas — dois mundos num só espaço. Ótimo para a tarde depois de explorar o Châtelain e Ixelles.</p>
-          <div class="resto-tags"><span class="rtag">Cervejas</span><span class="rtag">Ixelles</span></div>
+          <p class="resto-type">Café histórico · Chiado</p>
+          <p class="resto-desc">O café mais famoso de Lisboa desde 1905 — frequentado por Fernando Pessoa (estátua na porta). Interior art déco, bica (espresso) forte e atmosfera literária. Mais turístico mas vale pela história.</p>
+          <div class="resto-tags"><span class="rtag">Histórico</span><span class="rtag">Fernando Pessoa</span></div>
         </div>
       </div>
     </div>
@@ -3512,11 +3314,12 @@
     });
   });
 
-  // Expand Dia 1 of each city section by default
-  document.querySelectorAll('.city-section').forEach(section => {
-    const firstDay = section.querySelector('.day-block');
-    if (firstDay) firstDay.classList.remove('collapsed');
+  // All days start collapsed
+  document.querySelectorAll('.day-block').forEach(block => {
+    block.classList.add('collapsed');
   });
+
+  updateToggleLabel();
 
   // ── EXPAND / COLLAPSE ALL ──
   const toggleBtn = document.getElementById('snavToggle');
@@ -3542,10 +3345,13 @@
 
   // ── STICKY NAV ACTIVE STATE ──
   const sections = [
-    { id: 'sec-roteiro',      link: 'roteiro' },
+    { id: 'city-paris',       link: 'city-paris' },
+    { id: 'city-luxemburgo',  link: 'city-luxemburgo' },
+    { id: 'city-amsterda',    link: 'city-amsterda' },
+    { id: 'city-lisboa',      link: 'city-lisboa' },
     { id: 'sec-custos',       link: 'custos' },
-    { id: 'sec-resumo',       link: 'resumo' },
     { id: 'sec-hospedagem',   link: 'hospedagem' },
+    { id: 'sec-fwt',          link: 'fwt' },
     { id: 'sec-restaurantes', link: 'restaurantes' },
   ];
 
